@@ -664,8 +664,8 @@ mouse.KeyDown:Connect(function(key)
 	    	local horp = mouse.Target.Parent:FindFirstChild("HumanoidRootPart")
 	    	local magnitude = (horp.Position - hrp.Position).magnitude
 	    	local ezkill = mouse.Target.Parent
-	    	local limbuchoppa = "limbchop"
-	    	local limbuchoppa2 = 
+	    	  
+	    	  
 {
 	    	[1] = ezkill.Humanoid, 
 	    	[2] = ezkill.Torso.CFrame
@@ -850,7 +850,7 @@ _G.punchmove = function()
             game.ReplicatedStorage.Berserk:FireServer(hit.Parent.Humanoid)
             game.ReplicatedStorage.Damage:FireServer(hit.Parent.Humanoid, hit.Parent.HumanoidRootPart.CFrame, 80, .1, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector * 10 + Vector3.new(0, 250, 0), "", 1, Color3.new(0, 255, 0), "", 1, 1)
             hitbox1:Destroy()
-            local limbuchoppa = "limbchop"
+              
              
 {
             [1] = hit.Parent.Humanoid, 
@@ -1880,30 +1880,30 @@ _G.headhitdoe = function()
             debounce = true
             print(hit.Parent.Name)
             delay(.001, function() debounce = false end)
-        local strongpunceezzz = "strongpunch"
-        local strongpunceezzz_2 = 
+          
+          
 {
 	        [1] = hit.Parent.Humanoid, 
 	        [2] = hit.Parent.HumanoidRootPart.CFrame
 }
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
 	    game:GetService("ReplicatedStorage").Damage12:FireServer(hit.Parent.Humanoid, hit.Parent.Head.CFrame, 99, 0, Vector3.new(math.random(-20,20),math.random(-20,20),math.random(-20,20)), 0.08, "rbxassetid://5382576606", 1, 1)
 	    game:GetService("ReplicatedStorage").Damage12:FireServer(hit.Parent.Humanoid, hit.Parent.Head.CFrame, 99, 0, Vector3.new(math.random(-20,20),math.random(-20,20),math.random(-20,20)), 0.08, "rbxassetid://5382576606", 1, 1)
 	    game:GetService("ReplicatedStorage").Damage12:FireServer(hit.Parent.Humanoid, hit.Parent.Head.CFrame, 99, 0, Vector3.new(math.random(-20,20),math.random(-20,20),math.random(-20,20)), 0.08, "rbxassetid://5382576606", 1, 1)
@@ -1914,30 +1914,30 @@ elseif(hit.Parent.Parent:FindFirstChild("Humanoid")) and hit.Parent.Name ~= game
         debounce = true
         print(hit.Parent.Name)
         delay(.001, function() debounce = false end)
-        local strongpunceezzz = "strongpunch"
-        local strongpunceezzz_2 = 
+          
+          
 {
 	        [1] = hit.Parent.Humanoid, 
 	        [2] = hit.Parent.HumanoidRootPart.CFrame
 }
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
-        game:GetService("ReplicatedStorage").MadeInHeavenHandler:FireServer(strongpunceezzz,strongpunceezzz_2)
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
 	    game:GetService("ReplicatedStorage").Damage12:FireServer(hit.Parent.Humanoid, hit.Parent.Head.CFrame, 99, 0.05, Vector3.new(math.random(-20,20),math.random(-20,20),math.random(-20,20)), 0.01, "rbxassetid://5382576606", 1, 1)
 	    game:GetService("ReplicatedStorage").Damage12:FireServer(hit.Parent.Humanoid, hit.Parent.Head.CFrame, 99, 0.05, Vector3.new(math.random(-20,20),math.random(-20,20),math.random(-20,20)), 0.01, "rbxassetid://5382576606", 1, 1)
 	    game:GetService("ReplicatedStorage").Damage12:FireServer(hit.Parent.Humanoid, hit.Parent.Head.CFrame, 99, 0.05, Vector3.new(math.random(-20,20),math.random(-20,20),math.random(-20,20)), 0.01, "rbxassetid://5382576606", 1, 1)
