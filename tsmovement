@@ -1,0 +1,32 @@
+local Players = game:GetService("Players")
+
+-- Function to unanchor both the player and the Stand model inside the player
+local function unanchorPlayerAndStand(player)
+    local character = player.Character
+    if character then
+        -- Unanchor the player's character
+        for _, part in ipairs(character:GetDescendants()) do
+            if part:IsA("BasePart") then
+                part.Anchored = false
+            end
+        end
+        
+        -- Attempt to find and unanchor the Stand model inside the player's character
+        local standModel = character:FindFirstChild("Stand")
+        if standModel and standModel:IsA("Model") then
+            for _, part in ipairs(standModel:GetDescendants()) do
+                if part:IsA("BasePart") then
+                    part.Anchored = false
+                end
+            end
+        end
+    end
+end
+
+-- Connect the function to the PlayerAdded event
+Players.PlayerAdded:Connect(unanchorPlayerAndStand)
+
+-- Apply the function to all players already in the game
+for _, player in ipairs(Players:GetPlayers()) do
+    unanchorPlayerAndStand(player)
+end
