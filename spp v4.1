@@ -10,6 +10,10 @@ local Char2 = game.Players.LocalPlayer.Character
 --he is MY femboy--
 --dont try anything stupid--
 
+Player.PlayerGui.NewMenu.Background.Power.LocalScript:Remove()
+Player.PlayerGui.NewMenu.Background.Speed.LocalScript:Remove()
+Player.PlayerGui.NewMenu.Background.Durability.LocalScript:Remove()
+
 
 
 
@@ -109,7 +113,7 @@ function RemakeMenuGui(AbilityName, PowerStat, SpeedStat, DurabilityStat)
 	end
 end
 
-RemakeMenuGui("Shadow 1M Platinum", {"ℵ"}, {"Δ"}, {"∑"})
+RemakeMenuGui("Shadow 1M Platinum", {"Ω"}, {"∞"}, {"δ"})
 
 
 
@@ -263,7 +267,7 @@ repeat
 	game:GetService("ReplicatedStorage").Damage11Sans:FireServer(game.Players.LocalPlayer.Character.Humanoid, game.Players.LocalPlayer.Character["Head"].CFrame * CFrame.new(1.2,2,-0.5), 0, 0, nil, 0, "", 1, 1)
 	wait(0.01)
 	game:GetService("ReplicatedStorage").Damage11Sans:FireServer(game.Players.LocalPlayer.Character.Humanoid, game.Players.LocalPlayer.Character["Head"].CFrame * CFrame.new(1.5,2,0), 0, 0, nil, 0, "", 1, 1)
-until human2.Health == 1 or human2.Health < 1
+until Human2.Health == 1 or Human2.Health < 1
 end))
 
 coroutine.resume(coroutine.create(function()
@@ -310,7 +314,7 @@ repeat
 	game:GetService("ReplicatedStorage").Damage11Sans:FireServer(game.Players.LocalPlayer.Character.Humanoid, game.Players.LocalPlayer.Character["Head"].CFrame * CFrame.new(1.2,-3,-0.5), 0, 0, nil, 0, "", 1, 1)
 	wait(0.01)
 	game:GetService("ReplicatedStorage").Damage11Sans:FireServer(game.Players.LocalPlayer.Character.Humanoid, game.Players.LocalPlayer.Character["Head"].CFrame * CFrame.new(1.5,-3,0), 0, 0, nil, 0, "", 1, 1)
-until human2.Health == 1 or human2.Health < 1
+until Human2.Health == 1 or Human2.Health < 1
 end))
 
 
@@ -1115,8 +1119,8 @@ coroutine.wrap(PBOSZL_fake_script)()
 local function DJRREUU_fake_script() -- SettingsGui.GuiDestroy 
 	local script = Instance.new('LocalScript', SettingsGui)
 
-	human.HealthChanged:connect(function()
-		if human.Health < 1 then
+	Human2.HealthChanged:Connect(function()
+		if Human2.Health < 1 then
 			script.Parent:Destroy()
 		end
 	end)
@@ -1138,7 +1142,7 @@ coroutine.wrap(DJRREUU_fake_script)()
         lego["Star"].Handle.HeavenParticles.Enabled = true
         lego["Star"].Handle.StandEnergy:Play()
         lego["Star"].Handle.Swing:Play()
-        wait(2)
+        wait(1.8)
         _G.anim66:Stop()
         lego["Star"].Handle.HeavenParticles.Enabled = false
         lego["Star"].Handle.StandEnergy:Stop()
@@ -1221,6 +1225,7 @@ local damageevent33 = replicatedstorage.JSPDamage3
 local damageevent2 = replicatedstorage.Damage4Bootleg
 local damageevent4 = replicatedstorage.Damage13
 local damageevent3 = replicatedstorage.Damage4
+local damageevent54 = replicatedstorage.Damage
 local rtzdamageevent = replicatedstorage.RTZDamage
 local knifeevent = replicatedstorage.TTCAUDamage
 local blockevent = replicatedstorage.Block
@@ -1262,6 +1267,7 @@ local appeared = false
 local jirenmode = 0
 local powerup = false
 local poweroff = true
+local damagemultiplier = 1
 local disabled = chr:WaitForChild("Disabled")
 local timestopper = false
 local length = 10
@@ -1318,6 +1324,14 @@ tsknifethrow = Instance.new("Animation", chr.Humanoid)
 tsknifethrow.AnimationId = "rbxassetid://16271660007"
 
 _G.anim311 = chr.Humanoid:LoadAnimation(tsknifethrow)
+
+
+
+local Character222 = game.Players.LocalPlayer.Character
+local Animate = Character222:WaitForChild('Animate')
+Animate.idle.Animation1.AnimationId = "rbxassetid://16820297395"
+Animate.walk.WalkAnim.AnimationId = "rbxassetid://16820306097"
+Animate.run.RunAnim.AnimationId = "rbxassetid://16820306097"
 
 
 
@@ -1425,8 +1439,8 @@ function barrage()
 	end)
 	trailevent:FireServer(rarm.Trail, false)
 	trailevent:FireServer(larm.Trail, false)	
-	barrageanim:Play(0.1, 2, 8)
-	attackpose:Play(0.1, 2, 2)
+	barrageanim:Play(0.1, 1, 8)
+	
 	repeat
 		wait(0.025)
 		hito(rarm, rarm.CFrame * CFrame.new(0, -5, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,2, 15, 0.025, 0.05, rot.CFrame.lookVector * 5, 0.075,"rbxassetid://2894385265", math.random(9, 11) / 10, math.random(9, 11) / 50)
@@ -1617,7 +1631,7 @@ function Uppercut()
 	coroutine.resume(coroutine.create(function()
 		for _ = 1, 15 do
 			wait()
-			hito(rarm, rarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,3, 85, 0.75, 0.25, rot.CFrame.lookVector * 300, 0.25,"rbxassetid://1044088048", math.random(9, 11) / 10, math.random(9, 11) / 10)
+			hito54(rarm, rarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,3, 65, 0.75, 0.25, rot.CFrame.lookVector * 50 + Vector3.new(0, 25, 0), "rbxassetid://8595977193", 0.075, Color3.new(255, 255, 255),"rbxassetid://260430079", math.random(9, 11) / 10, math.random(9, 11) / 35, true)
 		end
 	end))
 	wait(0.65)
@@ -1633,35 +1647,71 @@ end
 
 
 ----------------------
-local ballremote = replicatedstorage.CMOONBall
-local slamcooldown = false
-function gravityforce()
-if activu == true then return end
-if slamcooldown == true then return end
-	if appeared == false then
-		return
-	end
-	trans0()
-	activu = true
-	slamcooldown = true
-	human.JumpPower = 0
-	human.WalkSpeed = 12
-    barrageanim:Play(0.1, 1, 2)
-	attackpose:Play()
-	trailevent:FireServer(rarm.Trail, true)
-	wait(0.75)
-	ballremote:FireServer()
-	hito5(rot, 22.5, 55, 0.75, 0.25, Vector3.new(100, 75, 0))
-	wait(0.65)
-	trailevent:FireServer(rarm.Trail, false)
-	attackpose:Stop()
-	activu = false
-	trans1()
-	human.JumpPower = 55
-	human.WalkSpeed = 17
-	wait(20)
-	slamcooldown = false
-end	
+---------------------------------
+local tauntactive = false
+function taunt()
+	if tauntactive == true then return end
+	tauntactive = true
+	local randomquote = math.random(1, 23)
+	if randomquote == 1 then
+game:GetService("ReplicatedStorage").Taunt:FireServer(chr.Head, "rbxassetid://3651529648", 3,3.5, 3)
+	elseif randomquote == 2 then
+game:GetService("ReplicatedStorage").Taunt:FireServer(chr.Head, "rbxassetid://3651526876", 3,3.5, 3)
+	elseif randomquote == 3 then
+game:GetService("ReplicatedStorage").Taunt:FireServer(chr.Head, "rbxassetid://5569743507", 3,3.5, 3)
+	elseif randomquote == 4 then
+game:GetService("ReplicatedStorage").Taunt:FireServer(chr.Head, "rbxassetid://5569742638", 3,3.5, 3)
+	elseif randomquote == 5 then
+game:GetService("ReplicatedStorage").Taunt:FireServer(chr.Head, "rbxassetid://5569744580", 3,3.5, 3)
+	elseif randomquote == 6 then
+game:GetService("ReplicatedStorage").Taunt:FireServer(chr.Head, "rbxassetid://5571408417", 3,3.5, 3)
+	elseif randomquote == 7 then
+game:GetService("ReplicatedStorage").Taunt:FireServer(chr.Head, "rbxassetid://1280294411", 3,3.5, 3)
+	elseif randomquote == 8 then
+game:GetService("ReplicatedStorage").Taunt:FireServer(chr.Head, "rbxassetid://4693804265", 3,3.5, 3)
+	elseif randomquote == 9 then
+game:GetService("ReplicatedStorage").Taunt:FireServer(chr.Head, "rbxassetid://4686410979", 3,3.5, 3)
+	elseif randomquote == 10 then
+game:GetService("ReplicatedStorage").Taunt:FireServer(chr.Head, "rbxassetid://4686410317", 3,3.5, 3)
+	elseif randomquote == 11 then
+game:GetService("ReplicatedStorage").Taunt:FireServer(chr.Head, "rbxassetid://4654042242", 3,3.5, 3)
+	elseif randomquote == 12 then
+game:GetService("ReplicatedStorage").Taunt:FireServer(chr.Head, "rbxassetid://4464243333", 3,3.5, 3)
+	elseif randomquote == 13 then
+game:GetService("ReplicatedStorage").Taunt:FireServer(chr.Head, "rbxassetid://4463895703", 3,3.5, 3)
+	elseif randomquote == 14 then
+game:GetService("ReplicatedStorage").Taunt:FireServer(chr.Head, "rbxassetid://616582888", 3,3.5, 3)
+	elseif randomquote == 15 then
+game:GetService("ReplicatedStorage").Taunt:FireServer(chr.Head, "rbxassetid://794068813", 3,3.5, 3)
+	elseif randomquote == 16 then
+game:GetService("ReplicatedStorage").Taunt:FireServer(chr.Head, "rbxassetid://616576465", 3,3.5, 3)
+	elseif randomquote == 17 then
+game:GetService("ReplicatedStorage").Taunt:FireServer(chr.Head, "rbxassetid://4733928693", 3,3.5, 3)
+	elseif randomquote == 18 then
+game:GetService("ReplicatedStorage").Taunt:FireServer(chr.Head, "rbxassetid://4707230860", 3,3.5, 3)
+	elseif randomquote == 19 then
+game:GetService("ReplicatedStorage").Taunt:FireServer(chr.Head, "rbxassetid://5572232666", 3,3.5, 3)
+	elseif randomquote == 20 then
+game:GetService("ReplicatedStorage").Taunt:FireServer(chr.Head, "rbxassetid://5572233210", 3,3.5, 3)
+	elseif randomquote == 21 then
+game:GetService("ReplicatedStorage").Taunt:FireServer(chr.Head, "rbxassetid://4654034307", 3,3.5, 3)
+	elseif randomquote == 22 then
+game:GetService("ReplicatedStorage").Taunt:FireServer(chr.Head, "rbxassetid://4470772287", 3,3.5, 3)
+	elseif randomquote == 23 then
+game:GetService("ReplicatedStorage").Taunt:FireServer(chr.Head, "rbxassetid://5572231558", 3,3.5, 3)
+		end
+    wait(6)
+	tauntactive = false
+end
+---------------------------------
+mouse.KeyDown:Connect(function(key)
+    if key == '2' then
+	if death == true then return end
+    if loading == true then return end
+		taunt()
+    end 
+end) 
+---------------------------------
 function barragebuff()
 	if activu == true then return end
 	if appeared == true then
@@ -1678,7 +1728,7 @@ function barragebuff()
 	trailevent:FireServer(rarm.Trail, false)
 	trailevent:FireServer(larm.Trail, false)	
 	barrageanim:Play(0.1, 2, 8)
-	attackpose:Play(0.1, 2, 2)
+	
 	repeat
 		wait(0.025)
 		hito6(rarm, rarm.CFrame * CFrame.new(0, -5, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,2, 65, 0.025, 0.05, rot.CFrame.lookVector * 5, 0.075,"rbxassetid://2894385265", math.random(9, 11) / 10, math.random(9, 11) / 50)
@@ -1691,7 +1741,6 @@ function barragebuff()
 		hito6(larm, larm.CFrame * CFrame.new(0, -5, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,2, 65, 0.025, 0.05, rot.CFrame.lookVector * 5, 0.075,"rbxassetid://1837829565", math.random(9, 11) / 10, math.random(9, 11) / 50)	
 	until bep == false
 	trans1()
-	attackpose:Stop(0.1)
 	barrageanim:Stop(0.1)
 	trailevent:FireServer(rarm.Trail, false)
 	trailevent:FireServer(larm.Trail, false)
@@ -1811,14 +1860,12 @@ function healbarrage()
 	trailevent:FireServer(larm.Trail, true)	
 	healbarrageanim:Play(0.1, 1, 4)
 	rushsfx:Play()
-	attackpose:Play(0.1, 1, 1)
 	repeat
 		heal(ntorso.CFrame * CFrame.new(0, 1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)),65,"rbxassetid://137579113", math.random(9, 11) / 5, math.random(9, 11) / 50)
         heal(ntorso.CFrame * CFrame.new(0, 1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)),65,"rbxassetid://137579113", math.random(9, 11) / 5, math.random(9, 11) / 50)
 		wait(0.025)
 	until bep == false
 	trans1()
-	attackpose:Stop()
 	rushsfx:Stop()
 	healbarrageanim:Stop(0.1)
 	trailevent:FireServer(rarm.Trail, false)
@@ -1995,7 +2042,6 @@ function healbarrageothers()
 	trailevent:FireServer(larm.Trail, true)	
 	barrageanim:Play(0.1, 1, 1.75)
 	human.JumpPower = 0
-	attackpose:Play()
 	repeat
 		EHMMM = EHMMM + 0.5
 		healo(rarm, rarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,2, 50, 0.05, 0.25, rot.CFrame.lookVector * 2.5, 0.075,"rbxassetid://137579113", math.random(9, 11) / 5, math.random(9, 11) / 50)
@@ -2004,7 +2050,6 @@ function healbarrageothers()
 	until bep == false or disabled.Value == true or EHMMM >= 40 
     trans1()
 	EHMMM = 0
-	attackpose:Stop()
 	human.JumpPower = 50
 	barrageanim:Stop(0.1)
 	trailevent:FireServer(rarm.Trail, false)
@@ -2097,7 +2142,6 @@ if kickcooldown == true then return end
 	kickanim:Play(0.1, 1, 1.35)
 	heavypunchsfx:Play()
 	trailevent:FireServer(rleg.Trail, true)
-	attackpose:Play()
 	human.JumpPower = 0
 		wait(0.35)
 	coroutine.resume(coroutine.create(function()
@@ -2109,7 +2153,6 @@ if kickcooldown == true then return end
 	wait(0.475)
 	trailevent:FireServer(rleg.Trail, false)
 	activu = false
-	attackpose:Stop()
 	human.JumpPower = 50
 	wait(5)
 	kickcooldown = false
@@ -2185,7 +2228,6 @@ if activu == true then return end
 	end
 	trans0()
 	activu = true
-	attackpose:Play(0.1, 1, 1)
 	strongpunchanim:Play(0.1, 1, 2)
         heavypunchsfx:Play()
 	trailevent:FireServer(rarm.Trail, true)
@@ -2202,7 +2244,6 @@ if activu == true then return end
 	trans1()
 	trailevent:FireServer(rarm.Trail, false)
 	activu = false
-	attackpose:Stop(0.1)
 end	
 function strongpunchsecond()
 if activu == true then return end
@@ -2211,7 +2252,6 @@ if activu == true then return end
 	end
 	trans0()
 	activu = true
-	attackpose:Play(0.1, 1, 1)
 	_G.anim1:Play(0.1, 1, 2)
         heavypunchsfx:Play()
 	trailevent:FireServer(rarm.Trail, true)
@@ -2228,7 +2268,6 @@ if activu == true then return end
 	trans1()
 	trailevent:FireServer(rarm.Trail, false)
 	activu = false
-	attackpose:Stop(0.1)
 end	
 function overwrite()
 if activu == true then return end
@@ -2236,7 +2275,6 @@ if activu == true then return end
 		return
 	end
 	trans0()
-	attackpose:Play(0.1, 1, 1)
 	activu = true
 	overwriteanim:Play(0.1, 1, 2)
 	trailevent:FireServer(rarm.Trail, true)
@@ -2258,7 +2296,6 @@ if activu == true then return end
 	trans1()
 	trailevent:FireServer(rarm.Trail, false)
 	activu = false
-	attackpose:Stop(0.1)
 end	
 function movement()
 	if appeared == true then
@@ -2514,7 +2551,7 @@ function hito(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, effect, gr
 		if partoz.Anchored then return end
         local humz = guy:FindFirstChild("Humanoid")
         local horp = guy:FindFirstChild("HumanoidRootPart")
-        damageevent:FireServer(humz, partcfr, dmg, debtime, bodyfdire, effect, grow, color, sound, pitch, volume)
+        damageevent:FireServer(humz, partcfr, dmg * damagemultiplier, debtime, bodyfdire, effect, grow, color, sound, pitch, volume)
         local db = Instance.new("StringValue")
         db.Name = "alabo"
         db.Parent = horp
@@ -2529,7 +2566,43 @@ function hito(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, effect, gr
 		if partoz.Anchored then return end
         local humz = guy:FindFirstChild("Humanoid")
         local horp = guy:FindFirstChild("HumanoidRootPart")
-        damageevent:FireServer(humz, partcfr, dmg, debtime, bodyfdire, effect, grow, color, sound, pitch, volume)
+        damageevent:FireServer(humz, partcfr, dmg * damagemultiplier, debtime, bodyfdire, effect, grow, color, sound, pitch, volume)
+        local db = Instance.new("StringValue")
+        db.Name = "alabo"
+        db.Parent = horp
+        delay(debtim, function()
+          db:Destroy()
+        end)
+      end
+    end
+
+  end
+end
+
+function hito54(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, effect, grow, color, sound, pitch, volume)
+  for _, guy in pairs(workspace:GetChildren()) do
+	if partoz.Anchored == true then return end
+    if guy:FindFirstChild("Humanoid") and guy:FindFirstChild("HumanoidRootPart") and guy ~= chr and magn > (guy:FindFirstChild("HumanoidRootPart").Position - partoz.Position).magnitude and guy:FindFirstChild("HumanoidRootPart"):FindFirstChild("alabo") == nil then
+      do
+		if partoz.Anchored then return end
+        local humz = guy:FindFirstChild("Humanoid")
+        local horp = guy:FindFirstChild("HumanoidRootPart")
+        damageevent54:FireServer(humz, partcfr, dmg * damagemultiplier, debtime, bodyfdire, effect, grow, color, sound, pitch, volume)
+        local db = Instance.new("StringValue")
+        db.Name = "alabo"
+        db.Parent = horp
+        delay(debtim, function()
+          db:Destroy()
+        end)
+      end
+    end
+
+	if guy:FindFirstChild("Stand") and guy["Stand"]:FindFirstChild("Stand Torso") and guy ~= chr and guy ~= chr[stand.Name] and magn > (guy["Stand"]:FindFirstChild("Stand Torso").Position - partoz.Position).magnitude and guy:FindFirstChild("HumanoidRootPart"):FindFirstChild("alabo") == nil then
+		do 
+		if partoz.Anchored then return end
+        local humz = guy:FindFirstChild("Humanoid")
+        local horp = guy:FindFirstChild("HumanoidRootPart")
+        damageevent54:FireServer(humz, partcfr, dmg * damagemultiplier, debtime, bodyfdire, effect, grow, color, sound, pitch, volume)
         local db = Instance.new("StringValue")
         db.Name = "alabo"
         db.Parent = horp
@@ -2550,7 +2623,7 @@ function hito6(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, effect, g
 		if partoz.Anchored then return end
         local humz = guy:FindFirstChild("Humanoid")
         local horp = guy:FindFirstChild("HumanoidRootPart")
-        damageevent22:FireServer(humz, partcfr, dmg, debtime, bodyfdire, effect, grow, color, sound, pitch, volume)
+        damageevent22:FireServer(humz, partcfr, dmg * damagemultiplier, debtime, bodyfdire, effect, grow, color, sound, pitch, volume)
         local db = Instance.new("StringValue")
         db.Name = "alabo"
         db.Parent = horp
@@ -2565,7 +2638,7 @@ function hito6(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, effect, g
 		if partoz.Anchored then return end
         local humz = guy:FindFirstChild("Humanoid")
         local horp = guy:FindFirstChild("HumanoidRootPart")
-        damageevent22:FireServer(humz, partcfr, dmg, debtime, bodyfdire, effect, grow, color, sound, pitch, volume)
+        damageevent22:FireServer(humz, partcfr, dmg * damagemultiplier, debtime, bodyfdire, effect, grow, color, sound, pitch, volume)
         local db = Instance.new("StringValue")
         db.Name = "alabo"
         db.Parent = horp
@@ -2633,7 +2706,7 @@ function hito33(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, effect, 
 		if partoz.Anchored then return end
         local humz = guy:FindFirstChild("Humanoid")
         local horp = guy:FindFirstChild("HumanoidRootPart")
-        damageevent33:FireServer(humz, partcfr, dmg, debtime, bodyfdire, effect, grow, color, sound, pitch, volume)
+        damageevent33:FireServer(humz, partcfr, dmg * damagemultiplier, debtime, bodyfdire, effect, grow, color, sound, pitch, volume)
         local db = Instance.new("StringValue")
         db.Name = "alabo"
         db.Parent = horp
@@ -2648,7 +2721,7 @@ function hito33(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, effect, 
 		if partoz.Anchored then return end
         local humz = guy:FindFirstChild("Humanoid")
         local horp = guy:FindFirstChild("HumanoidRootPart")
-        damageevent33:FireServer(humz, partcfr, dmg, debtime, bodyfdire, effect, grow, color, sound, pitch, volume)
+        damageevent33:FireServer(humz, partcfr, dmg * damagemultiplier, debtime, bodyfdire, effect, grow, color, sound, pitch, volume)
         local db = Instance.new("StringValue")
         db.Name = "alabo"
         db.Parent = horp
@@ -2706,7 +2779,7 @@ function hito2(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, effect, g
 		if partoz.Anchored then return end
         local humz = guy:FindFirstChild("Humanoid")
         local horp = guy:FindFirstChild("HumanoidRootPart")
-        damageevent2:FireServer(humz, partcfr, dmg, debtime, bodyfdire, effect, grow, color, sound, pitch, volume)
+        damageevent2:FireServer(humz, partcfr, dmg * damagemultiplier, debtime, bodyfdire, effect, grow, color, sound, pitch, volume)
         local db = Instance.new("StringValue")
         db.Name = "alabo"
         db.Parent = horp
@@ -2721,7 +2794,7 @@ function hito2(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, effect, g
 		if partoz.Anchored then return end
         local humz = guy:FindFirstChild("Humanoid")
         local horp = guy:FindFirstChild("HumanoidRootPart")
-        damageevent2:FireServer(humz, partcfr, dmg, debtime, bodyfdire, effect, grow, color, sound, pitch, volume)
+        damageevent2:FireServer(humz, partcfr, dmg * damagemultiplier, debtime, bodyfdire, effect, grow, color, sound, pitch, volume)
         local db = Instance.new("StringValue")
         db.Name = "alabo"
         db.Parent = horp
@@ -2742,7 +2815,7 @@ function hito3(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, effect, g
 		if partoz.Anchored then return end
         local humz = guy:FindFirstChild("Humanoid")
         local horp = guy:FindFirstChild("HumanoidRootPart")
-        damageevent2:FireServer(humz, partcfr, dmg, debtime, bodyfdire, effect, grow, color, sound, pitch, volume)
+        damageevent2:FireServer(humz, partcfr, dmg * damagemultiplier, debtime, bodyfdire, effect, grow, color, sound, pitch, volume)
         knockevent:FireServer(humz)
 		local db = Instance.new("StringValue")
         db.Name = "alabo"
@@ -2758,7 +2831,7 @@ function hito3(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, effect, g
 		if partoz.Anchored then return end
         local humz = guy:FindFirstChild("Humanoid")
         local horp = guy:FindFirstChild("HumanoidRootPart")
-        damageevent2:FireServer(humz, partcfr, dmg, debtime, bodyfdire, effect, grow, color, sound, pitch, volume)
+        damageevent2:FireServer(humz, partcfr, dmg * damagemultiplier, debtime, bodyfdire, effect, grow, color, sound, pitch, volume)
         knockevent:FireServer(humz)
 		local db = Instance.new("StringValue")
         db.Name = "alabo"
@@ -2780,7 +2853,7 @@ function hito4(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, effect, g
 		if partoz.Anchored then return end
         local humz = guy:FindFirstChild("Humanoid")
         local horp = guy:FindFirstChild("HumanoidRootPart")
-        damageevent3:FireServer(humz, partcfr, dmg, debtime, bodyfdire, effect, grow, color, sound, pitch, volume, BrickColor.new("Institutional white"))
+        damageevent3:FireServer(humz, partcfr, dmg * damagemultiplier, debtime, bodyfdire, effect, grow, color, sound, pitch, volume, BrickColor.new("Institutional white"))
         local db = Instance.new("StringValue")
         db.Name = "alabo"
         db.Parent = horp
@@ -2795,7 +2868,7 @@ function hito4(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, effect, g
 		if partoz.Anchored then return end
         local humz = guy:FindFirstChild("Humanoid")
         local horp = guy:FindFirstChild("HumanoidRootPart")
-        damageevent3:FireServer(humz, partcfr, dmg, effect, grow, color, sound, pitch, volume, "Institutional white")
+        damageevent3:FireServer(humz, partcfr, dmg * damagemultiplier, effect, grow, color, sound, pitch, volume, "Institutional white")
 		local db = Instance.new("StringValue")
         db.Name = "alabo"
         db.Parent = horp
@@ -2880,20 +2953,20 @@ end)
 berserkclientevent.OnClientEvent:connect(function()
 	game.Lighting.Ambient = Color3.fromRGB(0, 0, 122)
 	game.Lighting.Berserk.Enabled = true
-	human.WalkSpeed = 4
-	human:SetStateEnabled(3, false)
+	Human2.WalkSpeed = 4
+	Human2:SetStateEnabled(3, false)
 	wait(2.5)
-	human.WalkSpeed = 16
-	human:SetStateEnabled(3, true)
+	Human2.WalkSpeed = 16
+	Human2:SetStateEnabled(3, true)
 	game.Lighting.Ambient = Color3.fromRGB(150, 150, 150)
 	game.Lighting.Berserk.Enabled = false
 end)
 
 local deathevent = replicatedstorage.Death
-human.HealthChanged:connect(function()
-	if human.Health < 1 then
-		human:SetStateEnabled(3, false)
-		human:SetStateEnabled(15, false)
+Human2.HealthChanged:Connect(function()
+	if Human2.Health < 1 then
+		Human2:SetStateEnabled(3, false)
+		Human2:SetStateEnabled(15, false)
 		deathevent:FireServer(true)
 	end
 end)
@@ -2901,11 +2974,11 @@ end)
 knockclientevent.OnClientEvent:connect(function(enemyplr)
 	if chr.Block.Value == true then return end
 	knockedevent:FireServer()
-	human:SetStateEnabled(3, false)
+	Human2:SetStateEnabled(3, false)
 	wait(1.25)
-	if human.Health >= 1 then
+	if Human2.Health >= 1 then
 	getupevent:FireServer()
-	human:SetStateEnabled(3, true)
+	Human2:SetStateEnabled(3, true)
 	end
 end)
 
@@ -2913,3 +2986,9 @@ while true do
       wait(0.001)
       game.ReplicatedStorage.GetUp:FireServer()
 end
+
+
+
+
+
+
