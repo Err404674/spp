@@ -7,6 +7,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/
 
 
 ---------------------
+
+--UPDATE LOG--
+--NOTHING AS OF NOW--
+
 ---------------------
 local auractiveleg = false
 
@@ -1255,7 +1259,7 @@ function loadStuff()
     _G.anim33 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(beatdownanim)
 
     coolerepicupperanim = Instance.new("Animation", game.Players.LocalPlayer.Character)
-    coolerepicupperanim.AnimationId = "rbxassetid://0"
+    coolerepicupperanim.AnimationId = "rbxassetid://16271773436"
 
     _G.anim34 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(coolerepicupperanim)
     
@@ -4112,13 +4116,13 @@ _G.specialdashmove = function()
                 debounce = true
                 delay(.001, function() debounce = false end)
             game:GetService("ReplicatedStorage").PlayerStrongPunch2:FireServer(Vector3.new(3, -3, 3), Vector3.new(3, -3, 3), BrickColor.new("Bright green"))
-            game:GetService("ReplicatedStorage").Damage2:FireServer(hit.Parent.Humanoid, hit.Parent.Torso.CFrame, 99, 0.1, Vector3.new(0, 0, 0), 0.5, "", 1, 1)
-            game:GetService("ReplicatedStorage").Damage2:FireServer(hit.Parent.Humanoid, hit.Parent.Torso.CFrame, 99, 0.1, Vector3.new(0, 0, 0), 0.5, "", 1, 1)
-            game:GetService("ReplicatedStorage").Damage2:FireServer(hit.Parent.Humanoid, hit.Parent.Torso.CFrame, 99, 0.1, Vector3.new(0, 0, 0), 0.5, "", 1, 1)
-            game:GetService("ReplicatedStorage").Damage12:FireServer(hit.Parent.Humanoid, hit.Parent.Head.CFrame, 99, 0, Vector3.new(0, 0, 0), 0.5, "", 1, 1)
-            game:GetService("ReplicatedStorage").Damage12:FireServer(hit.Parent.Humanoid, hit.Parent.Head.CFrame, 99, 0, Vector3.new(0, 0, 0), 0.5, "", 1, 1)
-            game:GetService("ReplicatedStorage").Damage3:FireServer(hit.Parent.Humanoid, hit.Parent.Torso.CFrame, 99, 0.1, Vector3.new(0, 0, 0), 0.5, "", 1, 1)
-            game:GetService("ReplicatedStorage").Damage12:FireServer(hit.Parent.Humanoid, hit.Parent.Head.CFrame, 99, 0, Vector3.new(0, 0, 0), 0.5, "", 1, 1)
+            game:GetService("ReplicatedStorage").Damage2:FireServer(hit.Parent.Humanoid, hit.Parent.Torso.CFrame, 90, 0.1, Vector3.new(0, 0, 0), 0.5, "", 1, 1)
+            game:GetService("ReplicatedStorage").Damage2:FireServer(hit.Parent.Humanoid, hit.Parent.Torso.CFrame, 90, 0.1, Vector3.new(0, 0, 0), 0.5, "", 1, 1)
+            game:GetService("ReplicatedStorage").Damage2:FireServer(hit.Parent.Humanoid, hit.Parent.Torso.CFrame, 90, 0.1, Vector3.new(0, 0, 0), 0.5, "", 1, 1)
+            game:GetService("ReplicatedStorage").Damage12:FireServer(hit.Parent.Humanoid, hit.Parent.Head.CFrame, 90, 0, Vector3.new(0, 0, 0), 0.5, "", 1, 1)
+            game:GetService("ReplicatedStorage").Damage12:FireServer(hit.Parent.Humanoid, hit.Parent.Head.CFrame, 90, 0, Vector3.new(0, 0, 0), 0.5, "", 1, 1)
+            game:GetService("ReplicatedStorage").Damage3:FireServer(hit.Parent.Humanoid, hit.Parent.Torso.CFrame, 90, 0.1, Vector3.new(0, 0, 0), 0.5, "", 1, 1)
+            game:GetService("ReplicatedStorage").Damage12:FireServer(hit.Parent.Humanoid, hit.Parent.Head.CFrame, 90, 0, Vector3.new(0, 0, 0), 0.5, "", 1, 1)
             wait(0.5)
             hitbox1:Destroy()
             end
@@ -4127,13 +4131,13 @@ _G.specialdashmove = function()
                 debounce = true
                 delay(.001, function() debounce = false end)
             game:GetService("ReplicatedStorage").PlayerStrongPunch2:FireServer(Vector3.new(3, -3, 3), Vector3.new(3, -3, 3), BrickColor.new("Bright green"))
-            game:GetService("ReplicatedStorage").Damage2:FireServer(hit.Parent.Humanoid, hit.Parent.Torso.CFrame, 99, 0.1, Vector3.new(0, 0, 0), 0.5, "", 1, 1)
-            game:GetService("ReplicatedStorage").Damage2:FireServer(hit.Parent.Humanoid, hit.Parent.Torso.CFrame, 99, 0.1, Vector3.new(0, 0, 0), 0.5, "", 1, 1)
-            game:GetService("ReplicatedStorage").Damage2:FireServer(hit.Parent.Humanoid, hit.Parent.Torso.CFrame, 99, 0.1, Vector3.new(0, 0, 0), 0.5, "", 1, 1)
-            game:GetService("ReplicatedStorage").Damage12:FireServer(hit.Parent.Humanoid, hit.Parent.Head.CFrame, 99, 0, Vector3.new(0, 0, 0), 0.5, "", 1, 1)
-            game:GetService("ReplicatedStorage").Damage12:FireServer(hit.Parent.Humanoid, hit.Parent.Head.CFrame, 99, 0, Vector3.new(0, 0, 0), 0.5, "", 1, 1)
-            game:GetService("ReplicatedStorage").Damage3:FireServer(hit.Parent.Humanoid, hit.Parent.Torso.CFrame, 99, 0.1, Vector3.new(0, 0, 0), 0.5, "", 1, 1)
-            game:GetService("ReplicatedStorage").Damage12:FireServer(hit.Parent.Humanoid, hit.Parent.Head.CFrame, 99, 0, Vector3.new(0, 0, 0), 0.5, "", 1, 1)
+            game:GetService("ReplicatedStorage").Damage2:FireServer(hit.Parent.Humanoid, hit.Parent.Torso.CFrame, 90, 0.1, Vector3.new(0, 0, 0), 0.5, "", 1, 1)
+            game:GetService("ReplicatedStorage").Damage2:FireServer(hit.Parent.Humanoid, hit.Parent.Torso.CFrame, 90, 0.1, Vector3.new(0, 0, 0), 0.5, "", 1, 1)
+            game:GetService("ReplicatedStorage").Damage2:FireServer(hit.Parent.Humanoid, hit.Parent.Torso.CFrame, 90, 0.1, Vector3.new(0, 0, 0), 0.5, "", 1, 1)
+            game:GetService("ReplicatedStorage").Damage12:FireServer(hit.Parent.Humanoid, hit.Parent.Head.CFrame, 90, 0, Vector3.new(0, 0, 0), 0.5, "", 1, 1)
+            game:GetService("ReplicatedStorage").Damage12:FireServer(hit.Parent.Humanoid, hit.Parent.Head.CFrame, 90, 0, Vector3.new(0, 0, 0), 0.5, "", 1, 1)
+            game:GetService("ReplicatedStorage").Damage3:FireServer(hit.Parent.Humanoid, hit.Parent.Torso.CFrame, 90, 0.1, Vector3.new(0, 0, 0), 0.5, "", 1, 1)
+            game:GetService("ReplicatedStorage").Damage12:FireServer(hit.Parent.Humanoid, hit.Parent.Head.CFrame, 90, 0, Vector3.new(0, 0, 0), 0.5, "", 1, 1)
             wait(0.5)
             hitbox1:Destroy()
             end
@@ -5458,6 +5462,7 @@ _G.kcChoppa = function()
                 if debounce == false then
                 debounce = true
                 delay(.001, function() debounce = false end)
+                game:GetService("ReplicatedStorage").Damage12:FireServer(hit.Parent.Humanoid, hit.Parent["Torso"].CFrame * CFrame.new(0,1,0), 94, 0, Vector3.new(0, 0, 0), 0.025, "", 1, 1)
 	    	 
 	    	 
 {
@@ -5486,6 +5491,7 @@ _G.kcChoppa = function()
                 if debounce == false then
                 debounce = true
                 delay(.001, function() debounce = false end)
+                game:GetService("ReplicatedStorage").Damage12:FireServer(hit.Parent.Humanoid, hit.Parent["Torso"].CFrame * CFrame.new(0,1,0), 94, 0, Vector3.new(0, 0, 0), 0.025, "", 1, 1)
 	    	 
 	    	 
 {
