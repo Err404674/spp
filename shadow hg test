@@ -1027,9 +1027,9 @@ RemakeMenuGui("Shadow Hierophant Green", {"big damage"}, {"big speed"}, {"big du
 game:GetService("ReplicatedStorage").Block:FireServer(true)
 game:GetService("ReplicatedStorage").SuperArmor:FireServer(true)
 local Humanoid = game.Players.LocalPlayer.Character.Humanoid
---game:GetService("ReplicatedStorage").BurnDamage:FireServer(Humanoid, CFrame.new(0, -50, 0), -math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
---wait()
---game:GetService("ReplicatedStorage").BurnDamage:FireServer(Humanoid, CFrame.new(0, -50, 0), math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
+game:GetService("ReplicatedStorage").BurnDamage:FireServer(Humanoid, CFrame.new(0, -50, 0), -math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
+wait()
+game:GetService("ReplicatedStorage").BurnDamage:FireServer(Humanoid, CFrame.new(0, -50, 0), math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
 plr = game:GetService'Players'.LocalPlayer
 local premium = false
 local ALT = false
@@ -1294,6 +1294,8 @@ function loadStuff()
     _G.anim40 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(uidodge2anim)
 
 end
+
+
 
 -- load animations when script executes
 loadStuff()
