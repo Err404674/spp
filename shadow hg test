@@ -4,7 +4,7 @@ game.Players.LocalPlayer.Backpack.HierophantGreen:Remove()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 
-print("updated v2.7.7")
+print("updated v2.8")
 
 
 
@@ -2335,6 +2335,9 @@ _G.healMoveLol = function()
                 if debounce == false then
                 debounce = true
                 print(hit.Parent.Name)
+                game:GetService("ReplicatedStorage").BurnDamage:FireServer(hit.Parent.Humanoid, CFrame.new(0, -50, 0), -math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
+                wait()
+                game:GetService("ReplicatedStorage").BurnDamage:FireServer(hit.Parent.Humanoid, CFrame.new(0, -50, 0), math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
                 delay(.001, function() debounce = false end)
             hitbox1:Destroy()
             end
@@ -2342,6 +2345,9 @@ _G.healMoveLol = function()
                 if debounce == false then
                 debounce = true
                 print(hit.Parent.Name .. " elif")
+                game:GetService("ReplicatedStorage").BurnDamage:FireServer(hit.Parent.Humanoid, CFrame.new(0, -50, 0), -math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
+                wait()
+                game:GetService("ReplicatedStorage").BurnDamage:FireServer(hit.Parent.Humanoid, CFrame.new(0, -50, 0), math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
                 delay(.001, function() debounce = false end)
             hitbox1:Destroy()
             end
@@ -2359,9 +2365,9 @@ mouse.KeyDown:Connect(function(key)
 	if death == true then return end
         trans0()
         active = true
-         game.ReplicatedStorage.BurnDamage:FireServer(hit.Parent.Parent.Humanoid, hit.Parent.Parent.HumanoidRootPart.CFrame, -math.huge, .03, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector * 30 + Vector3.new(0, 30, 0), "rbxassetid://241837157", .25, Color3.new(0, 255, 0), "", 1, 1)
+         print("wowie")
         _G.anim7:Play()
-         game.ReplicatedStorage.BurnDamage:FireServer(hit.Parent.Parent.Humanoid, hit.Parent.Parent.HumanoidRootPart.CFrame, math.huge, .03, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector * 30 + Vector3.new(0, 30, 0), "rbxassetid://241837157", .25, Color3.new(0, 255, 0), "", 1, 1)
+         print("wowza")
         wait(0.6)
         _G.healMoveLol()
         trans1()
