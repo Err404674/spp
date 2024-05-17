@@ -4,7 +4,7 @@ game.Players.LocalPlayer.Backpack.HierophantGreen:Remove()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 
-print("updated v3.3.3")
+print("updated v10.12b")
 
 
 
@@ -3398,9 +3398,9 @@ game.Lighting.TS.Changed:Connect(function()
         wait(2)
         trans1()
         _G.anim17:Stop()
-        rtzevent:FireServer(false)
+        rtzevent:FireServer(true)
         wait(1.5)
-        rtzauractive = false
+        rtzauractive = true
         wait(1)
         tauntactive = false
         end
