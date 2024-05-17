@@ -4,7 +4,7 @@ game.Players.LocalPlayer.Backpack.HierophantGreen:Remove()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 
-print("updated v-12.5B")
+print("updated v-13.5B")
 print("SHG on top")
 
 
@@ -3717,7 +3717,7 @@ _G.healbarrageone = function()
                 debounce = true
                 delay(.001, function() debounce = false end)
             local healbarragecount = hit.Parent.Humanoid.MaxHealth/25
-            game:GetService("ReplicatedStorage").Heal6:FireServer(hit.Parent.Humanoid, hit.Parent.Head.CFrame, 15, 0, Vector3.new(0, 0, 0), 0.035, "", 1, 1)
+            game:GetService("ReplicatedStorage").Heal6:FireServer(hit.Parent.Humanoid, hit.Parent.Head.CFrame, 15, 0, Vector3.new(0, 0, 0), 0.5, "", 1, 1)
             hitbox1:Destroy()
             end
         elseif(hit.Parent.Parent:FindFirstChild("Humanoid")) and hit.Parent.Name ~= game.Players.LocalPlayer.Name then
@@ -3725,7 +3725,7 @@ _G.healbarrageone = function()
                 debounce = true
                 delay(.001, function() debounce = false end)
             local healbarragecount = hit.Parent.Humanoid.MaxHealth/25
-            game:GetService("ReplicatedStorage").Heal6:FireServer(hit.Parent.Humanoid, hit.Parent.Head.CFrame, 15, 0, Vector3.new(0, 0, 0), 0.035, "", 1, 1)
+            game:GetService("ReplicatedStorage").Heal6:FireServer(hit.Parent.Humanoid, hit.Parent.Head.CFrame, 15, 0, Vector3.new(0, 0, 0), 0.5, "", 1, 1)
             hitbox1:Destroy()
             end
         end
@@ -3783,7 +3783,7 @@ _G.healbarragetwo = function()
                 debounce = true
                 delay(.001, function() debounce = false end)
             local healbarragecount = hit.Parent.Humanoid.MaxHealth/100
-            game:GetService("ReplicatedStorage").Heal6:FireServer(hit.Parent.Humanoid, hit.Parent.Head.CFrame, 15, 0, Vector3.new(0, 0, 0), 0.035, "", 1, 1)
+            game:GetService("ReplicatedStorage").Heal6:FireServer(hit.Parent.Humanoid, hit.Parent.Head.CFrame, 15, 0, Vector3.new(0, 0, 0), 0.5, "", 1, 1)
             hitbox1:Destroy()
             end
         end
