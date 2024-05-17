@@ -4,7 +4,7 @@ game.Players.LocalPlayer.Backpack.HierophantGreen:Remove()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 
-print("updated v3.22")
+print("updated v3.2124")
 
 
 
@@ -1221,7 +1221,7 @@ function loadStuff()
     _G.anim25 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(nukeanim)
 
     counteranimation = Instance.new("Animation", game.Players.LocalPlayer.Character)
-    counteranimation.AnimationId = "rbxassetid://0"
+    counteranimation.AnimationId = "rbxassetid://17491282530"
 
     _G.anim26 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(counteranimation)
 
