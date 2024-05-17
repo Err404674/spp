@@ -4,7 +4,7 @@ game.Players.LocalPlayer.Backpack.HierophantGreen:Remove()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 
-print("updated v3.1")
+print("updated v3.2")
 
 
 
@@ -3377,7 +3377,7 @@ game.Lighting.TS.Changed:Connect(function()
     if death == true then return end
     if disablertzroar == true then return end
     if attackmode == false then
-    if game.Lighting.TS.Value == true then
+    if game.Lighting.TS.Value == false then
         rtzauractive = true
         tauntactive = true
         game:GetService("ReplicatedStorage").Taunt:FireServer(chr.Head, "rbxassetid://2540377045", 0,3.5, 0)
