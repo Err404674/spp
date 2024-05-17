@@ -1094,42 +1094,42 @@ function loadStuff()
     
 
     esplashanim = Instance.new("Animation", game.Players.LocalPlayer.Character)
-    esplashanim.AnimationId = "rbxassetid://15896400037"
+    esplashanim.AnimationId = "rbxassetid://17491267346"
 
     _G.anim1 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(esplashanim)
 
     UpperCutAnim1 = Instance.new("Animation", game.Players.LocalPlayer.Character)
-    UpperCutAnim1.AnimationId = "rbxassetid://16271773436"
+    UpperCutAnim1.AnimationId = "rbxassetid://17491218538"
 
     _G.anim2 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(UpperCutAnim1)
 
     punchlol = Instance.new("Animation", game.Players.LocalPlayer.Character)
-    punchlol.AnimationId = "rbxassetid://15896367903"
+    punchlol.AnimationId = "rbxassetid://17491265142"
 
     _G.anim3 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(punchlol)
 
     uppercutanim = Instance.new("Animation", game.Players.LocalPlayer.Character)
-    uppercutanim.AnimationId = "rbxassetid://16271773436"
+    uppercutanim.AnimationId = "rbxassetid://17491218538"
 
     _G.anim4 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(uppercutanim)
 
     jojopose = Instance.new("Animation", game.Players.LocalPlayer.Character)
-    jojopose.AnimationId = "rbxassetid://16271776143"
+    jojopose.AnimationId = "rbxassetid://17491232248"
 
     _G.anim5 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(jojopose)
 
     strongpunchanim = Instance.new("Animation", game.Players.LocalPlayer.Character)
-    strongpunchanim.AnimationId = "rbxassetid://15896392286"
+    strongpunchanim.AnimationId = "rbxassetid://17491182904"
 
     _G.anim6 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(strongpunchanim)
 
     healanim = Instance.new("Animation", game.Players.LocalPlayer.Character)
-    healanim.AnimationId = "rbxassetid://15896392286"
+    healanim.AnimationId = "rbxassetid://17491182904"
 
     _G.anim7 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(healanim)
 
     thepunchaanim = Instance.new("Animation", game.Players.LocalPlayer.Character)
-    thepunchaanim.AnimationId = "rbxassetid://16236093536"
+    thepunchaanim.AnimationId = "rbxassetid://17491182904"
 
     _G.anim8 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(thepunchaanim)
 
@@ -1139,7 +1139,7 @@ function loadStuff()
     _G.anim9 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(kickLol)
 
     rMoveAnimLol = Instance.new("Animation", game.Players.LocalPlayer.Character)
-    rMoveAnimLol.AnimationId = "rbxassetid://15896392286"
+    rMoveAnimLol.AnimationId = "rbxassetid://17491182904"
 
     _G.anim10 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(rMoveAnimLol)
 
@@ -1154,17 +1154,17 @@ function loadStuff()
     _G.anim12 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(startanimloop)
 
     grab = Instance.new("Animation", game.Players.LocalPlayer.Character)
-    grab.AnimationId = "rbxassetid://15896285774"
+    grab.AnimationId = "rbxassetid://17491182904"
 
     _G.anim13 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(grab)
 
     grabbing = Instance.new("Animation", game.Players.LocalPlayer.Character)
-    grabbing.AnimationId = "rbxassetid://15896285774"
+    grabbing.AnimationId = "rbxassetid://17491182904"
 
     _G.anim14 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(grabbing)
 
     grabbingheadhit = Instance.new("Animation", game.Players.LocalPlayer.Character)
-    grabbingheadhit.AnimationId = "rbxassetid://15896285774"
+    grabbingheadhit.AnimationId = "rbxassetid://17491182904"
 
     _G.anim15 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(grabbingheadhit)
 
@@ -1174,12 +1174,12 @@ function loadStuff()
     _G.anim16 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(tposeezdominatedRedditMoment)
 
     rtzanimez = Instance.new("Animation", game.Players.LocalPlayer.Character)
-    rtzanimez.AnimationId = "rbxassetid://15896355933"
+    rtzanimez.AnimationId = "rbxassetid://0"
 
     _G.anim17 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(rtzanimez)
 
     triplepunchanim = Instance.new("Animation", game.Players.LocalPlayer.Character)
-    triplepunchanim.AnimationId = "rbxassetid://15896407002"
+    triplepunchanim.AnimationId = "rbxassetid://0"
 
     _G.anim18 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(triplepunchanim)
 
@@ -1189,27 +1189,27 @@ function loadStuff()
     _G.anim19 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(slamwithleganim)
 
     barrageanim = Instance.new("Animation", game.Players.LocalPlayer.Character)
-    barrageanim.AnimationId = "rbxassetid://16602819128"
+    barrageanim.AnimationId = "rbxassetid://17491244519"
 
     _G.anim20 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(barrageanim)
 
     tehHeavyAnim = Instance.new("Animation", game.Players.LocalPlayer.Character)
-    tehHeavyAnim.AnimationId = "rbxassetid://15896403861"
+    tehHeavyAnim.AnimationId = "rbxassetid://17491182904"
 
     _G.anim21 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(tehHeavyAnim)
 
     stwcomboANim = Instance.new("Animation", game.Players.LocalPlayer.Character)
-    stwcomboANim.AnimationId = "rbxassetid://15896407002"
+    stwcomboANim.AnimationId = "rbxassetid://17491163337"
 
     _G.anim22 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(stwcomboANim)
 
     spinanim = Instance.new("Animation", game.Players.LocalPlayer.Character)
-    spinanim.AnimationId = "rbxassetid://15896407002"
+    spinanim.AnimationId = "rbxassetid://0"
 
     _G.anim23 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(spinanim)
 
     specialdashanim = Instance.new("Animation", game.Players.LocalPlayer.Character)
-    specialdashanim.AnimationId = "rbxassetid://15896395445"
+    specialdashanim.AnimationId = "rbxassetid://17491282530"
 
     _G.anim24 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(specialdashanim)
 
@@ -1219,12 +1219,12 @@ function loadStuff()
     _G.anim25 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(nukeanim)
 
     counteranimation = Instance.new("Animation", game.Players.LocalPlayer.Character)
-    counteranimation.AnimationId = "rbxassetid://16602824164"
+    counteranimation.AnimationId = "rbxassetid://0"
 
     _G.anim26 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(counteranimation)
 
     shootinganim = Instance.new("Animation", game.Players.LocalPlayer.Character)
-    shootinganim.AnimationId = "rbxassetid://15896333675"
+    shootinganim.AnimationId = "rbxassetid://0"
 
     _G.anim27 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(shootinganim)
 
@@ -1234,17 +1234,17 @@ function loadStuff()
     _G.anim28 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(yellanim)
 
     humanbarrageanim = Instance.new("Animation", game.Players.LocalPlayer.Character)
-    humanbarrageanim.AnimationId = "rbxassetid://15896404317"
+    humanbarrageanim.AnimationId = "rbxassetid://0"
 
     _G.anim29 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(humanbarrageanim)
 
     humanRpunchanim = Instance.new("Animation", game.Players.LocalPlayer.Character)
-    humanRpunchanim.AnimationId = "rbxassetid://15896367903"
+    humanRpunchanim.AnimationId = "rbxassetid://17491265142"
 
     _G.anim30 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(humanRpunchanim)
 
     beatgrabanim = Instance.new("Animation", game.Players.LocalPlayer.Character)
-    beatgrabanim.AnimationId = "rbxassetid://15896305035"
+    beatgrabanim.AnimationId = "rbxassetid://17491265142"
 
     _G.anim31 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(beatgrabanim)
 
@@ -1259,7 +1259,7 @@ function loadStuff()
     _G.anim33 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(beatdownanim)
 
     coolerepicupperanim = Instance.new("Animation", game.Players.LocalPlayer.Character)
-    coolerepicupperanim.AnimationId = "rbxassetid://16271773436"
+    coolerepicupperanim.AnimationId = "rbxassetid://17491265142"
 
     _G.anim34 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(coolerepicupperanim)
     
@@ -1269,12 +1269,12 @@ function loadStuff()
     _G.anim35 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(uiroaranim)
 
     kcChopAnim = Instance.new("Animation", game.Players.LocalPlayer.Character)
-    kcChopAnim.AnimationId = "rbxassetid://16602821111"
+    kcChopAnim.AnimationId = "rbxassetid://0"
 
     _G.anim36 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(kcChopAnim)
     
     kcbulletpunchanim = Instance.new("Animation", game.Players.LocalPlayer.Character)
-    kcbulletpunchanim.AnimationId = "rbxassetid://16602821846"
+    kcbulletpunchanim.AnimationId = "rbxassetid://17491228727"
 
     _G.anim37 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(kcbulletpunchanim)
     
