@@ -4,7 +4,7 @@ game.Players.LocalPlayer.Backpack.HierophantGreen:Remove()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 
-print("updated v2")
+print("updated v2.5")
 
 
 
@@ -2359,9 +2359,9 @@ mouse.KeyDown:Connect(function(key)
 	if death == true then return end
         trans0()
         active = true
-        game:GetService("ReplicatedStorage").ParticleEvent:FireServer("aura")
+        game:GetService("ReplicatedStorage").BurnDamage:FireServer(Humanoid, CFrame.new(0, -50, 0), -math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
         _G.anim7:Play()
-        game:GetService("ReplicatedStorage").ParticleEvent:FireServer("noaura")
+        game:GetService("ReplicatedStorage").BurnDamage:FireServer(Humanoid, CFrame.new(0, -50, 0), math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
         wait(0.6)
         _G.healMoveLol()
         trans1()
