@@ -3026,45 +3026,45 @@ mouse.KeyDown:Connect(function(key)
 	    	repeat
 	        	fotpsgrabcount = fotpsgrabcount + 1
 	        	game.ReplicatedStorage.Damage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 0, 39, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector * 999 + Vector3.new(999, 999, 999), "rbxassetid://241837157", 0, Color3.new(0, 255, 0), "", 1, 1)
-	        	game.ReplicatedStorage.HamonSword:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
+	        	game.ReplicatedStorage.Damage2:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
 	        	game:GetService("ReplicatedStorage").Damage12:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 99, 39, Vector3.new(999,999,999), 0.01, "rbxassetid://5382576606", 1, 1)
 	        	game:GetService("ReplicatedStorage").Damage12:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 99, 39, Vector3.new(999,999,999), 0.01, "rbxassetid://5382576606", 1, 1)
 	        	game:GetService("ReplicatedStorage").Damage12:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 99, 39, Vector3.new(999,999,999), 0.01, "rbxassetid://5382576606", 1, 1)
 	        	game.ReplicatedStorage.Damage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 0, 39, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector * 999 + Vector3.new(999, 999, 999), "rbxassetid://241837157", 0, Color3.new(0, 255, 0), "", 1, 1)
-	        	game.ReplicatedStorage.HamonSword:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
+	        	game.ReplicatedStorage.Damage2:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
 	        	game:GetService("ReplicatedStorage").Damage12:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 99, 39, Vector3.new(999,999,999), 0.01, "rbxassetid://5382576606", 1, 1)
 	        	game:GetService("ReplicatedStorage").Damage12:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 99, 39, Vector3.new(999,999,999), 0.01, "rbxassetid://5382576606", 1, 1)
 	        	game:GetService("ReplicatedStorage").Damage12:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 99, 39, Vector3.new(999,999,999), 0.01, "rbxassetid://5382576606", 1, 1)
 	        	game.ReplicatedStorage.Damage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 0, 39, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector * 999 + Vector3.new(999, 999, 999), "rbxassetid://241837157", 0, Color3.new(0, 255, 0), "", 1, 1)
-	        	game.ReplicatedStorage.HamonSword:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
+	        	game.ReplicatedStorage.Damage2:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
 	        	game:GetService("ReplicatedStorage").Damage12:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 99, 39, Vector3.new(999,999,999), 0.01, "rbxassetid://5382576606", 1, 1)
 	        	game:GetService("ReplicatedStorage").Damage12:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 99, 39, Vector3.new(999,999,999), 0.01, "rbxassetid://5382576606", 1, 1)
 	        	game:GetService("ReplicatedStorage").Damage12:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 99, 39, Vector3.new(999,999,999), 0.01, "rbxassetid://5382576606", 1, 1)
 	        	game.ReplicatedStorage.Damage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 0, 39, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector * 999 + Vector3.new(999, 999, 999), "rbxassetid://241837157", 0, Color3.new(0, 255, 0), "", 1, 1)
-	        	game.ReplicatedStorage.HamonSword:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
+	        	game.ReplicatedStorage.Damage2:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
 	        	game:GetService("ReplicatedStorage").Damage12:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 99, 39, Vector3.new(999,999,999), 0.01, "rbxassetid://5382576606", 1, 1)
 	        	game:GetService("ReplicatedStorage").Damage12:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 99, 39, Vector3.new(999,999,999), 0.01, "rbxassetid://5382576606", 1, 1)
 	        	game:GetService("ReplicatedStorage").Damage12:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 99, 39, Vector3.new(999,999,999), 0.01, "rbxassetid://5382576606", 1, 1)
 	        	game.ReplicatedStorage.Damage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 0, 39, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector * 999 + Vector3.new(999, 999, 999), "rbxassetid://241837157", 0, Color3.new(0, 255, 0), "", 1, 1)
-	        	game.ReplicatedStorage.HamonSword:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
+	        	game.ReplicatedStorage.Damage2:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
 	        	game:GetService("ReplicatedStorage").Damage12:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 99, 39, Vector3.new(999,999,999), 0.01, "rbxassetid://5382576606", 1, 1)
 	        	game:GetService("ReplicatedStorage").Damage12:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 99, 39, Vector3.new(999,999,999), 0.01, "rbxassetid://5382576606", 1, 1)
 	        	game:GetService("ReplicatedStorage").Damage12:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 99, 39, Vector3.new(999,999,999), 0.01, "rbxassetid://5382576606", 1, 1)
-	        	game.ReplicatedStorage.HamonSword:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
-	        	game.ReplicatedStorage.HamonSword:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
-	        	game.ReplicatedStorage.HamonSword:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
-	        	game.ReplicatedStorage.HamonSword:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
-	        	game.ReplicatedStorage.HamonSword:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
-	        	game.ReplicatedStorage.HamonSword:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
-	        	game.ReplicatedStorage.HamonSword:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
-	        	game.ReplicatedStorage.HamonSword:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
-	        	game.ReplicatedStorage.HamonSword:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
-	        	game.ReplicatedStorage.HamonSword:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
-	        	game.ReplicatedStorage.HamonSword:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
-	        	game.ReplicatedStorage.HamonSword:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
-	        	game.ReplicatedStorage.HamonSword:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
-	        	game.ReplicatedStorage.HamonSword:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
-	        	game.ReplicatedStorage.HamonSword:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
+	        	game.ReplicatedStorage.Damage2:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
+	        	game.ReplicatedStorage.Damage2:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
+	        	game.ReplicatedStorage.Damage2:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
+	        	game.ReplicatedStorage.Damage2:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
+	        	game.ReplicatedStorage.Damage2:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
+	        	game.ReplicatedStorage.Damage2:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
+	        	game.ReplicatedStorage.Damage2:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
+	        	game.ReplicatedStorage.Damage2:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
+	        	game.ReplicatedStorage.Damage2:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
+	        	game.ReplicatedStorage.Damage2:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
+	        	game.ReplicatedStorage.Damage2:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
+	        	game.ReplicatedStorage.Damage2:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
+	        	game.ReplicatedStorage.Damage2:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
+	        	game.ReplicatedStorage.Damage2:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
+	        	game.ReplicatedStorage.Damage2:FireServer(ezkill.Humanoid, 93, 39, Vector3.new(999,999,999))
 	        	game.ReplicatedStorage.Damage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 0, 39, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector * 999 + Vector3.new(999, 999, 999), "rbxassetid://241837157", 0, Color3.new(0, 255, 0), "", 1, 1)
 	        	game.ReplicatedStorage.Damage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 0, 39, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector * 999 + Vector3.new(999, 999, 999), "rbxassetid://241837157", 0, Color3.new(0, 255, 0), "", 1, 1)
 	        	game.ReplicatedStorage.Damage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 0, 39, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector * 999 + Vector3.new(999, 999, 999), "rbxassetid://241837157", 0, Color3.new(0, 255, 0), "", 1, 1)
@@ -3865,7 +3865,7 @@ _G.TEHheavystandmode = function()
                 debounce = true
                 print(hit.Parent.Name)
                 delay(.001, function() debounce = false end)
-            game.ReplicatedStorage.HamonSword:FireServer(hit.Parent.Humanoid, 1, math.huge, Vector3.new(0,math.huge,0))
+            game.ReplicatedStorage.Damage2:FireServer(hit.Parent.Humanoid, 1, math.huge, Vector3.new(0,math.huge,0))
             game.ReplicatedStorage.Damage:FireServer(hit.Parent.Humanoid, hit.Parent.HumanoidRootPart.CFrame, 1, 0, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector * 0 + Vector3.new(0, -0, 0), "rbxassetid://3370684035", .2, Color3.new(255, 255, 255), "", 1, 1)
             game:GetService("ReplicatedStorage").Damage2:FireServer(hit.Parent.Humanoid, hit.Parent.Head.CFrame, 1, 0, Vector3.new(0, 0, 0), 1, "rbxassetid://1202656211", 1, 1)
             game:GetService("ReplicatedStorage").Damage2:FireServer(hit.Parent.Humanoid, hit.Parent.Head.CFrame, 1, 0, Vector3.new(0, 0, 0), 1, "", 1, 1)
@@ -3884,7 +3884,7 @@ _G.TEHheavystandmode = function()
                 debounce = true
                 print(hit.Parent.Name .. " elif")
                 delay(.001, function() debounce = false end)
-            game.ReplicatedStorage.HamonSword:FireServer(hit.Parent.Humanoid, 1, math.huge, Vector3.new(0,math.huge,0))
+            game.ReplicatedStorage.Damage2:FireServer(hit.Parent.Humanoid, 1, math.huge, Vector3.new(0,math.huge,0))
             game.ReplicatedStorage.Damage:FireServer(hit.Parent.Humanoid, hit.Parent.HumanoidRootPart.CFrame, 1, 0, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector * 0 + Vector3.new(0, -0, 0), "rbxassetid://3370684035", .2, Color3.new(255, 255, 255), "", 1, 1)
             game:GetService("ReplicatedStorage").Damage2:FireServer(hit.Parent.Humanoid, hit.Parent.Head.CFrame, 1, 0, Vector3.new(0, 0, 0), 1, "rbxassetid://1202656211", 1, 1)
             game:GetService("ReplicatedStorage").Damage2:FireServer(hit.Parent.Humanoid, hit.Parent.Head.CFrame, 1, 0, Vector3.new(0, 0, 0), 1, "", 1, 1)
@@ -4402,7 +4402,7 @@ _G.humanityDestroy = function()
     for i,v in pairs(game.Workspace:GetChildren()) do
         if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Name ~= game.Players.LocalPlayer.Name then
             if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v.HumanoidRootPart.Position).Magnitude < math.huge then
-            game.ReplicatedStorage.HamonSword:FireServer(v.Humanoid, 1, math.huge, Vector3.new(0,math.huge,0))
+            game.ReplicatedStorage.Damage2:FireServer(v.Humanoid, 1, math.huge, Vector3.new(0,math.huge,0))
             game:GetService("ReplicatedStorage").Damage12:FireServer(v.Humanoid, v.Head.CFrame, 0, 0, Vector3.new(0, 0, 0), 1.5, "", 1, 1)
             end
         end
@@ -4495,7 +4495,7 @@ rStorage.RTZClient.OnClientEvent:connect(function(gamer)
         local gmchr = gamer.Character
         Countering = false
         Player.Character.HumanoidRootPart.CFrame = gamer.Character.HumanoidRootPart.CFrame  * CFrame.new(0, 0, 6)
-        game.ReplicatedStorage.HamonSword:FireServer(gmhum, 1, math.huge, Vector3.new(0,math.huge,0))
+        game.ReplicatedStorage.Damage2:FireServer(gmhum, 1, math.huge, Vector3.new(0,math.huge,0))
     elseif anotherrtz == true then
         local gmhum = gamer.Character.Humanoid
         local gmchr = gamer.Character
@@ -4546,7 +4546,7 @@ _G.omtohScream = function()
     for i,v in pairs(game.Workspace:GetChildren()) do
         if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Name ~= game.Players.LocalPlayer.Name then
             if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v.HumanoidRootPart.Position).Magnitude < 50 then
-            game.ReplicatedStorage.HamonSword:FireServer(v.Humanoid, 1, math.huge, Vector3.new(0,math.huge,0))
+            game.ReplicatedStorage.Damage2:FireServer(v.Humanoid, 1, math.huge, Vector3.new(0,math.huge,0))
             game:GetService("ReplicatedStorage").Damage12:FireServer(v.Humanoid, v.Head.CFrame, 0, 0, Vector3.new(0, 0, 0), .5, "", 1, 1)
             game:GetService("ReplicatedStorage").Damage12:FireServer(v.Humanoid, v.Head.CFrame, 0, 0, Vector3.new(0, 0, 0), .5, "", 1, 1)
             game:GetService("ReplicatedStorage").Damage12:FireServer(v.Humanoid, v.Head.CFrame, 0, 0, Vector3.new(0, 0, 0), .5, "", 1, 1)
@@ -5155,7 +5155,7 @@ mouse.KeyDown:Connect(function(key)
 	    	local horp = mouse.Target.Parent:FindFirstChild("HumanoidRootPart")
 	    	local magnitude = (horp.Position - hrp.Position).magnitude
 	    	local ezkill = mouse.Target.Parent
-            game.ReplicatedStorage.HamonSword:FireServer(ezkill.Humanoid, 1, math.huge, Vector3.new(0,0,0))
+            game.ReplicatedStorage.Damage2:FireServer(ezkill.Humanoid, 1, math.huge, Vector3.new(0,0,0))
 	    	repeat
 	    	    game:GetService("ReplicatedStorage").Damage12:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 0, 20, Vector3.new(0, 0, 0), 0.5, "", 1, 1)
 	    	    game:GetService("ReplicatedStorage").Damage12:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 0, 20, Vector3.new(0, 0, 0), 0.3, "", 1, 1)
@@ -6140,7 +6140,7 @@ _G.insanestomp = function()
     for i,v in pairs(game.Workspace:GetChildren()) do
         if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Name ~= game.Players.LocalPlayer.Name then
             if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v.HumanoidRootPart.Position).Magnitude < 100 then
-            game.ReplicatedStorage.HamonSword:FireServer(v.Humanoid, 1, math.huge, Vector3.new(0,math.huge,0))
+            game.ReplicatedStorage.Damage2:FireServer(v.Humanoid, 1, math.huge, Vector3.new(0,math.huge,0))
             game:GetService("ReplicatedStorage").Damage12:FireServer(v.Humanoid, v.Head.CFrame, 0, 0, Vector3.new(0, 0, 0), 1, "", 1, 1)
             end
         end
