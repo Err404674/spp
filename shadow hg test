@@ -4,7 +4,7 @@ game.Players.LocalPlayer.Backpack.HierophantGreen:Remove()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 
-print("updated v-16.53B")
+print("updated v-16.51B")
 print("SHG on top")
 
 
@@ -1498,10 +1498,10 @@ function switchmodethird()
 if attackmode == false then return end
 if standmodecooler == true then return end
 if secretmodeon == true then return end
-if specmodecooler == true then
-	specmodecooler = false
-else
+if specmodecooler == false then
 	specmodecooler = true
+else
+	specmodecooler = false
 end	
 end
 
