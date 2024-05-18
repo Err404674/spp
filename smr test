@@ -11,7 +11,7 @@ end
 
 game.Players.LocalPlayer.Backpack.MagiciansRed:Remove()
 
-print("updated github v5132")
+print("shadow magicians red omg no way??")
  
 --Events
 character = game.Players.LocalPlayer.Character
@@ -2002,8 +2002,8 @@ for i,v in pairs(stand:GetDescendants()) do
 	coroutine.resume(coroutine.create(function()
 	for _ = 1, 15 do
 		wait()
-		hito(rarm, rarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,3, 100, 0.15, 0.25, hrp.CFrame.lookVector * 75, "rbxassetid://3370684035", 0.075, Color3.fromRGB(255, 255, 255),"rbxassetid://5523122402", math.random(9, 11) / 10, math.random(9, 11) / 30)
-		hitofire(rarm, rarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,3, 100, 1.25, 0.25, hrp.CFrame.lookVector * 75, "rbxassetid://3370684035", 0.075, Color3.fromRGB(255, 255, 255),"rbxassetid://5523122402", math.random(9, 11) / 10, math.random(9, 11) / 4)
+		hito(rarm, rarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,3, 90, 0.15, 0.25, hrp.CFrame.lookVector * 75, "rbxassetid://3370684035", 0.075, Color3.fromRGB(255, 255, 255),"rbxassetid://5523122402", math.random(9, 11) / 10, math.random(9, 11) / 30)
+		hitofire(rarm, rarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,3, 90, 1.25, 0.25, hrp.CFrame.lookVector * 75, "rbxassetid://3370684035", 0.075, Color3.fromRGB(255, 255, 255),"rbxassetid://5523122402", math.random(9, 11) / 10, math.random(9, 11) / 4)
 	end
 	end))
 	wait(0.65)
@@ -3868,8 +3868,8 @@ if fnfmode == true then return end
 		wait(0.1)
 		bodvel.Velocity = hrp.CFrame.lookVector * 80
 		game.ReplicatedStorage.Damage12:FireServer(game.Players.LocalPlayer.Character.Humanoid, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame, 0, 0, Vector3.new(0, 0, 0), 9e999, "rbxassetid://5885680263", 1, 10);
-	hito6(rarm, rarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,2.5, 99, 0, 0.25, hrp.CFrame.lookVector * 5000  + Vector3.new(0,5000,0), 1,"rbxassetid://1597043578", math.random(9, 11) / 10, math.random(9, 11) / 25)
-	hito6(larm, larm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,2.5, 99, 0, 0.25, hrp.CFrame.lookVector * 5000  + Vector3.new(0,5000,0), 1,"rbxassetid://1597043578", math.random(9, 11) / 10, math.random(9, 11) / 25)
+	hito6(rarm, rarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,2.5, 93, 0, 0.25, hrp.CFrame.lookVector * 5000  + Vector3.new(0,5000,0), 1,"rbxassetid://1597043578", math.random(9, 11) / 10, math.random(9, 11) / 25)
+	hito6(larm, larm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,2.5, 93, 0, 0.25, hrp.CFrame.lookVector * 5000  + Vector3.new(0,5000,0), 1,"rbxassetid://1597043578", math.random(9, 11) / 10, math.random(9, 11) / 25)
 	until bep == false
 	bodvel:Destroy()
 	glideanim:Stop(0.1)
@@ -4770,7 +4770,7 @@ if animemode == true then return end
 	coroutine.resume(coroutine.create(function()
 	for _ = 1, 15 do
 		wait()
-	hitoultimate(rleg, rleg.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,2.5, -100, 0, 0.25, hrp.CFrame.lookVector * 5000  + Vector3.new(0,5000,0), 1,"rbxassetid://260421433", math.random(9, 11) / 10, math.random(9, 11) / 25)
+	hitoultimate(rleg, rleg.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,2.5, 20, 0, 0.25, hrp.CFrame.lookVector * 5000  + Vector3.new(0,5000,0), 1,"rbxassetid://260421433", math.random(9, 11) / 10, math.random(9, 11) / 25)
 	end
 	end))
 	wait(0.65)
@@ -4890,7 +4890,7 @@ local ezkill = mouse.Target.Parent
 	        until count == 4
 repeat
 	        	count = count + 1
-	    	game.ReplicatedStorage.HamonSword:FireServer(ezkill.Humanoid,1)
+	    	game.ReplicatedStorage.Damage2:FireServer(ezkill.Humanoid,1)
 		    wait(0.1)
 until count == 10
       wait(0.1)
@@ -4939,9 +4939,9 @@ wait(0.2)
 	strongpunchevent:FireServer(Vector3.new(1, 0.5, 1), Vector3.new(1, 1, 2), BrickColor.new("Brown"))
 	strongpunchevent:FireServer(Vector3.new(1, 0.5, 1), Vector3.new(1, 1, 1), BrickColor.new("Brown"))
             game.ReplicatedStorage.Damage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 0, 0, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector * 300 + Vector3.new(0, 80, 0), "rbxassetid://130833677", 0, Color3.new(0, 255, 0), "rbxassetid://5312369043", 1, 1)
-	        game:GetService("ReplicatedStorage").BurnDamage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 100, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "", math.random(98,106)/100, 7.5)
-	    	game.ReplicatedStorage.BurnDamage:FireServer(ezkill.Humanoid,100)
-	    	game.ReplicatedStorage.HamonSword:FireServer(ezkill.Humanoid,100)
+	        game:GetService("ReplicatedStorage").BurnDamage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 90, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "", math.random(98,106)/100, 7.5)
+	    	game.ReplicatedStorage.BurnDamage:FireServer(ezkill.Humanoid,90)
+	    	game.ReplicatedStorage.BurnDamage:FireServer(ezkill.Humanoid,90)
 	game.ReplicatedStorage.Transparency:FireServer(game.Players.LocalPlayer.Character.Stand["Stand Right Arm"],1)
 	game.ReplicatedStorage.Transparency:FireServer(game.Players.LocalPlayer.Character.Stand["Stand Head"],1)
 	game.ReplicatedStorage.Transparency:FireServer(game.Players.LocalPlayer.Character.Stand["Stand Left Arm"],1)
@@ -5024,9 +5024,9 @@ wait(0.3)
 wait(1)
 	chr.HumanoidRootPart.CFrame = ezkill.HumanoidRootPart.CFrame  * CFrame.new(0, 0, 3)
             game.ReplicatedStorage.Damage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 0, 0, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector * 300 + Vector3.new(0, 80, 0), "rbxassetid://130833677", 0, Color3.new(0, 255, 0), "rbxassetid://5700183626", 1, 1)
-	        game:GetService("ReplicatedStorage").BurnDamage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 100, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "", math.random(98,106)/9e999, 7.5)
-	    	game.ReplicatedStorage.BurnDamage:FireServer(ezkill.Humanoid,9e999)
-	    	game.ReplicatedStorage.HamonSword:FireServer(ezkill.Humanoid,9e999)
+	        game:GetService("ReplicatedStorage").BurnDamage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 75, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "", math.random(98,106)/9e999, 7.5)
+	    	game.ReplicatedStorage.BurnDamage:FireServer(ezkill.Humanoid,90)
+	    	game.ReplicatedStorage.BurnDamage:FireServer(ezkill.Humanoid,90)
 wait(0.2)
 	chr.HumanoidRootPart.CFrame = ezkill.HumanoidRootPart.CFrame  * CFrame.new(0, 0, 3)
 	  	 	    game.ReplicatedStorage.Damage:FireServer(game.Players.LocalPlayer.Character.Humanoid, 
@@ -5225,9 +5225,9 @@ if animemode == false then return end
 	coroutine.resume(coroutine.create(function()
 	for _ = 1, 15 do
 		wait()
-	hito56(rightarm, rightarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,2.5, 95, 0, 0.25, hrp.CFrame.lookVector * 5000  + Vector3.new(0,5000,0), 1,"rbxassetid://1597043578", math.random(9, 11) / 10, math.random(9, 11) / 25)
-	hito6(rightarm, rightarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,2.5, 95, 0, 0.25, hrp.CFrame.lookVector * 5000  + Vector3.new(0,5000,0), 1,"rbxassetid://1597043578", math.random(9, 11) / 10, math.random(9, 11) / 25)
-	hito7(rightarm, rightarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,2.5, 95, 0, 0.25, hrp.CFrame.lookVector * 5000  + Vector3.new(0,5000,0), 1,"rbxassetid://1597043578", math.random(9, 11) / 10, math.random(9, 11) / 25)
+	hito56(rightarm, rightarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,2.5, 93, 0, 0.25, hrp.CFrame.lookVector * 5000  + Vector3.new(0,5000,0), 1,"rbxassetid://1597043578", math.random(9, 11) / 10, math.random(9, 11) / 25)
+	hito6(rightarm, rightarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,2.5, 93, 0, 0.25, hrp.CFrame.lookVector * 5000  + Vector3.new(0,5000,0), 1,"rbxassetid://1597043578", math.random(9, 11) / 10, math.random(9, 11) / 25)
+	hito7(rightarm, rightarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,2.5, 93, 0, 0.25, hrp.CFrame.lookVector * 5000  + Vector3.new(0,5000,0), 1,"rbxassetid://1597043578", math.random(9, 11) / 10, math.random(9, 11) / 25)
 	end
 	end))
 	wait(0.65)
@@ -5271,7 +5271,7 @@ if animemode == true then return end
 	coroutine.resume(coroutine.create(function()
 	for _ = 1, 15 do
 		wait()
-	hito6(rightarm, rightarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,2.5, 95, 0, 0.25, hrp.CFrame.lookVector * 5000  + Vector3.new(0,5000,0), 1,"rbxassetid://1597043578", math.random(9, 11) / 10, math.random(9, 11) / 25)
+	hito6(rightarm, rightarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,2.5, 93, 0, 0.25, hrp.CFrame.lookVector * 5000  + Vector3.new(0,5000,0), 1,"rbxassetid://1597043578", math.random(9, 11) / 10, math.random(9, 11) / 25)
 	end
 	end))
 	wait(0.65)
@@ -5302,7 +5302,7 @@ wait(0.001)
 	coroutine.resume(coroutine.create(function()
 	for _ = 1, 15 do
 		wait()
-	hito(rightarm, rightarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,2.5, 95, 0, 0.25, hrp.CFrame.lookVector * 5000  + Vector3.new(0,5000,0), 1,"rbxassetid://1597043578", math.random(9, 11) / 10, math.random(9, 11) / 25)
+	hito(rightarm, rightarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,2.5, 69, 0, 0.25, hrp.CFrame.lookVector * 5000  + Vector3.new(0,5000,0), 1,"rbxassetid://1597043578", math.random(9, 11) / 10, math.random(9, 11) / 25)
 	end
 	end))
 	wait(0.65)
@@ -5403,11 +5403,11 @@ if fnfmode == true then return end
 	humainbarrageanim:Play(0.1, 1, 2)
 	repeat
 		EHMMM = EHMMM + 1
-		hitoultimate(rightarm, rightarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,2.5, 95, 0.5, 0.25, hrp.CFrame.lookVector * 5  + Vector3.new(0, 0, 0), 0.1, 3,"", math.random(9, 11) / 10, math.random(9, 11) / 25)
+		hitoultimate(rightarm, rightarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,2.5, 93, 0.5, 0.25, hrp.CFrame.lookVector * 5  + Vector3.new(0, 0, 0), 0.1, 3,"", math.random(9, 11) / 10, math.random(9, 11) / 25)
 		hitofire(rightarm, rightarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,2.5, 10, 0, 0.25, hrp.CFrame.lookVector * 5, "rbxassetid://3370684035", 0.075, Color3.fromRGB(255, 255, 255),"", math.random(9, 11) / 10, math.random(9, 11) / 30)
 		game.ReplicatedStorage.Damage12:FireServer(game.Players.LocalPlayer.Character.Humanoid, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame, 0, 0, Vector3.new(0, 0, 0), 9e999, "rbxassetid://5135874388", 1, 10);
 		hitofire(leftarm, leftarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,2.5, 10, 0, 0.25, hrp.CFrame.lookVector * 5, "rbxassetid://3370684035", 0.075, Color3.fromRGB(255, 255, 255),"", math.random(9, 11) / 10, math.random(9, 11) / 30)	
-		hitoultimate(leftarm, leftarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,2.5, 95, 0.5, 0.25, hrp.CFrame.lookVector * 5  + Vector3.new(0, 0, 0), 0.1, 3,"", math.random(9, 11) / 10, math.random(9, 11) / 25)
+		hitoultimate(leftarm, leftarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,2.5, 93, 0.5, 0.25, hrp.CFrame.lookVector * 5  + Vector3.new(0, 0, 0), 0.1, 3,"", math.random(9, 11) / 10, math.random(9, 11) / 25)
 		wait(0.1)
 	until bep == false
 	humainbarrageanim:Stop(0.1)
@@ -5452,7 +5452,7 @@ if fnfmode == true then return end
 	coroutine.resume(coroutine.create(function()
 	for _ = 1, 15 do
 		wait()
-	hitoultimate(rightarm, rightarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,2.5, 95, 0, 0.25, hrp.CFrame.lookVector * 5000  + Vector3.new(0,5000,0), 1,"rbxassetid://7053083974", math.random(9, 11) / 10, math.random(9, 11) / 25)
+	hitoultimate(rightarm, rightarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,2.5, 87, 0, 0.25, hrp.CFrame.lookVector * 5000  + Vector3.new(0,5000,0), 1,"rbxassetid://7053083974", math.random(9, 11) / 10, math.random(9, 11) / 25)
 	end
 	end))
 	wait(0.65)
@@ -5485,9 +5485,9 @@ if fnfmode == true then return end
 	humainbarrageanim:Play(0.1, 1, 2)
 	repeat
 		EHMMM = EHMMM + 1
-		hito(rightarm, rightarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,2.5, 95, 0.5, 0.25, hrp.CFrame.lookVector * 5000  + Vector3.new(0,5000,0), 1,"rbxassetid://4809574295", math.random(9, 11) / 10, math.random(9, 11) / 25)
+		hito(rightarm, rightarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,2.5, 91, 0.5, 0.25, hrp.CFrame.lookVector * 5000  + Vector3.new(0,5000,0), 1,"rbxassetid://4809574295", math.random(9, 11) / 10, math.random(9, 11) / 25)
 		game.ReplicatedStorage.Damage12:FireServer(game.Players.LocalPlayer.Character.Humanoid, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame, 0, 0, Vector3.new(0, 0, 0), 9e999, "rbxassetid://7029488364", 1, 10);
-		hito(leftarm, leftarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,2.5, 95, 0.5, 0.25, hrp.CFrame.lookVector * 5000  + Vector3.new(0,5000,0), 1,"rbxassetid://4809574295", math.random(9, 11) / 10, math.random(9, 11) / 25)
+		hito(leftarm, leftarm.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,2.5, 91, 0.5, 0.25, hrp.CFrame.lookVector * 5000  + Vector3.new(0,5000,0), 1,"rbxassetid://4809574295", math.random(9, 11) / 10, math.random(9, 11) / 25)
 		wait(0.1)
 	until bep == false
 	humainbarrageanim:Stop(0.1)
@@ -5727,19 +5727,19 @@ local ezkill = mouse.Target.Parent
                 game:GetService("ReplicatedStorage").Anchor:FireServer(game.Players.LocalPlayer.Character["Left Leg"],true)
  	humainstrongpunchanim:Play(0.1, 1, 1.5)
             game.ReplicatedStorage.Damage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 0, 0, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector * 300 + Vector3.new(0, 80, 0), "rbxassetid://130833677", 0, Color3.new(0, 255, 0), "rbxassetid://5382576606", 1, 1)
-	        game:GetService("ReplicatedStorage").BurnDamage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 120, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "", math.random(98,106)/100, 7.5)
+	        game:GetService("ReplicatedStorage").BurnDamage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 94, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "", math.random(98,106)/100, 7.5)
 	    	game.ReplicatedStorage.BurnDamage:FireServer(ezkill.Humanoid,120)
 	    	game.ReplicatedStorage.HamonSword:FireServer(ezkill.Humanoid,120)
-	        game:GetService("ReplicatedStorage").BurnDamage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 120, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "", math.random(98,106)/100, 7.5)
+	        game:GetService("ReplicatedStorage").BurnDamage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 94, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "", math.random(98,106)/100, 7.5)
 	    	game.ReplicatedStorage.BurnDamage:FireServer(ezkill.Humanoid,120)
 	    	game.ReplicatedStorage.HamonSword:FireServer(ezkill.Humanoid,120)
-	        game:GetService("ReplicatedStorage").BurnDamage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 120, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "", math.random(98,106)/100, 7.5)
+	        game:GetService("ReplicatedStorage").BurnDamage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 94, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "", math.random(98,106)/100, 7.5)
 	    	game.ReplicatedStorage.BurnDamage:FireServer(ezkill.Humanoid,120)
 	    	game.ReplicatedStorage.HamonSword:FireServer(ezkill.Humanoid,120)
-	        game:GetService("ReplicatedStorage").BurnDamage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 120, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "", math.random(98,106)/100, 7.5)
+	        game:GetService("ReplicatedStorage").BurnDamage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 94, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "", math.random(98,106)/100, 7.5)
 	    	game.ReplicatedStorage.BurnDamage:FireServer(ezkill.Humanoid,120)
 	    	game.ReplicatedStorage.HamonSword:FireServer(ezkill.Humanoid,120)
-	        game:GetService("ReplicatedStorage").BurnDamage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 120, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "", math.random(98,106)/100, 7.5)
+	        game:GetService("ReplicatedStorage").BurnDamage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 94, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "", math.random(98,106)/100, 7.5)
 	    	game.ReplicatedStorage.BurnDamage:FireServer(ezkill.Humanoid,120)
 	    	game.ReplicatedStorage.HamonSword:FireServer(ezkill.Humanoid,120)
 wait(0.4)
@@ -5797,19 +5797,19 @@ local ezkill = mouse.Target.Parent
                 game:GetService("ReplicatedStorage").Anchor:FireServer(game.Players.LocalPlayer.Character["Left Leg"],true)
  	humainstrongpunchanim:Play(0.1, 1, 1.5)
             game.ReplicatedStorage.Damage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 0, 0, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector * 300 + Vector3.new(0, 80, 0), "rbxassetid://130833677", 0, Color3.new(0, 255, 0), "rbxassetid://5382576606", 1, 1)
-	        game:GetService("ReplicatedStorage").BurnDamage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 120, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "", math.random(98,106)/100, 7.5)
+	        game:GetService("ReplicatedStorage").BurnDamage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 94, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "", math.random(98,106)/100, 7.5)
 	    	game.ReplicatedStorage.BurnDamage:FireServer(ezkill.Humanoid,120)
 	    	game.ReplicatedStorage.HamonSword:FireServer(ezkill.Humanoid,120)
-	        game:GetService("ReplicatedStorage").BurnDamage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 120, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "", math.random(98,106)/100, 7.5)
+	        game:GetService("ReplicatedStorage").BurnDamage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 94, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "", math.random(98,106)/100, 7.5)
 	    	game.ReplicatedStorage.BurnDamage:FireServer(ezkill.Humanoid,120)
 	    	game.ReplicatedStorage.HamonSword:FireServer(ezkill.Humanoid,120)
-	        game:GetService("ReplicatedStorage").BurnDamage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 120, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "", math.random(98,106)/100, 7.5)
+	        game:GetService("ReplicatedStorage").BurnDamage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 94, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "", math.random(98,106)/100, 7.5)
 	    	game.ReplicatedStorage.BurnDamage:FireServer(ezkill.Humanoid,120)
 	    	game.ReplicatedStorage.HamonSword:FireServer(ezkill.Humanoid,120)
-	        game:GetService("ReplicatedStorage").BurnDamage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 120, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "", math.random(98,106)/100, 7.5)
+	        game:GetService("ReplicatedStorage").BurnDamage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 94, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "", math.random(98,106)/100, 7.5)
 	    	game.ReplicatedStorage.BurnDamage:FireServer(ezkill.Humanoid,120)
 	    	game.ReplicatedStorage.HamonSword:FireServer(ezkill.Humanoid,120)
-	        game:GetService("ReplicatedStorage").BurnDamage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 120, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "", math.random(98,106)/100, 7.5)
+	        game:GetService("ReplicatedStorage").BurnDamage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 94, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "", math.random(98,106)/100, 7.5)
 	    	game.ReplicatedStorage.BurnDamage:FireServer(ezkill.Humanoid,120)
 	    	game.ReplicatedStorage.HamonSword:FireServer(ezkill.Humanoid,120)
 wait(0.4)
@@ -6013,7 +6013,7 @@ rendcooldown = true
     coroutine.resume(coroutine.create(function()
     for _ = 1, 25 do
         wait()
-        hito(rot, rot.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,5, 95, 2, 0.25, hrp.CFrame.lookVector * 40, "rbxassetid://", 0.075, Color3.new(255, 0, 0),"rbxassetid://3041191430", math.random(9, 11) / 10, math.random(9, 11) / 7)
+        hito(rot, rot.CFrame * CFrame.new(0, -1, 0) * CFrame.new(math.random(-0.25, 0.25), math.random(-0.25, 0.25), math.random(-0.25, 0.25)) ,5, 94, 2, 0.25, hrp.CFrame.lookVector * 40, "rbxassetid://", 0.075, Color3.new(255, 0, 0),"rbxassetid://3041191430", math.random(9, 11) / 10, math.random(9, 11) / 7)
     end
     end))
     wait(0.65)
