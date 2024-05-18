@@ -9,7 +9,7 @@ end
 end
 end
 
-game.Players.LocalPlayer.Character[mystand]:Destroy()
+game.Players.LocalPlayer.Backpack.MagiciansRed:Remove()
  
 --Events
 character = game.Players.LocalPlayer.Character
@@ -39,12 +39,6 @@ local jumpevent3 = replicatedstorage.ReversedJump
 local dodgeevent = replicatedstorage.Dodge
 local anchorevent = replicatedstorage.Anchor
 local trailevent = replicatedstorage.Trail
-local mih4 = game:GetService("ReplicatedStorage").MadeInHeavenHandler
-local mih1 = "MIHKnife"
-local mih2 = 
-{
-}
-local mih3 = true
 local jumpevent = replicatedstorage.Jump
 local velocityevent = replicatedstorage.Velocity
 local poseevent = replicatedstorage.Menacing
@@ -59,9 +53,7 @@ local yellevent = replicatedstorage.Yell
 local berserkevent = replicatedstorage.Berserk
 local slamevent = replicatedstorage.DoppioSlam
 local rtzevent = replicatedstorage.RTZEffect
-local mihtime1 = game:GetService("ReplicatedStorage").MadeInHeavenHandler
 local rtzevent2 = replicatedstorage.RTZ
-local epicslash = "rotationslashes"
 local EmperorBackdash = replicatedstorage.EmperorBackdash
 plr = game:GetService("Players").LocalPlayer
 repeat
@@ -173,28 +165,28 @@ local anim1 = Instance.new("Animation") -- dash
 anim1.AnimationId = "rbxassetid://3445906008"
 
 local anim7 = Instance.new("Animation") -- barrage
-anim7.AnimationId = "rbxassetid://2763936707"
+anim7.AnimationId = "rbxassetid://17491244519"
 
 local anim4 = Instance.new("Animation") -- right punch
-anim4.AnimationId = "rbxassetid://2876963057"
+anim4.AnimationId = "rbxassetid://17491153483"
 
 local anim5 = Instance.new("Animation") -- left punch
-anim5.AnimationId = "rbxassetid://2876963877"
+anim5.AnimationId = "rbxassetid://17491210097"
 
 local anim3 = Instance.new("Animation") -- strong punch
-anim3.AnimationId = "rbxassetid://5676650960"
+anim3.AnimationId = "rbxassetid://17491142708"
 
 local anim2 = Instance.new("Animation") -- block
-anim2.AnimationId = "rbxassetid://3445763571"
+anim2.AnimationId = "rbxassetid://17491180438"
 
 local Pose1 = Instance.new("Animation") -- pose
-Pose1.AnimationId = "rbxassetid://4659036460"
+Pose1.AnimationId = "rbxassetid://17491173631"
 
 local Pose2 = Instance.new("Animation") -- pose
-Pose2.AnimationId = "rbxassetid://3893638675"
+Pose2.AnimationId = "rbxassetid://17491240106"
 
 local anim6 = Instance.new("Animation") -- attack pose
-anim6.AnimationId = "rbxassetid://2876973676"
+anim6.AnimationId = "rbxassetid://17491231116"
 
 local anim9 = Instance.new("Animation")
 anim9.AnimationId = "rbxassetid://4116810298"
@@ -203,7 +195,7 @@ local anim10 = Instance.new("Animation")
 anim10.AnimationId = "rbxassetid://3166494872"
 
 local anim11 = Instance.new("Animation")
-anim11.AnimationId = "rbxassetid://3445780399"
+anim11.AnimationId = "rbxassetid://17491153166"
 
 local anim12 = Instance.new("Animation")
 anim12.AnimationId = "rbxassetid://2876969459"
@@ -218,7 +210,7 @@ local anim24 = Instance.new("Animation")
 anim24.AnimationId = "rbxassetid://4643330927"
 
 local anim25 = Instance.new("Animation")
-anim25.AnimationId = "rbxassetid://3818766887"
+anim25.AnimationId = "rbxassetid://17491210579"
 
 local anim27 = Instance.new("Animation")
 anim27.AnimationId = "rbxassetid://5022688512"
@@ -227,22 +219,22 @@ local anim28 = Instance.new("Animation")
 anim28.AnimationId = "rbxassetid://5299850867"
 
 local anim29 = Instance.new("Animation") -- specialdash
-anim29.AnimationId = "rbxassetid://4814777086"
+anim29.AnimationId = "rbxassetid://17491282530"
 
 local anim30 = Instance.new("Animation") -- barrage
-anim30.AnimationId = "rbxassetid://3445788051"
+anim30.AnimationId = "rbxassetid://17491198035"
 
 local anim31 = Instance.new("Animation") -- barrage
 anim31.AnimationId = "rbxassetid://3468083015"
 
 local anim32 = Instance.new("Animation") -- barrage
-anim32.AnimationId = "rbxassetid://4774749466"
+anim32.AnimationId = "rbxassetid://17491239540"
 
 local anim33 = Instance.new("Animation") -- barrage
 anim33.AnimationId = "rbxassetid://4774879706"
 
 local anim34 = Instance.new("Animation") -- barrage
-anim34.AnimationId = "rbxassetid://3893397364"
+anim34.AnimationId = "rbxassetid://17491218538"
 
 local anim35 = Instance.new("Animation") -- barrage
 anim35.AnimationId = "rbxassetid://4782246916"
@@ -260,16 +252,16 @@ local anim39 = Instance.new("Animation")
 anim39.AnimationId = "rbxassetid://3445781532"
 
 local anim40 = Instance.new("Animation")
-anim40.AnimationId = "rbxassetid://4646232248"
+anim40.AnimationId = "rbxassetid://17491210579"
 
 local anim41 = Instance.new("Animation")
-anim41.AnimationId = "rbxassetid://3681636088"
+anim41.AnimationId = "rbxassetid://17491149469"
 
 local anim42 = Instance.new("Animation")
-anim42.AnimationId = "rbxassetid://3445806846"
+anim42.AnimationId = "rbxassetid://17491265142"
 
 local anim43 = Instance.new("Animation")
-anim43.AnimationId = "rbxassetid://5482300918"
+anim43.AnimationId = "rbxassetid://17491282530"
 
 local anim44 = Instance.new("Animation")
 anim44.AnimationId = "rbxassetid://5020568175"
