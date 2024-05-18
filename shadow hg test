@@ -4,7 +4,7 @@ game.Players.LocalPlayer.Backpack.HierophantGreen:Remove()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 
-print("updated v-15.5B")
+print("updated v-16.5B")
 print("SHG on top")
 
 
@@ -1506,7 +1506,7 @@ end
 end
 
 mouse.KeyDown:connect(function(key)
-    if key == "-" then
+    if key == "0" then
     if loading == true then return end
     if death == true then return end
     if standmodecooler == true then return end
