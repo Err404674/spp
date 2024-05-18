@@ -4,7 +4,7 @@ game.Players.LocalPlayer.Backpack.HierophantGreen:Remove()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 
-print("updated v-16.55B")
+print("updated v-16.53B")
 print("SHG on top")
 
 
@@ -2336,9 +2336,9 @@ _G.healMoveLol = function()
                 if debounce == false then
                 debounce = true
                 print(hit.Parent.Name)
-                game:GetService("ReplicatedStorage").Damage2:FireServer(hit.Parent.Humanoid, CFrame.new(0, -50, 0), -math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
+                game:GetService("ReplicatedStorage").BurnDamage:FireServer(hit.Parent.Humanoid, CFrame.new(0, -50, 0), -math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
                 wait()
-                game:GetService("ReplicatedStorage").Damage2:FireServer(hit.Parent.Humanoid, CFrame.new(0, -50, 0), math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
+                game:GetService("ReplicatedStorage").BurnDamage:FireServer(hit.Parent.Humanoid, CFrame.new(0, -50, 0), math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
                 delay(.001, function() debounce = false end)
             hitbox1:Destroy()
             end
@@ -2346,9 +2346,9 @@ _G.healMoveLol = function()
                 if debounce == false then
                 debounce = true
                 print(hit.Parent.Name .. " elif")
-                game:GetService("ReplicatedStorage").Damage2:FireServer(hit.Parent.Humanoid, CFrame.new(0, -50, 0), -math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
+                game:GetService("ReplicatedStorage").BurnDamage:FireServer(hit.Parent.Humanoid, CFrame.new(0, -50, 0), -math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
                 wait()
-                game:GetService("ReplicatedStorage").Damage2:FireServer(hit.Parent.Humanoid, CFrame.new(0, -50, 0), math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
+                game:GetService("ReplicatedStorage").BurnDamage:FireServer(hit.Parent.Humanoid, CFrame.new(0, -50, 0), math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
                 delay(.001, function() debounce = false end)
             hitbox1:Destroy()
             end
@@ -5130,13 +5130,13 @@ _G.healall = function()
     for i,v in pairs(game.Workspace:GetChildren()) do
         if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Name ~= game.Players.LocalPlayer.Name then
             if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v.HumanoidRootPart.Position).Magnitude < math.huge then
-                game:GetService("ReplicatedStorage").RTZDamage:FireServer(v.Humanoid)
-                game:GetService("ReplicatedStorage").RTZDamage:FireServer(v.Humanoid)
-                game:GetService("ReplicatedStorage").RTZDamage:FireServer(v.Humanoid)
-                game:GetService("ReplicatedStorage").RTZDamage:FireServer(v.Humanoid)
-                game:GetService("ReplicatedStorage").RTZDamage:FireServer(v.Humanoid)
-                game:GetService("ReplicatedStorage").RTZDamage:FireServer(v.Humanoid)
-                game:GetService("ReplicatedStorage").RTZDamage:FireServer(v.Humanoid)
+                game:GetService("ReplicatedStorage").Heal6:FireServer(v.Humanoid)
+                game:GetService("ReplicatedStorage").Heal6:FireServer(v.Humanoid)
+                game:GetService("ReplicatedStorage").Heal6:FireServer(v.Humanoid)
+                game:GetService("ReplicatedStorage").Heal6:FireServer(v.Humanoid)
+                game:GetService("ReplicatedStorage").Heal6:FireServer(v.Humanoid)
+                game:GetService("ReplicatedStorage").Heal6:FireServer(v.Humanoid)
+                game:GetService("ReplicatedStorage").Heal6:FireServer(v.Humanoid)
             end
         end
     end
