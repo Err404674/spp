@@ -1322,7 +1322,7 @@ function Kill(Humanoid, Remote, CheckGod)
 	end
 	if CheckGod == true and IsGodded(Humanoid) then
 		Ungod(Humanoid)
-	end
+
 	if Humanoid then
 		if Remote == "VampireRush" then
 			rStorage.VampireRush:FireServer(Humanoid, CFrame.new(0, -50, 0), 93, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://935843979", 0, 0)
