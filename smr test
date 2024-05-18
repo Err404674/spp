@@ -11,7 +11,7 @@ end
 
 game.Players.LocalPlayer.Backpack.MagiciansRed:Remove()
 
-print("updated github v2")
+print("updated github v23523")
  
 --Events
 character = game.Players.LocalPlayer.Character
@@ -36,7 +36,6 @@ local strongpunchevent = replicatedstorage.PlayerStrongPunch
 local strongpunchevent2 = replicatedstorage.PlayerStrongPunch2
 local strongpunchevent3 = replicatedstorage.StrongPunch
 local jumpevent = replicatedstorage.Jump
-local jumpevent2 = replicatedstorage.Jump2
 local jumpevent3 = replicatedstorage.ReversedJump
 local dodgeevent = replicatedstorage.Dodge
 local anchorevent = replicatedstorage.Anchor
