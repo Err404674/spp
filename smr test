@@ -12,6 +12,7 @@ end
 game.Players.LocalPlayer.Backpack.MagiciansRed:Remove()
 
 print("shadow magicians red omg no way??")
+print("unpatched for abdm by me!!!")
  
 --Events
 character = game.Players.LocalPlayer.Character
