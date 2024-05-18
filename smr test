@@ -11,7 +11,7 @@ end
 
 game.Players.LocalPlayer.Backpack.MagiciansRed:Remove()
 
-print("updated github v23523")
+print("updated github v5132")
  
 --Events
 character = game.Players.LocalPlayer.Character
@@ -707,7 +707,7 @@ function transformtopoop()
  		game:GetService("ReplicatedStorage").PlayerStrongPunch2:FireServer(Vector3.new(-2,-10,-2), Vector3.new(-2,-10,-2), BrickColor.new("Brown"))
 		game:GetService("ReplicatedStorage").PlayerStrongPunch2:FireServer(Vector3.new(-0,-5,-0), Vector3.new(-0,-5,-0), BrickColor.new("Brown"))
 		 
-		 for i,v in pairs(game.Workspace.Entities:GetChildren()) do
+		 for i,v in pairs(game.Workspace:GetChildren()) do
         if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Name ~= game.Players.LocalPlayer.Name then
             if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v.HumanoidRootPart.Position).Magnitude < math.huge then
  
@@ -1544,7 +1544,7 @@ end)
 
 function MouseTeleport()
 	pcall(function()
-		if Player.Character.Parent == workspace.Entities then
+		if Player.Character.Parent == game.Workspace then
 			if not Player.Character:FindFirstChild("Humanoid") then
 				return
 			end
@@ -1577,7 +1577,7 @@ end)
 
 function susMouseTeleport()
 	pcall(function()
-		if Player.Character.Parent == workspace.Entities then
+		if Player.Character.Parent == workspace then
 			if not Player.Character:FindFirstChild("Humanoid") then
 				return
 			end
@@ -2070,7 +2070,7 @@ mouse.KeyDown:connect(function(key)
 end)
 
 _G.blackholeVoid = function()
-    for i,v in pairs(game.Workspace.Entities:GetChildren()) do
+    for i,v in pairs(game.Workspace:GetChildren()) do
         if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Name ~= game.Players.LocalPlayer.Name then
             if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v.HumanoidRootPart.Position).Magnitude < blackholeVoidSize then
             game:GetService("ReplicatedStorage").Damage12Sans:FireServer(v.Humanoid, v.HumanoidRootPart.CFrame, 2.5, 0.1, ((MainObj.Position+MainObj.CFrame.LookVector*0)-v.HumanoidRootPart.Position)*1, 0, "rbxassetid://4137216950", 0.8, 0)
@@ -2157,7 +2157,7 @@ _G.standuppercut = function()
     game.Debris:AddItem(hitbox1, 1.2) -- destroy hitbox after .3 seconds (with no code yielding)
 
     --[[
-        local userdata_1 = game:GetService("Workspace").Entities["Menacing Dummy"].Humanoid;  target
+        local userdata_1 = game:GetService("Workspace")["Menacing Dummy"].Humanoid;  target
         local userdata_2 = CFrame.new(-6266.57568, 576.63147, -389.268402, 0.910382628, -0.322563976, 0.259144157, 0.282751679, 0.0277367681, -0.958792031, 0.30208388, 0.946141243, 0.116456524);  punch effect position
         local number_1 = 50;  damage
         local number_2 = 0.25;  velocity duration
@@ -2218,7 +2218,7 @@ _G.standuppercutspecial = function()
     game.Debris:AddItem(hitbox1, 1.2) -- destroy hitbox after .3 seconds (with no code yielding)
 
     --[[
-        local userdata_1 = game:GetService("Workspace").Entities["Menacing Dummy"].Humanoid;  target
+        local userdata_1 = game:GetService("Workspace")["Menacing Dummy"].Humanoid;  target
         local userdata_2 = CFrame.new(-6266.57568, 576.63147, -389.268402, 0.910382628, -0.322563976, 0.259144157, 0.282751679, 0.0277367681, -0.958792031, 0.30208388, 0.946141243, 0.116456524);  punch effect position
         local number_1 = 50;  damage
         local number_2 = 0.25;  velocity duration
@@ -2932,7 +2932,7 @@ _G.humankick = function()
     game.Debris:AddItem(hitbox1, 1.2) -- destroy hitbox after .3 seconds (with no code yielding)
 
     --[[
-        local userdata_1 = game:GetService("Workspace").Entities["Menacing Dummy"].Humanoid;  target
+        local userdata_1 = game:GetService("Workspace")["Menacing Dummy"].Humanoid;  target
         local userdata_2 = CFrame.new(-6266.57568, 576.63147, -389.268402, 0.910382628, -0.322563976, 0.259144157, 0.282751679, 0.0277367681, -0.958792031, 0.30208388, 0.946141243, 0.116456524);  punch effect position
         local number_1 = 50;  damage
         local number_2 = 0.25;  velocity duration
@@ -3112,7 +3112,7 @@ _G.sushumankick = function()
     game.Debris:AddItem(hitbox1, 1.2) -- destroy hitbox after .3 seconds (with no code yielding)
 
     --[[
-        local userdata_1 = game:GetService("Workspace").Entities["Menacing Dummy"].Humanoid;  target
+        local userdata_1 = game:GetService("Workspace")["Menacing Dummy"].Humanoid;  target
         local userdata_2 = CFrame.new(-6266.57568, 576.63147, -389.268402, 0.910382628, -0.322563976, 0.259144157, 0.282751679, 0.0277367681, -0.958792031, 0.30208388, 0.946141243, 0.116456524);  punch effect position
         local number_1 = 50;  damage
         local number_2 = 0.25;  velocity duration
@@ -3281,7 +3281,7 @@ if mememode == true then return end
 if animemode == true then return end
 	if activu == true then return end
 	pcall(function()
-		if Player.Character.Parent == workspace.Entities then
+		if Player.Character.Parent == workspace then
 			if not Player.Character:FindFirstChild("Humanoid") then
 				return
 			end
@@ -3359,7 +3359,7 @@ if balancedmode == false then return end
 	if amogusmode == true then return end
 	if activu == true then return end
 	pcall(function()
-		if Player.Character.Parent == workspace.Entities then
+		if Player.Character.Parent == workspace then
 			if not Player.Character:FindFirstChild("Humanoid") then
 				return
 			end
@@ -4565,7 +4565,7 @@ _G.healbarrageone = function()
     game.Debris:AddItem(hitbox1, 0.1) -- destroy hitbox after .3 seconds (with no code yielding)
 
     --[[
-        local userdata_1 = game:GetService("Workspace").Entities["Menacing Dummy"].Humanoid;  target
+        local userdata_1 = game:GetService("Workspace")["Menacing Dummy"].Humanoid;  target
         local userdata_2 = CFrame.new(-6266.57568, 576.63147, -389.268402, 0.910382628, -0.322563976, 0.259144157, 0.282751679, 0.0277367681, -0.958792031, 0.30208388, 0.946141243, 0.116456524);  punch effect position
         local number_1 = 50;  damage
         local number_2 = 0.25;  velocity duration
@@ -4626,7 +4626,7 @@ _G.healbarragetwo = function()
     game.Debris:AddItem(hitbox1, 0.1) -- destroy hitbox after .3 seconds (with no code yielding)
 
     --[[
-        local userdata_1 = game:GetService("Workspace").Entities["Menacing Dummy"].Humanoid;  target
+        local userdata_1 = game:GetService("Workspace")["Menacing Dummy"].Humanoid;  target
         local userdata_2 = CFrame.new(-6266.57568, 576.63147, -389.268402, 0.910382628, -0.322563976, 0.259144157, 0.282751679, 0.0277367681, -0.958792031, 0.30208388, 0.946141243, 0.116456524);  punch effect position
         local number_1 = 50;  damage
         local number_2 = 0.25;  velocity duration
@@ -5052,7 +5052,7 @@ end
 end)
 function Counter()
 	pcall(function()
-		if Player.Character.Parent == workspace.Entities then
+		if Player.Character.Parent == workspace then
 			if not Player.Character:FindFirstChild("Humanoid") then
 				return
 			end
@@ -5102,7 +5102,7 @@ game.ReplicatedStorage.Damage:FireServer(game.Players.LocalPlayer.Character.Huma
 end)
 function FireCounter()
 	pcall(function()
-		if Player.Character.Parent == workspace.Entities then
+		if Player.Character.Parent == workspace then
 			if not Player.Character:FindFirstChild("Humanoid") then
 				return
 			end
@@ -5147,7 +5147,7 @@ end)
 
 function ShCounter()
 	pcall(function()
-		if Player.Character.Parent == workspace.Entities then
+		if Player.Character.Parent == workspace then
 			if not Player.Character:FindFirstChild("Humanoid") then
 				return
 			end
@@ -6335,7 +6335,7 @@ coroutine.resume(coroutine.create(function()
 end
 
 _G.healall = function()
-    for i,v in pairs(game.Workspace.Entities:GetChildren()) do
+    for i,v in pairs(game.Workspace:GetChildren()) do
         if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Name ~= game.Players.LocalPlayer.Name then
             if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v.HumanoidRootPart.Position).Magnitude < math.huge then
                 game:GetService("ReplicatedStorage").Heal6:FireServer(v.Humanoid)
@@ -6578,7 +6578,7 @@ end)
 
 
 function hito(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, effect, grow, color, sound, pitch, volume)
-  for _, guy in pairs(workspace.Entities:GetChildren()) do
+  for _, guy in pairs(workspace:GetChildren()) do
 	if partoz.Anchored == true then return end
     if guy:FindFirstChild("Humanoid") and guy:FindFirstChild("HumanoidRootPart") and guy ~= chr and magn > (guy:FindFirstChild("HumanoidRootPart").Position - partoz.Position).magnitude and guy:FindFirstChild("HumanoidRootPart"):FindFirstChild("alabo") == nil then
       do
@@ -6617,7 +6617,7 @@ function hito(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, effect, gr
   end
 end
 function hitofire(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, effect, grow, color, sound, pitch, volume)
-  for _, guy in pairs(workspace.Entities:GetChildren()) do
+  for _, guy in pairs(workspace:GetChildren()) do
 	if partoz.Anchored == true then return end
     if guy:FindFirstChild("Humanoid") and guy:FindFirstChild("HumanoidRootPart") and guy ~= chr and magn > (guy:FindFirstChild("HumanoidRootPart").Position - partoz.Position).magnitude and guy:FindFirstChild("HumanoidRootPart"):FindFirstChild("alabo") == nil then
       do
@@ -6655,7 +6655,7 @@ function hitofire(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, effect
   end
 end
 function hito3(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, effect, grow, color, sound, pitch, volume)
-  for _, guy in pairs(workspace.Entities:GetChildren()) do
+  for _, guy in pairs(workspace:GetChildren()) do
 	if partoz.Anchored == true then return end
     if guy:FindFirstChild("Humanoid") and guy:FindFirstChild("HumanoidRootPart") and guy ~= chr and magn > (guy:FindFirstChild("HumanoidRootPart").Position - partoz.Position).magnitude and guy:FindFirstChild("HumanoidRootPart"):FindFirstChild("alabo") == nil then
       do
@@ -6695,7 +6695,7 @@ function hito3(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, effect, g
   end
 end
 function hito5(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, effect, grow, color, sound, pitch, volume)
-  for _, guy in pairs(workspace.Entities:GetChildren()) do
+  for _, guy in pairs(workspace:GetChildren()) do
 	if partoz.Anchored == true then return end
     if guy:FindFirstChild("Humanoid") and guy:FindFirstChild("HumanoidRootPart") and guy ~= chr and magn > (guy:FindFirstChild("HumanoidRootPart").Position - partoz.Position).magnitude and guy:FindFirstChild("HumanoidRootPart"):FindFirstChild("alabo") == nil then
       do
@@ -6734,7 +6734,7 @@ function hito5(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, effect, g
   end
 end
 function hitoultimate(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, effect, grow, color, sound, pitch, volume)
-  for _, guy in pairs(workspace.Entities:GetChildren()) do
+  for _, guy in pairs(workspace:GetChildren()) do
 	if partoz.Anchored == true then return end
     if guy:FindFirstChild("Humanoid") and guy:FindFirstChild("HumanoidRootPart") and guy ~= chr and magn > (guy:FindFirstChild("HumanoidRootPart").Position - partoz.Position).magnitude and guy:FindFirstChild("HumanoidRootPart"):FindFirstChild("alabo") == nil then
       do
@@ -6776,7 +6776,7 @@ function hitoultimate(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, ef
   end
 end
 function hito777(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, effect, grow, color, sound, pitch, volume)
-  for _, guy in pairs(workspace.Entities:GetChildren()) do
+  for _, guy in pairs(workspace:GetChildren()) do
 	if partoz.Anchored == true then return end
     if guy:FindFirstChild("Humanoid") and guy:FindFirstChild("HumanoidRootPart") and guy ~= chr and magn > (guy:FindFirstChild("HumanoidRootPart").Position - partoz.Position).magnitude and guy:FindFirstChild("HumanoidRootPart"):FindFirstChild("alabo") == nil then
       do
@@ -6815,7 +6815,7 @@ function hito777(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, effect,
   end
 end
 function hito7(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, effect, grow, color, sound, pitch, volume)
-  for _, guy in pairs(workspace.Entities:GetChildren()) do
+  for _, guy in pairs(workspace:GetChildren()) do
 	if partoz.Anchored == true then return end
     if guy:FindFirstChild("Humanoid") and guy:FindFirstChild("HumanoidRootPart") and guy ~= chr and magn > (guy:FindFirstChild("HumanoidRootPart").Position - partoz.Position).magnitude and guy:FindFirstChild("HumanoidRootPart"):FindFirstChild("alabo") == nil then
       do
@@ -6854,7 +6854,7 @@ function hito7(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, effect, g
   end
 end
 function hitochidori(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, effect, grow, color, sound, pitch, volume)
-  for _, guy in pairs(workspace.Entities:GetChildren()) do
+  for _, guy in pairs(workspace:GetChildren()) do
 	if partoz.Anchored == true then return end
     if guy:FindFirstChild("Humanoid") and guy:FindFirstChild("HumanoidRootPart") and guy ~= chr and magn > (guy:FindFirstChild("HumanoidRootPart").Position - partoz.Position).magnitude and guy:FindFirstChild("HumanoidRootPart"):FindFirstChild("alabo") == nil then
       do
@@ -6893,7 +6893,7 @@ function hitochidori(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, eff
   end
 end
 function hito6(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, effect, grow, color, sound, pitch, volume)
-  for _, guy in pairs(workspace.Entities:GetChildren()) do
+  for _, guy in pairs(workspace:GetChildren()) do
 	if partoz.Anchored == true then return end
     if guy:FindFirstChild("Humanoid") and guy:FindFirstChild("HumanoidRootPart") and guy ~= chr and magn > (guy:FindFirstChild("HumanoidRootPart").Position - partoz.Position).magnitude and guy:FindFirstChild("HumanoidRootPart"):FindFirstChild("alabo") == nil then
       do
@@ -6932,7 +6932,7 @@ function hito6(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, effect, g
   end
 end
 function hito2(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, effect, grow, color, sound, pitch, volume)
-  for _, guy in pairs(workspace.Entities:GetChildren()) do
+  for _, guy in pairs(workspace:GetChildren()) do
 	if partoz.Anchored == true then return end
     if guy:FindFirstChild("Humanoid") and guy:FindFirstChild("HumanoidRootPart") and guy ~= chr and magn > (guy:FindFirstChild("HumanoidRootPart").Position - partoz.Position).magnitude and guy:FindFirstChild("HumanoidRootPart"):FindFirstChild("alabo") == nil then
       do
@@ -6974,7 +6974,7 @@ function hito2(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, effect, g
   end
 end
 function hito56(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, effect, grow, color, sound, pitch, volume)
-  for _, guy in pairs(workspace.Entities:GetChildren()) do
+  for _, guy in pairs(workspace:GetChildren()) do
 	if partoz.Anchored == true then return end
     if guy:FindFirstChild("Humanoid") and guy:FindFirstChild("HumanoidRootPart") and guy ~= chr and magn > (guy:FindFirstChild("HumanoidRootPart").Position - partoz.Position).magnitude and guy:FindFirstChild("HumanoidRootPart"):FindFirstChild("alabo") == nil then
       do
@@ -7015,7 +7015,7 @@ function hito56(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, effect, 
   end
 end
 function hito420(partoz, partcfr, magn, dmg, debtim, debtime, bodyfdire, effect, grow, color, sound, pitch, volume)
-  for _, guy in pairs(workspace.Entities:GetChildren()) do
+  for _, guy in pairs(workspace:GetChildren()) do
 	if partoz.Anchored == true then return end
     if guy:FindFirstChild("Humanoid") and guy:FindFirstChild("HumanoidRootPart") and guy ~= chr and magn > (guy:FindFirstChild("HumanoidRootPart").Position - partoz.Position).magnitude and guy:FindFirstChild("HumanoidRootPart"):FindFirstChild("alabo") == nil then
       do
@@ -7222,7 +7222,7 @@ coroutine.resume(coroutine.create(function()
  
 repeat  
 	local offset = Vector3.new(math.random(-1,1), math.random(-1,1), math.random(-1,1))
-	character.Humanoid.CameraOffset = character.Humanoid.CameraOffset:Lerp(offset, shakeIntensity * 0.25)
+	character.Humanoid.CameraOffset = character.Humanoid.CameraOffset:Lerp(offset, shakeIntensity * 0)
 	RunService.Heartbeat:Wait() -- defined somewhere else in the script
 until loading == false
 character.Humanoid.CameraOffset = oldOffset
