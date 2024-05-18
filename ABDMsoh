@@ -1316,43 +1316,7 @@ function Fling(Humanoid, DebrisTime, Velocity)
 	end
 end
 
-function Kill(Humanoid, Remote, CheckGod)
-	if Humanoid.Health < 0.001 and IsDummy(Humanoid) == false then
-		return
-	end
-	if CheckGod == true and IsGodded(Humanoid) then
-		Ungod(Humanoid)
-
-	if Humanoid then
-		if Remote == "VampireRush" then
-			rStorage.VampireRush:FireServer(Humanoid, CFrame.new(0, -50, 0), 93, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://935843979", 0, 0)
-		elseif Remote == "BurnDamage" then
-			rStorage.BurnDamage:FireServer(Humanoid, CFrame.new(0, -50, 0), 93, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
-		elseif Remote == "VampireRush" then
-			rStorage.VampireRush:FireServer(Humanoid, 93)
-		elseif Remote == "Starman" then
-			local CF = Humanoid.Parent.Head.CFrame * CFrame.new(0, -1, 0)
-			wait(0.025)
-			rStorage.DoppioSlam:FireServer()
-			coroutine.resume(coroutine.create(function()
-				for i = 1, 7 do
-					Void(Humanoid)
-					wait()
-				end
-			end))
-			wait(0.069)
-			rStorage.VampireRush:FireServer(Humanoid, 93)
-			wait(0.05)
-			rStorage.Damage12Enderman:FireServer(Humanoid, CF, 0, 0, Vector3.new(0, 0, 0), 0.15, "rbxassetid://1693499499", 0, 0)
-			rStorage.BurnDamage:FireServer(Humanoid, CFrame.new(0, -50, 0), 93, 2, Humanoid.Parent.Torso.CFrame:Inverse().lookVector * 1e44 + Vector3.new(0, 5e9, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
-			rStorage.VampireRush:FireServer(Humanoid, 93)
-			for i = 1, 5 do
-				rStorage.Damage12:FireServer(Humanoid, CFrame.new(0, -50, 0), 93, 0, Vector3.new(0, 0, 0), 1e-320, "rbxassetid://1693499499", 0.2, 0)
-				rStorage.Damage3:FireServer(Humanoid, CFrame.new(0, -50, 0), 93, 0, Vector3.new(0, 0, 0), 1e-320, "rbxassetid://1693499499", 0.2, 0)
-			end
-		end
-	end
-end
+------------------------------------------------------
 
 function Heal(Humanoid, Amount, Remote, AllowDamage)
 	if Amount > 0.001 and AllowDamage ~= true then
