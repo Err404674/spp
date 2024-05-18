@@ -4,7 +4,7 @@ game.Players.LocalPlayer.Backpack.HierophantGreen:Remove()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 
-print("updated v-16.51B")
+print("updated v-16.55B")
 print("SHG on top")
 
 
@@ -1432,14 +1432,7 @@ mouse.KeyDown:connect(function(key)
     end
 end)
 ---------------------------------
-function passivedodgeanimate()
-	local randompassivedodgeanimate = math.random(1, 2)
-	if randompassivedodgeanimate == 1 then
-_G.anim39:Play()
-	elseif randompassivedodgeanimate == 2 then
-_G.anim40:Play()
-		end
-end
+
 
 function secretmode()
 if standmodecooler == true then return end
@@ -4509,7 +4502,6 @@ rStorage.RTZClient.OnClientEvent:connect(function(gamer)
         local gmhum = gamer.Character.Humanoid
         local gmchr = gamer.Character
         game.ReplicatedStorage.Damage:FireServer(gmhum, gmchr["Head"].CFrame * CFrame.new(0,-1,0), 25, 0, Vector3.new(0, 0, 0), "rbxassetid://", 0.25, Color3.new(255, 255, 255), "", 1, 1)
-        passivedodgeanimate()
     end
     end
 end)
