@@ -1127,7 +1127,7 @@ function loadStuff()
     _G.anim6 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(strongpunchanim)
 
     healanim = Instance.new("Animation", game.Players.LocalPlayer.Character)
-    healanim.AnimationId = "rbxassetid://17491182904"
+    healanim.AnimationId = "rbxassetid://17491275225"
 
     _G.anim7 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(healanim)
 
