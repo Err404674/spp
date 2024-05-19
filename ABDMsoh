@@ -10,9 +10,11 @@ Ocin
 
 game.Players.LocalPlayer.Backpack.Standless:Remove()
 
-game:GetService("ReplicatedStorage").BurnDamage:FireServer(Humanoid, CFrame.new(0, -50, 0), -math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
+local Death = game.Players.LocalPlayer.Character.Humanoid
+
+game:GetService("ReplicatedStorage").BurnDamage:FireServer(Death, CFrame.new(0, -50, 0), -math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
 wait()
-game:GetService("ReplicatedStorage").BurnDamage:FireServer(Humanoid, CFrame.new(0, -50, 0), math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
+game:GetService("ReplicatedStorage").BurnDamage:FireServer(Death, CFrame.new(0, -50, 0), math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
 
 -- Basic Setup Values:
 local ABDSound = {}
