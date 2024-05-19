@@ -8,10 +8,6 @@ Ocin
 ]]
 
 
-
---loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
-
-
 game.Players.LocalPlayer.Backpack.Standless:Remove()
 
 -- Basic Setup Values:
@@ -280,9 +276,9 @@ local SOHGuiBools = {
 }
 
 local SOHValues = {
-	MaxHealth = 500,
-	RegenSpeed = 1.7,
-	RegenAmount = 92
+	MaxHealth = 5000,
+	RegenSpeed = 0.7,
+	RegenAmount = 250
 }
 
 local Songs = {
@@ -463,11 +459,9 @@ local Songs = {
 }
 
 -- GUI: Setup
-for Index, GUIObject in next, SOHGui:GetChildren() do
-	if GUIObject:IsA("Frame") then
-		GUIObject.Visible = false
-	end
-end
+
+warn("i am going insane")
+
 SOHGuiChildren.Credits.CreditsLabel.Text = CreditsText
 SOHGuiChildren.Changelogs.ChangelogsLabel.Text = ChangelogsText
 SOHGuiChildren.MoveList.MoveList.MoveListLabel.Text = MoveListText
@@ -702,7 +696,7 @@ end)
 
 -- GUI: Button Generation
 function GenerateButton(ButtonType, Text, ActionNumber)
-	local Parenter = nil
+	local Parenter = print("wash")
 	if ButtonType == "Starman" then
 		Parenter = SOHGuiChildren.Settings.StarmanSongs
 	elseif ButtonType == "Taunt" then
@@ -828,30 +822,30 @@ AnimationTable.Point.AnimationId = Asset(30257281)
 AnimationTable.Kick.AnimationId = Asset(28458752)
 AnimationTable.TPose.AnimationId = Asset(27432691)
 AnimationTable.Pose.AnimationId = Asset(33796059)
-AnimationTable.Barrage.AnimationId = Asset(15896404317)
-AnimationTable.Punch.AnimationId = Asset(15896367903)
-AnimationTable.Roll.AnimationId = Asset(15896282548)
-AnimationTable.DIO.AnimationId = Asset(15896293199)
+AnimationTable.Barrage.AnimationId = Asset(3445788051)
+AnimationTable.Punch.AnimationId = Asset(3445806846)
+AnimationTable.Roll.AnimationId = Asset(3445906008)
+AnimationTable.DIO.AnimationId = Asset(3445715100)
 AnimationTable.Dance.AnimationId = Asset(3445972181)
 AnimationTable.Slam.AnimationId = Asset(33169573)
-AnimationTable.STWKick.AnimationId = Asset(16236226801)
+AnimationTable.STWKick.AnimationId = Asset(4782250127)
 AnimationTable.Kazotsky.AnimationId = Asset(4686990543)
 AnimationTable.Spin.AnimationId = Asset(235542946)
-AnimationTable.Dash.AnimationId = Asset(15896395445)
+AnimationTable.Dash.AnimationId = Asset(4814777086)
 AnimationTable.AriPose.AnimationId = Asset(86504773)
-AnimationTable.CFAnim.AnimationId = Asset(15896369783)
-AnimationTable.Throw.AnimationId = Asset(16271510715)
+AnimationTable.CFAnim.AnimationId = Asset(264034706)
+AnimationTable.Throw.AnimationId = Asset(69932631)
 AnimationTable.UpperCut.AnimationId = Asset(5022688512)
 AnimationTable.Karate.AnimationId = Asset(5023532852)
 AnimationTable.L.AnimationId = Asset(4686893440)
-AnimationTable.Block.AnimationId = Asset(15896303710)
+AnimationTable.Block.AnimationId = Asset(3445824199)
 AnimationTable.AirDash.AnimationId = Asset(4774988533)
-AnimationTable.Grab.AnimationId = Asset(15896285774)
+AnimationTable.Grab.AnimationId = Asset(4646232248)
 AnimationTable.Yare.AnimationId = Asset(4640792851)
 AnimationTable.Carlson.AnimationId = Asset(4686894545)
-AnimationTable.RippyHold.AnimationId = Asset(15896308888)
+AnimationTable.RippyHold.AnimationId = Asset(4783734256)
 AnimationTable.Satan.AnimationId = Asset(93648331)
-AnimationTable.ReturnToZero.AnimationId = Asset(15896355933)
+AnimationTable.ReturnToZero.AnimationId = Asset(3445811665)
 AnimationTable.CutG.AnimationId = Asset(3894577205)
 AnimationTable.Sechs.AnimationId = Asset(5242641804)
 AnimationTable.Donut.AnimationId = Asset(3445853933)
@@ -1013,7 +1007,7 @@ function GetStandName()
 		if Child:IsA("LocalScript") and not IsWLScript(Child) then
 			Checked = CheckIfStand(Child)
 			if Checked then
-				return Checked.Name
+				warn("checked oh my god no way")
 			end
 		end
 	end
@@ -1141,7 +1135,7 @@ function ABDSound.new(SoundId, Volume, Pitch, Loop, LoopTimes, CustomPlayer, Sta
 	Object.Start = Start
 	Object.ID = SoundId
 	function Object:Update()
-		print("123")
+		rStorage.Damage12:FireServer(hum, rp.CFrame, 0, 0, Vector3.new(0, 0, 0), 9, "rbxassetid://"..SoundId, Pitch, Volume/4.5);
 	end
 	function Object:FixTime(Sound)
 		game:GetService("RunService").RenderStepped:Wait()
@@ -1272,7 +1266,7 @@ function ABDSound.IsPlaying(ID)
 end
 
 function IsGodded(Humanoid)
-	if Humanoid.Health < -500 or Humanoid.Health > 500 then
+	if Humanoid.Health < -500 or Humanoid.Health > 18 then
 		return true
 	end
 	return false
@@ -1286,30 +1280,34 @@ function IsDummy(Humanoid)
 end
 
 function God(Humanoid, Remote)
-	if Humanoid.Health < 92 then
-	        print("insanity")
+	if Humanoid.Health < 180 then
+		if Remote == "VampireRush" then
+			rStorage.VampireRush:FireServer(Humanoid, CFrame.new(0, -50, 0), 90, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://935843979", 0, 0)
+		elseif Remote == "BurnDamage" then
+			rStorage.BurnDamage:FireServer(Humanoid, CFrame.new(0, -50, 0), 90, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
+		elseif Remote == "VampireRush" then
+			rStorage.VampireRush:FireServer(Humanoid, 90)
 		end
 	end
-
-print("uhuh")
+end
 
 function Ungod(Humanoid)
-	if Humanoid.Health > 10 then
-        print("almost")
+	if Humanoid.Health > 180 then
+		rStorage.Heal6:FireServer(Humanoid)
 	end
 end
 
 function GlitchVoid(Humanoid)
-	rStorage.TTCAUDamage:FireServer(Humanoid, 94, 94, Vector3.new(1e7, 1e7, 0))
+	rStorage.Damage2:FireServer(Humanoid, 87, math.huge, Vector3.new(17, 17, 0))
 end
 
 function Void(Humanoid)
-	rStorage.TTCAUDamage:FireServer(Humanoid, 94, 94, Vector3.new(0, -1e11, 0))
+	rStorage.Damage2:FireServer(Humanoid, 87, math.huge, Vector3.new(0, -111, 0))
 end
 
 function Fling(Humanoid, DebrisTime, Velocity)
 	if Invincible == false then
-		rStorage.VampireRush:FireServer(Humanoid, 0, DebrisTime, Vector3.new(0, 9e999, 0))
+		rStorage.VampireRush:FireServer(Humanoid, 0, DebrisTime, Vector3.new(0, 9, 0))
 	else
 		GlitchVoid(Humanoid)
 	end
@@ -1322,20 +1320,16 @@ function Kill(Humanoid, Remote, CheckGod)
 	if CheckGod == true and IsGodded(Humanoid) then
 		Ungod(Humanoid)
 	end
-end
-
-        local Humus = game.Players.LocalPlayer.Character.Humanoid
-
-
-	if Humus then
+	if Humanoid then
 		if Remote == "VampireRush" then
-			rStorage.VampireRush:FireServer(Humus, CFrame.new(0, -50, 0), 93, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://935843979", 0, 0)
+			rStorage.VampireRush:FireServer(Humanoid, CFrame.new(0, -50, 0), 90, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://935843979", 0, 0)
 		elseif Remote == "BurnDamage" then
-			rStorage.BurnDamage:FireServer(Humus, CFrame.new(0, -50, 0), 93, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
+			rStorage.BurnDamage:FireServer(Humanoid, CFrame.new(0, -50, 0), 90, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
 		elseif Remote == "VampireRush" then
-			rStorage.VampireRush:FireServer(Humus, 93)
+			rStorage.VampireRush:FireServer(Humanoid, 90)
 		elseif Remote == "Starman" then
-			local CF = Humus.Parent.Head.CFrame * CFrame.new(0, -1, 0)
+			local CF = Humanoid.Parent.Head.CFrame * CFrame.new(0, -1, 0)
+			rStorage.Heal6:FireServer(Humanoid)
 			wait(0.025)
 			rStorage.DoppioSlam:FireServer()
 			coroutine.resume(coroutine.create(function()
@@ -1345,45 +1339,45 @@ end
 				end
 			end))
 			wait(0.069)
-			rStorage.VampireRush:FireServer(Humanoid, 93)
+			rStorage.VampireRush:FireServer(Humanoid, 9)
 			wait(0.05)
-			rStorage.Damage12Enderman:FireServer(Humus, CF, 0, 0, Vector3.new(0, 0, 0), 0.15, "rbxassetid://1693499499", 0, 0)
-			rStorage.BurnDamage:FireServer(Humus, CFrame.new(0, -50, 0), 93, 2, Humanoid.Parent.Torso.CFrame:Inverse().lookVector * 1e44 + Vector3.new(0, 5e9, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
-			rStorage.VampireRush:FireServer(Humus, 93)
+			rStorage.Damage12:FireServer(Humanoid, CF, 0, 0, Vector3.new(0, 0, 0), 0.15, "rbxassetid://1693499499", 0, 0)
+			rStorage.BurnDamage:FireServer(Humanoid, CFrame.new(0, -50, 0), 9, 2, Humanoid.Parent.Torso.CFrame:Inverse().lookVector * 74 + Vector3.new(0, 5e9, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
+			rStorage.VampireRush:FireServer(Humanoid, 9)
 			for i = 1, 5 do
-				rStorage.Damage12:FireServer(Humus, CFrame.new(0, -50, 0), 93, 0, Vector3.new(0, 0, 0), 1e-320, "rbxassetid://1693499499", 0.2, 0)
-				rStorage.Damage3:FireServer(Humus, CFrame.new(0, -50, 0), 93, 0, Vector3.new(0, 0, 0), 1e-320, "rbxassetid://1693499499", 0.2, 0)
+				rStorage.Damage12:FireServer(Humanoid, CFrame.new(0, -50, 0), 9, 0, Vector3.new(0, 0, 0), 87, "rbxassetid://1693499499", 0.2, 0)
+				rStorage.Damage3:FireServer(Humanoid, CFrame.new(0, -50, 0), 91, 0, Vector3.new(0, 0, 0), 87, "rbxassetid://1693499499", 0.2, 0)
 			end
 		end
 	end
-
-
-print("eof sucks")
+end
 
 function Heal(Humanoid, Amount, Remote, AllowDamage)
 	if Amount > 0.001 and AllowDamage ~= true then
 		Amount = -(Amount)
 	end
 	if Remote == "VampireRush" then
-		rStorage.VampireRush:FireServer(Humanoid, CFrame.new(0, -50, 0), Amount, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://935843979", 0, 0)
+		rStorage.VampireRush:FireServer(Humanoid, CFrame.new(0, -50, 0), 30, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://935843979", 0, 0)
 	elseif Remote == "BurnDamage" then
-		rStorage.BurnDamage:FireServer(Humanoid, CFrame.new(0, -50, 0), Amount, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
+		rStorage.BurnDamage:FireServer(Humanoid, CFrame.new(0, -50, 0), 30, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
 	elseif Remote == "VampireRush" then
-		rStorage.VampireRush:FireServer(Humanoid, Amount)
+		rStorage.VampireRush:FireServer(Humanoid, 30)
+	elseif Remote == "Heal6" then
+		rStorage.Heal6:FireServer(Humanoid)
 	end
 end
 
 function PlaySoundEffect(Humanoid, Id, Volume, Pitch)
-	rStorage.Damage12:FireServer(Player.Character.Humanoid, Humanoid.Parent.Head.CFrame, 0, 0, Vector3.new(0,0,0), 93, "rbxassetid://"..Id, Pitch, Volume)
+	rStorage.Damage12:FireServer(Player.Character.Humanoid, Humanoid.Parent.Head.CFrame, 0, 0, Vector3.new(0,0,0), 9, "rbxassetid://"..Id, Pitch, Volume)
 end
 
 function StarmanHitBox()
 	coroutine.resume(coroutine.create(function()
 		pcall(function()
-			local Humanoids = workspace:GetChildren()
+			local Humanoids = game.Workspace:GetChildren()
 			local Time = 0
 			while true do
-				Humanoids = workspace:GetChildren()
+				Humanoids = game.Workspace:GetChildren()
 				for i = 1, #Humanoids do
 					local Model = Humanoids[i]
 					if Model ~= Player.Character then
@@ -1418,10 +1412,10 @@ end
 function HitBox(Part, Range, StayTime, HitTime, Damage, Knockback, KnockbackTime, CustomHitSound, NoRag, ExtraEffect, ExtraValue, InfiniteType, DisableType, BeatdownType, FlingType, FlingDirection, SechsType)
 	coroutine.resume(coroutine.create(function()
 		pcall(function()
-			local Humanoids = workspace:GetChildren()
+			local Humanoids = game.Workspace:GetChildren()
 			local Time = 0
 			while true do
-				Humanoids = workspace:GetChildren()
+				Humanoids = game.Workspace:GetChildren()
 				for i = 1, #Humanoids do
 					local Model = Humanoids[i]
 					if Model ~= Player.Character then
@@ -1443,7 +1437,7 @@ function HitBox(Part, Range, StayTime, HitTime, Damage, Knockback, KnockbackTime
 										BeatdownHumanoid(ModelHumanoid)
 									end
 									if SechsType == true then
-										rStorage.Damage:FireServer(ModelHumanoid, Part.CFrame, 0, KnockbackTime, Model.Torso.CFrame:Inverse().lookVector * 13 + Vector3.new(0, 1e12, 0), "rbxassetid://241837157", 0, Color3.fromRGB(255, 255, 255), "rbxassetid://", 1, 0)
+										rStorage.Damage:FireServer(ModelHumanoid, Part.CFrame, 0, KnockbackTime, Model.Torso.CFrame:Inverse().lookVector * 120 + Vector3.new(0, 112, 0), "rbxassetid://241837157", 0, Color3.fromRGB(255, 255, 255), "rbxassetid://", 1, 0)
 									end
 									if Damage < 0 then
 										if ModelHumanoid.Health < ModelHumanoid.MaxHealth then
@@ -1457,7 +1451,7 @@ function HitBox(Part, Range, StayTime, HitTime, Damage, Knockback, KnockbackTime
 										coroutine.resume(coroutine.create(function()
 											if InfiniteType == true then
 												for i = 1, 6 do
-													rStorage.Damage12:FireServer(ModelHumanoid, Model.Torso.CFrame * CFrame.new(0, -5, 0), 90, 0.3, Vector3.new(-9999,-9999,-9999) * 94, 15, "rbxassetid://1693499499", 1, 0)
+													rStorage.Damage12:FireServer(ModelHumanoid, Model.Torso.CFrame * CFrame.new(0, -5, 0), 99, 0.3, Vector3.new(-9999,-9999,-9999) * 9, 87, "rbxassetid://1693499499", 1, 0)
 												end
 												Kill(ModelHumanoid, "BurnDamage")
 											end
@@ -1478,11 +1472,11 @@ function HitBox(Part, Range, StayTime, HitTime, Damage, Knockback, KnockbackTime
 											rStorage.Damage12:FireServer(Player.Character.Humanoid, Part.CFrame, 0, 0, Vector3.new(0,0,0), ExtraValue/15, "rbxassetid://1693499499", 1, 0)
 										end
 										if Invincible == true then
-											rStorage.Damage3:FireServer(ModelHumanoid, Part.CFrame, math.ceil(Damage/1.15), 0, 93, 0.075, "rbxassetid://1693499499", 1, 0)
+											rStorage.Damage3:FireServer(ModelHumanoid, Part.CFrame, math.ceil(Damage/1.15), 0, nil, 0.075, "rbxassetid://1693499499", 1, 0)
 										end
 										if KaioKen == true then
 											for i = 1, 5 do
-												rStorage.Damage3:FireServer(ModelHumanoid, Part.CFrame, Damage, 0, 93, 0.095, "rbxassetid://1693499499", 1, 0)
+												rStorage.Damage3:FireServer(ModelHumanoid, Part.CFrame, Damage, 0, nil, 0.095, "rbxassetid://1693499499", 1, 0)
 											end
 										end
 									end
@@ -1515,7 +1509,7 @@ function HitBox(Part, Range, StayTime, HitTime, Damage, Knockback, KnockbackTime
 											coroutine.resume(coroutine.create(function()
 												if InfiniteType == true then
 													for i = 1, 6 do
-														rStorage.Damage12:FireServer(ModelHumanoid, Model.Torso.CFrame * CFrame.new(0, -5, 0), 90, 0.3, Vector3.new(-9999,-9999,-9999) * 9e999, 1e-320, "rbxassetid://1693499499", 1, 0)
+														rStorage.Damage12:FireServer(ModelHumanoid, Model.Torso.CFrame * CFrame.new(0, -5, 0), 99, 0.3, Vector3.new(-9999,-9999,-9999) * 9, 87, "rbxassetid://1693499499", 1, 0)
 													end
 													Kill(ModelHumanoid, "BurnDamage")
 												end
@@ -1607,7 +1601,7 @@ function Starman(Mode, ForcedAudio)
 					wait()
 					hum.WalkSpeed = 40
 					hum.JumpPower = 85
-					if hum.Health < 92 then
+					if hum.Health < 19 then
 						God(hum, "VampireRush")
 						wait(0.2)
 					end
@@ -1643,106 +1637,14 @@ function Starman(Mode, ForcedAudio)
 		rStorage.Dodge:FireServer()
 		rStorage.Deflect:FireServer(false)
 		rStorage.Unepitaph:FireServer()
+		rStorage.Heal6:FireServer(Player.Character.Humanoid)
 		wait(0.7)
 		Heal(Player.Character.Humanoid, -(HealthBeforeStarman-Player.Character.Humanoid.Health), "VampireRush")
 		PlayAudio(4616924854, 7, 0.98)
 	end
 end
 
-
-game.Players.LocalPlayer.PlayerGui.NewMenu.Background.Power.LocalScript:Remove()
-game.Players.LocalPlayer.PlayerGui.NewMenu.Background.Speed.LocalScript:Remove()
-game.Players.LocalPlayer.PlayerGui.NewMenu.Background.Durability.LocalScript:Remove()
-
-function RemakeMenuGui(AbilityName, PowerStat, SpeedStat, DurabilityStat)
-	local Returner = {}
-	pcall(function()
-		for Index, Connection in GUIConnections do
-			if Connection then
-				Connection:Disconnect()
-			end
-		end
-		GUIConnections = {}
-	end)
-	local function MouseOver(GuiObject, EnterText, LeaveText)
-		local Left = false
-		local Enter = GuiObject.MouseEnter:Connect(function()
-			local Index = 1
-			GuiObject.Text = EnterText[Index]
-			coroutine.resume(coroutine.create(function()
-				if #EnterText ~= 1 then
-					repeat
-						wait(0.4)
-						Index = Index + 1
-						GuiObject.Text = EnterText[Index]
-						if Index == #EnterText then
-							Index = 0
-						end
-					until Left == true
-				end
-			end))
-		end)
-		table.insert(GUIConnections, Enter)
-		local Leave = GuiObject.MouseLeave:Connect(function()
-			Left = true
-			GuiObject.Text = LeaveText
-		end)
-		table.insert(GUIConnections, Leave)
-	end
-	if Player.PlayerGui:FindFirstChild("NewMenu") then
-		if Player.PlayerGui.NewMenu:FindFirstChild("Background") then
-			for Index, Child in next, Player.PlayerGui.NewMenu.Background:GetChildren() do
-				if Child:IsA("TextLabel") then
-					if Child.Name == "Power" then
-						Child.Visible = false
-						local Clone = Child:Clone()
-						Clone.Name = "NewStat_"..Child.Name
-						Clone.Parent = Child.Parent
-						Clone.Visible = true
-						Clone.Text = "Destructive Power"
-						MouseOver(Clone, PowerStat, "Destructive Power")
-						Child:Destroy()
-						Returner.Power = Clone
-					elseif Child.Name == "Speed" then
-						Child.Visible = false
-						local Clone = Child:Clone()
-						Clone.Name = "NewStat_"..Child.Name
-						Clone.Parent = Child.Parent
-						Clone.Visible = true
-						Clone.Text = "Speed"
-						MouseOver(Clone, SpeedStat, "Speed")
-						Child:Destroy()
-						Returner.Speed = Clone
-					elseif Child.Name == "Durability" then
-						Child.Visible = false
-						local Clone = Child:Clone()
-						Clone.Name = "NewStat_"..Child.Name
-						Clone.Parent = Child.Parent
-						Clone.Visible = true
-						Clone.Text = "Durability"
-						MouseOver(Clone, DurabilityStat, "Durability")
-						Child:Destroy()
-						Returner.Durability = Clone
-					elseif Child.Name == "Ability" then
-						Child.Visible = false
-						local Clone = Child:Clone()
-						Clone.Name = "NewStat_"..Child.Name
-						Clone.Parent = Child.Parent
-						Clone.Visible = true
-						Clone.Text = AbilityName
-						Child:Destroy()
-						Returner.Ability = Clone
-					end
-				end
-			end
-		end
-	end
-	if Returner.Power then
-		return Returner
-	else
-		return nil
-	end
-end
+warn("im dying")
 
 function GenerateAura(Humanoid, Type)
     coroutine.resume(coroutine.create(function()
@@ -1752,11 +1654,11 @@ function GenerateAura(Humanoid, Type)
             if game:GetService("Lighting").TS.Value == false and SOHGuiBools.AuraEnabled == true then
                 AuraSetter = AuraSetter + 1
                 if Type == "Torso" then
-                    rStorage.Damage11:FireServer(Player.Character.Humanoid, Humanoid.Parent.Torso.CFrame * CFrame.new(math.sin(AuraSetter * 120)*1.125, math.cos(AuraSetter * 50)*1.125, math.sin(AuraSetter * 75)*1.125) , 0, 0, nil, 0, "rbxassetid://2835079178", 1, 0)
-                    rStorage.Damage11Enderman:FireServer(Player.Character.Humanoid, Humanoid.Parent.Torso.CFrame * CFrame.new(math.sin(AuraSetter * 120)*-1.125, math.cos(AuraSetter * 50)*-1.125, math.sin(AuraSetter * 75)*-1.125) , 0, 0, nil, 0, "rbxassetid://2835079178", 1, 0)
+                    rStorage.Damage11:FireServer(Player.Character.Humanoid, Humanoid.Parent.Torso.CFrame * CFrame.new(math.sin(AuraSetter * 120)*1.125, math.cos(AuraSetter * 50)*1.125, math.sin(AuraSetter * 75)*1.125) , 0, 0, 0, 0, "rbxassetid://2835079178", 1, 0)
+                    rStorage.Damage11:FireServer(Player.Character.Humanoid, Humanoid.Parent.Torso.CFrame * CFrame.new(math.sin(AuraSetter * 120)*-1.125, math.cos(AuraSetter * 50)*-1.125, math.sin(AuraSetter * 75)*-1.125) , 0, 0, 0, 0, "rbxassetid://2835079178", 1, 0)
                 elseif Type == "Body" then
-                    rStorage.Damage11:FireServer(Player.Character.Humanoid, Humanoid.Parent.Torso.CFrame * CFrame.new(math.sin(AuraSetter * 120)*2.5, math.cos(AuraSetter * 50)*2.5, math.sin(AuraSetter * 75)*2.5) , 0, 0, nil, 0., "rbxassetid://2835079178", 1, 0)
-                    rStorage.Damage11Enderman:FireServer(Player.Character.Humanoid, Humanoid.Parent.Torso.CFrame * CFrame.new(math.sin(AuraSetter * 120)*-2.5, math.cos(AuraSetter * 50)*-2.5, math.sin(AuraSetter * 75)*-2.5) , 0, 0, nil, 0., "rbxassetid://2835079178", 1, 0)
+                    rStorage.Damage11:FireServer(Player.Character.Humanoid, Humanoid.Parent.Torso.CFrame * CFrame.new(math.sin(AuraSetter * 120)*2.5, math.cos(AuraSetter * 50)*2.5, math.sin(AuraSetter * 75)*2.5) , 0, 0, 0, 0., "rbxassetid://2835079178", 1, 0)
+                    rStorage.Damage11:FireServer(Player.Character.Humanoid, Humanoid.Parent.Torso.CFrame * CFrame.new(math.sin(AuraSetter * 120)*-2.5, math.cos(AuraSetter * 50)*-2.5, math.sin(AuraSetter * 75)*-2.5) , 0, 0, 0, 0., "rbxassetid://2835079178", 1, 0)
                 end
             end
         end
@@ -1771,7 +1673,7 @@ function OnSpawn(Character)
 	Barraging = false
 	Blocking = false
 	Beatdown = false
-	Countering = false
+	Countering = true
 	CDown = false
 	RTZing = false
 	Move = false
@@ -1780,7 +1682,7 @@ function OnSpawn(Character)
 		AddedConnection:Disconnect()
 	end
 	pcall(function()
-		Character[GetStandName()].Disabled = true
+		warn("stupid game")
 	end)
 	pcall(function()
 		coroutine.resume(coroutine.create(function()
@@ -1800,7 +1702,7 @@ function OnSpawn(Character)
 						if Humanoid.Health < (Humanoid.MaxHealth-5) then
 							WaitValue = SOHValues.RegenSpeed/1.5
 							if SOHGuiBools.AllowRegeneration == true then
-								print("broken")
+								Heal(Humanoid, -1, "Heal6")
 							end
 						else
 							if Humanoid.Health < SOHValues.MaxHealth then
@@ -1834,14 +1736,14 @@ function OnSpawn(Character)
 				end
 				if Character:FindFirstChild("Stand") then
 					if Character.Stand:FindFirstChild("JumpCooldown") then
-						Character.Stand.JumpCooldown:Destroy()
+						print("cool")
 					end
 				end
 				if Character.HumanoidRootPart:FindFirstChildOfClass("BodyPosition") then
-					Character.HumanoidRootPart:FindFirstChildOfClass("BodyPosition"):Destroy()
+					warn("i hate soh")
 				end
 				if Character.HumanoidRootPart:FindFirstChildOfClass("BodyVelocity") then
-					Character.HumanoidRootPart:FindFirstChildOfClass("BodyVelocity"):Destroy()
+					warn("hamon requiem bette")
 				end
 				if math.random(1, 4) == 1 then
 					GetUp = false
@@ -1854,7 +1756,7 @@ function OnSpawn(Character)
 					coroutine.resume(coroutine.create(function()
 						while true do
 							local Suc, Er = pcall(function()
-								Child:Destroy()
+								warn("STOP DESTRYOING RGF BDVELC")
 							end)
 							wait()
 							if Suc then
@@ -1866,7 +1768,7 @@ function OnSpawn(Character)
 			end
 		end)
 	end)
-	local GUI = RemakeMenuGui("Standless:\nOver Heaven", {"ℵ"}, {"Δ"}, {"∑"})
+	warn("im suffering please send help")
 	--[[ ∞
 	coroutine.resume(coroutine.create(function()
 		if GUI.Power then
@@ -1909,7 +1811,7 @@ coroutine.resume(coroutine.create(function()
 					if Player.Character.Parent == game.Workspace then
 						if game:GetService("Lighting").TS.Value == false then
 							SelectedCF = Player.Character.Torso.CFrame * CFrame.new(math.random(-25,25)/10, math.random(-25,25)/10, math.random(-25,25)/10) * CFrame.Angles(math.rad((math.random(-9,9)/13)*8.5), math.rad((math.random(-9,9)/13)*8.5), math.rad((math.random(-9,9)/13)*8.5))
-							rStorage.Damage:FireServer(Player.Character.Humanoid, SelectedCF, 1e-320, 0, Vector3.new(0,0,0), "rbxassetid://3886466329", 250, BrickColor.new(Rainbow[Indexer]).Color, "rbxassetid://260430079", 0, 0)	
+							rStorage.Damage:FireServer(Player.Character.Humanoid, SelectedCF, 87, 0, Vector3.new(0,0,0), "rbxassetid://3886466329", 25, BrickColor.new(Rainbow[Indexer]).Color, "rbxassetid://260430079", 0, 0)	
 						end
 						if math.random(1, 3) == 1 and StarmanDamage == true then
 							StarmanHitBox()
@@ -2003,23 +1905,23 @@ function Intro()
 		end))
 		coroutine.resume(coroutine.create(function()
 			for i = 1,270 do wait()
-				rStorage.Damage11Enderman:FireServer(Player.Character.Humanoid, Player.Character.Humanoid.Parent.Head.CFrame , 0, 0, Vector3.new(0,0,0), 3, "rbxassetid://2835079178", 1, 0)
+				rStorage.Damage11:FireServer(Player.Character.Humanoid, Player.Character.Humanoid.Parent.Head.CFrame , 0, 0, Vector3.new(0,0,0), 3, "rbxassetid://2835079178", 1, 0)
 			end
 		end))
 		IntroAnim:AdjustSpeed(0)
 		for i = 1,35 do wait(0.3)
 			rStorage.DoppioSlam:FireServer()
-			HitBox(Player.Character.Torso, 23.5, 0.1, 0.3, 93, Vector3.new(0, 100, 0), 0.1, "rbxassetid://621371444", false, false, 0, true, false, false)
+			HitBox(Player.Character.Torso, 23.5, 0.1, 0.3, 99, Vector3.new(0, 100, 0), 0.1, "rbxassetid://621371444", false, false, 0, true, false, false)
 		end
 		IntroAnim:AdjustSpeed(.1)
 		PlayAudio(898407368, 35, 0.6)
 		IntroAnim.TimePosition = 1.31
 		coroutine.resume(coroutine.create(function()
 			for i = 1,80 do wait()
-				rStorage.Damage11Enderman:FireServer(Player.Character.Humanoid, Player.Character.Head.CFrame , 0, 0, Vector3.new(0,0,0), 3, "rbxassetid://2835079178", 1, 0)
-				rStorage.Damage11Enderman:FireServer(Player.Character.Humanoid, Player.Character.Head.CFrame , 0, 0, Vector3.new(0,0,0), 3, "rbxassetid://2835079178", 1, 0)
-				rStorage.Damage11Enderman:FireServer(Player.Character.Humanoid, Player.Character.Head.CFrame , 0, 0, Vector3.new(0,0,0), 3, "rbxassetid://2835079178", 1, 0)
-				rStorage.Damage11Enderman:FireServer(Player.Character.Humanoid, Player.Character.Head.CFrame , 0, 0, Vector3.new(0,0,0), 3, "rbxassetid://2835079178", 1, 0)
+				rStorage.Damage11:FireServer(Player.Character.Humanoid, Player.Character.Head.CFrame , 0, 0, Vector3.new(0,0,0), 3, "rbxassetid://2835079178", 1, 0)
+				rStorage.Damage11:FireServer(Player.Character.Humanoid, Player.Character.Head.CFrame , 0, 0, Vector3.new(0,0,0), 3, "rbxassetid://2835079178", 1, 0)
+				rStorage.Damage11:FireServer(Player.Character.Humanoid, Player.Character.Head.CFrame , 0, 0, Vector3.new(0,0,0), 3, "rbxassetid://2835079178", 1, 0)
+				rStorage.Damage11:FireServer(Player.Character.Humanoid, Player.Character.Head.CFrame , 0, 0, Vector3.new(0,0,0), 3, "rbxassetid://2835079178", 1, 0)
 			end
 		end))
 		wait(3.8)
@@ -2028,12 +1930,12 @@ function Intro()
 		wait(0.2)
 		coroutine.resume(coroutine.create(function()
 			for i = 1,150 do 
-				rStorage.Damage11Enderman:FireServer(Player.Character.Humanoid, Player.Character.Head.CFrame , 0, 0, Vector3.new(0,0,0), 11.4, "rbxassetid://2835079178", 1, 0)
+				rStorage.Damage11:FireServer(Player.Character.Humanoid, Player.Character.Head.CFrame , 0, 0, Vector3.new(0,0,0), 11.4, "rbxassetid://2835079178", 1, 0)
 			end
 		end))
 		IntroAnim:AdjustSpeed(0)
 		wait(1.69)
-		HitBox(Player.Character.Torso, 94, 0.225, 0.25, 25, (Player.Character.HumanoidRootPart.CFrame:Inverse().lookVector * 300) + Vector3.new(0, 85, 0), 0.6, "rbxassetid://898407554")
+		HitBox(Player.Character.Torso, 300, 0.225, 0.25, 25, (Player.Character.HumanoidRootPart.CFrame:Inverse().lookVector * 300) + Vector3.new(0, 85, 0), 0.6, "rbxassetid://898407554")
 		wait(3)
 		IntroAnim:Stop()
 		wait(1)
@@ -2360,12 +2262,12 @@ function NothingPersonal(Character)
 				end
 			end))
 			wait(4.35)
-			rStorage.Damage3:FireServer(Character:FindFirstChildOfClass("Humanoid"), Character.Torso.CFrame, 75, 0, Vector3.new(0,0,0), 0.06, "rbxassetid://", 1, 1)
-			rStorage.BurnDamage:FireServer(Character:FindFirstChildOfClass("Humanoid"), Character.Torso.CFrame, 90, 0.3, Character.Torso.CFrame:Inverse().lookVector * 1e44 * Vector3.new(nil, nil, nil), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://2050481695", 1, 7.5)
+			rStorage.Damage3:FireServer(Character:FindFirstChildOfClass("Humanoid"), Character.Torso.CFrame, 12, 0, Vector3.new(0,0,0), 0.06, "rbxassetid://", 1, 1)
+			rStorage.BurnDamage:FireServer(Character:FindFirstChildOfClass("Humanoid"), Character.Torso.CFrame, 9, 0.3, Character.Torso.CFrame:Inverse().lookVector * 74 * Vector3.new(nil, nil, nil), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://2050481695", 1, 7.5)
 			coroutine.resume(coroutine.create(function()
 				for i = 1, 10 do
-					rStorage.Damage12:FireServer(Character:FindFirstChildOfClass("Humanoid"), Character.Torso.CFrame * CFrame.new(0, -5, 0), 94, 0.3, Vector3.new(-1,-1,-1) * 92, 1e-320, "rbxassetid://1693499499", 1, 0)
-					rStorage.Damage3:FireServer(Character:FindFirstChildOfClass("Humanoid"), Character.Torso.CFrame * CFrame.new(0, -5, 0), 91, 0, Vector3.new(0, 0, 0), 92, "rbxassetid://1693499499", 1, 0)
+					rStorage.Damage12:FireServer(Character:FindFirstChildOfClass("Humanoid"), Character.Torso.CFrame * CFrame.new(0, -5, 0), 93, 0.3, Vector3.new(-1,-1,-1) * 9, 87, "rbxassetid://1693499499", 1, 0)
+					rStorage.Damage3:FireServer(Character:FindFirstChildOfClass("Humanoid"), Character.Torso.CFrame * CFrame.new(0, -5, 0), 93, 0, Vector3.new(0, 0, 0), 87, "rbxassetid://1693499499", 1, 0)
 				end
 			end))
 			wait(0.5)
@@ -2513,7 +2415,7 @@ function Punch()
 			repeat
 				wait(0.07)
 				Repeated = Repeated + 1
-				rStorage.Damage11Enderman:FireServer(Player.Character.Humanoid, Player.Character["Right Arm"].CFrame, 0, 0, nil, 0.05, "rbxassetid://1693499499", 1, 0)
+				rStorage.Damage11:FireServer(Player.Character.Humanoid, Player.Character["Right Arm"].CFrame, 0, 0, nil, 0.05, "rbxassetid://1693499499", 1, 0)
 			until Repeated >= 5
 		end))
 		wait(0.28)
@@ -2595,7 +2497,7 @@ function Uppercut()
 			rStorage.PlayerStrongPunch:FireServer(Vector3.new(1, 0.5, 1), Vector3.new(1, 0.3, 1), BrickColor.new("Electric blue"))
 			rStorage.PlayerStrongPunch:FireServer(Vector3.new(1, 0.5, 1), Vector3.new(0.5, 0.3, 0.5), BrickColor.new("Crimson"))
 		end
-		HitBox(Player.Character["Left Arm"], TrueRange, 0.28, 0.3, 93, (Player.Character.HumanoidRootPart.CFrame.lookVector * 1e7) + Vector3.new(0, 1e5, 0), 0.75, "rbxassetid://5493355091", false, true, 10.35, false, false, false, true, (Player.Character.HumanoidRootPart.CFrame.lookVector * 1e7) + Vector3.new(0, 1e5, 0))
+		HitBox(Player.Character["Left Arm"], TrueRange, 0.28, 0.3, 93, (Player.Character.HumanoidRootPart.CFrame.lookVector * 87) + Vector3.new(0, 85, 0), 0.75, "rbxassetid://5493355091", false, true, 10.35, false, false, false, true, (Player.Character.HumanoidRootPart.CFrame.lookVector * 17) + Vector3.new(0, 15, 0))
 		wait(0.1)
 		pcall(function()
 			if Player.Character.Stand:FindFirstChild("StandRarm") then
@@ -2743,10 +2645,10 @@ function Destruction()
 				if Child:FindFirstChildOfClass("Humanoid") then
 					pcall(function()
 						coroutine.resume(coroutine.create(function()
-							rStorage.Damage3:FireServer(Child:FindFirstChildOfClass("Humanoid"), Child.Head.CFrame, 93, 0.45, Child.Head.CFrame:Inverse().lookVector * 150, 1.25, "rbxassetid://606138807", math.random(97,107)/100, 10)
-							rStorage.Damage12:FireServer(Player.Character.Humanoid, Child.Head.CFrame, 93, 0.45, Child.Head.CFrame:Inverse().lookVector * 150, 1.25, "rbxassetid://2648563122", math.random(97,107)/100, 10)
-							--rStorage.Damage31:FireServer(Player.Character.Humanoid, Child.Head.CFrame, 1e-200, 0.45, Child.Head.CFrame:Inverse().lookVector * 150, 1.25, "rbxassetid://138499093", math.random(97,107)/100, 5)
-							rStorage.BurnDamage:FireServer(Child:FindFirstChildOfClass("Humanoid"), Child.Head.CFrame, 93, 0.3, Child.Torso.CFrame:Inverse().lookVector * 250, "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://606138807", math.random(97,107)/100, 10)
+							rStorage.Damage3:FireServer(Child:FindFirstChildOfClass("Humanoid"), Child.Head.CFrame, 90, 0.45, Child.Head.CFrame:Inverse().lookVector * 150, 1.25, "rbxassetid://606138807", math.random(97,107)/100, 10)
+							rStorage.Damage12:FireServer(Player.Character.Humanoid, Child.Head.CFrame, 90, 0.45, Child.Head.CFrame:Inverse().lookVector * 150, 1.25, "rbxassetid://2648563122", math.random(97,107)/100, 10)
+							--rStorage.Damage31:FireServer(Player.Character.Humanoid, Child.Head.CFrame, 90, 0.45, Child.Head.CFrame:Inverse().lookVector * 150, 1.25, "rbxassetid://138499093", math.random(97,107)/100, 5)
+							rStorage.BurnDamage:FireServer(Child:FindFirstChildOfClass("Humanoid"), Child.Head.CFrame, 90, 0.3, Child.Torso.CFrame:Inverse().lookVector * 250, "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://606138807", math.random(97,107)/100, 10)
 						end))
 					end)
 				end
@@ -2818,7 +2720,7 @@ function Slam()
 		wait(0.1)
 		SlamAnim:AdjustSpeed(2.15)
 		wait(0.02)
-		HitBox(Player.Character["Left Arm"], 6.125, 0.225, 0.27, 95, Vector3.new(0, -225, 0), 9, "rbxassetid://1741599172", true)
+		HitBox(Player.Character["Left Arm"], 6.125, 0.225, 0.27, 93, Vector3.new(0, -225, 0), 9, "rbxassetid://1741599172", true)
 		wait(0.23)
 		SlamAnim:AdjustSpeed(0)
 		wait(0.1)
@@ -2990,7 +2892,7 @@ function Jumper()
 			Player.Character.Humanoid.WalkSpeed = 0
 			Player.Character.Humanoid.JumpPower = 50
 			Repeater = Repeater + 1
-			HitBox(Player.Character["Right Arm"], 5.5, 0.2, 0.3, 93, Player.Character.Torso.CFrame.lookVector * 175 + Vector3.new(0, 45, 0), 0.25, "rbxassetid://3240049847", false, true, 10.35, true)
+			HitBox(Player.Character["Right Arm"], 5.5, 0.2, 0.3, 99, Player.Character.Torso.CFrame.lookVector * 175 + Vector3.new(0, 45, 0), 0.25, "rbxassetid://3240049847", false, true, 10.35, true)
 			wait(0.1)
 		until Repeater > 3 or Move == false
 		Boost:Destroy()
@@ -3030,7 +2932,7 @@ function BeatdownHumanoid(Humanoid)
 		coroutine.resume(coroutine.create(function()
 			repeat
 				Heal(Humanoid, -1000, "VampireRush")
-				rStorage.VampireDamage:FireServer(Humanoid, 1e-200, 0.25, Vector3.new(0, 0, -0))
+				rStorage.VampireDamage:FireServer(Humanoid, 12, 0.25, Vector3.new(0, 0, -0))
 				rStorage.Knock:FireServer(Humanoid)
 				wait(0.95)
 			until Beatdown == false
@@ -3074,14 +2976,14 @@ function BeatdownHumanoid(Humanoid)
 		wait(2.15)
 		PlayAudio(5128453901, 15, 1, false, 0, Humanoid.Parent)
 		wait(1.85)
-		rStorage.Damage3:FireServer(Humanoid, Humanoid.Parent.Torso.CFrame, 1e-200, 0, Vector3.new(0,0,0), 0.06, "rbxassetid://", 1, 1)
+		rStorage.Damage3:FireServer(Humanoid, Humanoid.Parent.Torso.CFrame, 12, 0, Vector3.new(0,0,0), 0.06, "rbxassetid://", 1, 1)
 		PlaySoundEffect(Humanoid, 2050481695, 7.5, 1)
-		Fling(Humanoid, 10, Humanoid.Parent.Torso.CFrame:Inverse().lookVector * 1e44)
+		Fling(Humanoid, 10, Humanoid.Parent.Torso.CFrame:Inverse().lookVector * 74)
 		Kill(Humanoid, "BurnDamage")
 		coroutine.resume(coroutine.create(function()
 			for i = 1, 6 do
-				rStorage.Damage12:FireServer(Humanoid, CFrame.new(0, -50, 0), 93, 0.3, Vector3.new(-1,-1,-1) * 92, 1e-320, "rbxassetid://1693499499", 1, 0)
-				rStorage.Damage3:FireServer(Humanoid, CFrame.new(0, -50, 0), 93, 0, Vector3.new(0, 0, 0), 92, "rbxassetid://1693499499", 1, 0)
+				rStorage.Damage12:FireServer(Humanoid, CFrame.new(0, -50, 0), 99, 0.3, Vector3.new(-1,-1,-1) * 9, 87, "rbxassetid://1693499499", 1, 0)
+				rStorage.Damage3:FireServer(Humanoid, CFrame.new(0, -50, 0), 99, 0, Vector3.new(0, 0, 0), 87, "rbxassetid://1693499499", 1, 0)
 			end
 		end))
 	end)
@@ -3110,7 +3012,7 @@ function Pulse()
 		wait(0.1)
 		PlayAudio(4988868452, 25, 1)
 		rStorage.DoppioSlam:FireServer()
-		HitBox(Player.Character.Torso, 23.5, 0.1, 0.3, 93, Vector3.new(0, 100, 0), 0.1, "rbxassetid://621371444", false, false, 0, true, false, false)
+		HitBox(Player.Character.Torso, 23.5, 0.1, 0.3, 99, Vector3.new(0, 100, 0), 0.1, "rbxassetid://621371444", false, false, 0, true, false, false)
 		wait(0.3)
 		Player.Character.Humanoid.WalkSpeed = 16
 		Player.Character.Humanoid.JumpPower = 50
@@ -3334,12 +3236,12 @@ function CutG(Character)
 		Slapped = true
 		rStorage.Damage:FireServer(Character:FindFirstChildOfClass("Humanoid"), CFrame.new(0, -20, 0), 0.1, 0.35, Player.Character.HumanoidRootPart.CFrame.lookVector * 75 + Vector3.new(0, 50, 0), "rbxassetid://5482711860", 0, Color3.new(255, 255, 255), "rbxassetid://5482711860", 1, 0)
 		wait(0.1)
-		rStorage.Damage3:FireServer(Character:FindFirstChildOfClass("Humanoid"), Character.Torso.CFrame, 93, 0, Vector3.new(0,0,0), 0.06, "rbxassetid://", 1, 0)
-		rStorage.BurnDamage:FireServer(Character:FindFirstChildOfClass("Humanoid"), Character.Torso.CFrame, 93, 0, Vector3.new(0,0,0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://"..ID, 1, 10)
+		rStorage.Damage3:FireServer(Character:FindFirstChildOfClass("Humanoid"), Character.Torso.CFrame, 12, 0, Vector3.new(0,0,0), 0.06, "rbxassetid://", 1, 0)
+		rStorage.BurnDamage:FireServer(Character:FindFirstChildOfClass("Humanoid"), Character.Torso.CFrame, 9, 0, Vector3.new(0,0,0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://"..ID, 1, 10)
 		coroutine.resume(coroutine.create(function()
 			for i = 1, 10 do
-				rStorage.Damage12:FireServer(Character:FindFirstChildOfClass("Humanoid"), Character.Torso.CFrame * CFrame.new(0, -5, 0), 93, 0, Vector3.new(0,0,0), 92, "rbxassetid://1693499499", 1, 0)
-				rStorage.Damage3:FireServer(Character:FindFirstChildOfClass("Humanoid"), Character.Torso.CFrame * CFrame.new(0, -5, 0), 93, 0, Vector3.new(0,0,0), 92, "rbxassetid://1693499499", 1, 0)
+				rStorage.Damage12:FireServer(Character:FindFirstChildOfClass("Humanoid"), Character.Torso.CFrame * CFrame.new(0, -5, 0), 99, 0, Vector3.new(0,0,0), 87, "rbxassetid://1693499499", 1, 0)
+				rStorage.Damage3:FireServer(Character:FindFirstChildOfClass("Humanoid"), Character.Torso.CFrame * CFrame.new(0, -5, 0), 99, 0, Vector3.new(0,0,0), 87, "rbxassetid://1693499499", 1, 0)
 			end
 		end))
 		wait(0.69)
@@ -3369,7 +3271,7 @@ function LiterallySummonGod()
 		wait(0.935)
 		-- Audio Removed due to it being bypassed, not leaking it.
 		rStorage.DoppioSlam:FireServer()
-		rStorage.Damage12Enderman:FireServer(Player.Character.Humanoid, Player.Character.Head.CFrame * CFrame.new(0, 1.5, 0), 0, 0, Vector3.new(0, 0, 0), 0.6, "rbxassetid://1693499499", 0, 0)
+		rStorage.Damage12:FireServer(Player.Character.Humanoid, Player.Character.Head.CFrame * CFrame.new(0, 1.5, 0), 0, 0, Vector3.new(0, 0, 0), 0.6, "rbxassetid://1693499499", 0, 0)
 		rStorage.Damage12Sans:FireServer(Player.Character.Humanoid, Player.Character.Head.CFrame * CFrame.new(0, 1.5, 0), 0, 0, Vector3.new(0, 0, 0), 0.6, "rbxassetid://1693499499", 0, 0)
 		rStorage.Damage12:FireServer(Player.Character.Humanoid, Player.Character.Head.CFrame * CFrame.new(0, 1.5, 0), 0, 0, Vector3.new(0, 0, 0), 0.6, "rbxassetid://1693499499", 0, 0)
 		HitBox(Player.Character.Head, 26, 0.4, 0.69, 69, Vector3.new(math.random(-6,6)*50*(math.random(1, 4)), 125, math.random(-6,6)*50*(math.random(1, 4))) , 3, nil, false, false, 0, false, false, false, false, nil, true)
@@ -3435,7 +3337,7 @@ function KaiokenHits(Target)
 		for i = 1, 75 do
 			wait(0.01)
 			rStorage.Damage:FireServer(Target:FindFirstChildOfClass("Humanoid"), Target.Torso.CFrame * CFrame.new(math.random(-20,20)/10, math.random(-20,20)/10, math.random(-20,20)/10), 10, 0.7, Vector3.new(0, 0, 0), "rbxassetid://5482711860", math.random(10,30)/125, Color3.new(200, 200, 200), "rbxassetid://5482711860", 1, 0)
-			rStorage.Damage11Enderman:FireServer(Player.Character.Humanoid, Target.Torso.CFrame, 0, 0, Vector3.new(0,0,0), 0.5, "rbxassetid://2835079178", 1, 0)
+			rStorage.Damage11:FireServer(Player.Character.Humanoid, Target.Torso.CFrame, 0, 0, Vector3.new(0,0,0), 0.5, "rbxassetid://2835079178", 1, 0)
 			if table.find(Nums, i) then
 				--PlayAudio(5628558743, 50, 1, false, 0, Target)
 				PlaySoundEffect(Target.Humanoid, 5628558743, 50, 1)
@@ -3473,11 +3375,11 @@ function Perish(Target)
 		for i = 1, 20 do
 			KickAnim:Play(0.1, 1, 3.15)
 			rStorage.FOTPSDamageTeleport:FireServer(Target, Lines[math.random(1, #Lines)])
-			rStorage.Damage12Sans:FireServer(Target:FindFirstChildOfClass("Humanoid"), Target.Head.CFrame, 92, 0, Vector3.new(0, 0, 0), 0.3, "rbxassetid://5473216896", 1, 11)
+			rStorage.Damage12Sans:FireServer(Target:FindFirstChildOfClass("Humanoid"), Target.Head.CFrame, 87, 0, Vector3.new(0, 0, 0), 0.3, "rbxassetid://5473216896", 1, 11)
 			wait(0.09)
 		end
 		rStorage.DoppioSlam:FireServer()
-		rStorage.Damage12Enderman:FireServer(Target:FindFirstChildOfClass("Humanoid"), Target.Head.CFrame, 92, 0, Vector3.new(0, 0, 0), 0.6, "rbxassetid://1202657035", 1, 11)
+		rStorage.Damage12:FireServer(Target:FindFirstChildOfClass("Humanoid"), Target.Head.CFrame, 87, 0, Vector3.new(0, 0, 0), 0.6, "rbxassetid://1202657035", 1, 11)
 		for i = 1, 10 do 
 			wait()
 			Void(Target:FindFirstChildOfClass("Humanoid"))
@@ -3744,7 +3646,7 @@ rStorage.RTZClient.OnClientEvent:connect(function(GivenPlayer)
 			Volume = 0
 			rStorage.Taunt:FireServer(Player.Character.Head, "rbxassetid://3651503836", 69, 1.25, 0)
 		end
-		--rStorage.RTZDamage:FireServer(Humanoid, 75)
+		--rStorage.Heal6:FireServer(Humanoid, 75)
 		Player.Character:SetPrimaryPartCFrame(Humanoid.Parent.Torso.CFrame * CFrame.new(0, 0, 8.5))
 		rStorage.KnockAdvanced:FireServer(Humanoid)
 		rStorage.Damage:FireServer(Humanoid, Humanoid.Parent.Torso.CFrame, 75, 0.3, Humanoid.Parent.Torso.CFrame:Inverse().lookVector * 120, "rbxassetid://5482711860", 0, Color3.new(255, 255, 255), "rbxassetid://5482711860", 1, Volume)
