@@ -1356,7 +1356,9 @@ end
 			end
 		end
 	end
-end
+
+
+print("eof sucks")
 
 function Heal(Humanoid, Amount, Remote, AllowDamage)
 	if Amount > 0.001 and AllowDamage ~= true then
