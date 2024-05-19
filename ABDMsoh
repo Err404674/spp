@@ -2649,7 +2649,7 @@ function Destruction()
 					pcall(function()
 						coroutine.resume(coroutine.create(function()
 							rStorage.Damage3:FireServer(Child:FindFirstChildOfClass("Humanoid"), Child.Head.CFrame, 90, 0.45, Child.Head.CFrame:Inverse().lookVector * 150, 1.25, "rbxassetid://606138807", math.random(97,107)/100, 10)
-							rStorage.Damage12:FireServer(Player.Character.Humanoid, Child.Head.CFrame, 90, 0.45, Child.Head.CFrame:Inverse().lookVector * 150, 1.25, "rbxassetid://2648563122", math.random(97,107)/100, 10)
+							
 							--rStorage.Damage31:FireServer(Player.Character.Humanoid, Child.Head.CFrame, 90, 0.45, Child.Head.CFrame:Inverse().lookVector * 150, 1.25, "rbxassetid://138499093", math.random(97,107)/100, 5)
 							rStorage.BurnDamage:FireServer(Child:FindFirstChildOfClass("Humanoid"), Child.Head.CFrame, 90, 0.3, Child.Torso.CFrame:Inverse().lookVector * 250, "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://606138807", math.random(97,107)/100, 10)
 						end))
@@ -2984,7 +2984,7 @@ function BeatdownHumanoid(Humanoid)
 		Kill(Humanoid, "BurnDamage")
 		coroutine.resume(coroutine.create(function()
 			for i = 1, 6 do
-				rStorage.Damage12:FireServer(Humanoid, CFrame.new(0, -50, 0), 34, 0.3, Vector3.new(-1,-1,-1) * 9, 87, "rbxassetid://1693499499", 1, 0)
+
 				rStorage.Damage3:FireServer(Humanoid, CFrame.new(0, -50, 0), 71, 0, Vector3.new(0, 0, 0), 87, "rbxassetid://1693499499", 1, 0)
 			end
 		end))
@@ -3170,7 +3170,7 @@ function Gun()
 				SlamAnim:AdjustSpeed(0.75)
 				Repeated = Repeated + 1
 				PlaySoundEffect(Player.Character.Humanoid, 3478357091, 2, 1)
-				rStorage.Damage12:FireServer(Player.Character.Humanoid, Player.Character.Torso.CFrame * CFrame.new(1.8, 1.5, -1.85), 0, 0, Vector3.new(0, 0, 0), 0.02, "rbxassetid://", 0, 0)
+				
 				rStorage.EmperorBackdash:FireServer()
 			until Repeated >= ToRepeat
 		elseif Mode == 1 then
