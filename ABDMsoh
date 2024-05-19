@@ -1290,7 +1290,8 @@ function God(Humanoid, Remote)
 	        print("insanity")
 		end
 	end
-end
+
+print("uhuh")
 
 function Ungod(Humanoid)
 	if Humanoid.Health > 10 then
