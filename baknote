@@ -1,0 +1,17 @@
+while wait() do
+    for i, v in pairs(game:GetService("Workspace").OrbSpawns:GetChildren()) do
+        firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v, 0)
+    end
+end
+
+local Backpack = game.Players.LocalPlayer:FindFirstChildOfClass("Backpack")
+while task.wait() do
+    for _, v in ipairs(Backpack:GetChildren()) do
+        v.Parent = game.Players.LocalPlayer.Character
+        task.spawn(function()
+            v:Activate()
+            task.wait() -- Optionally wait for a specific duration before moving the item back
+            v.Parent = Backpack
+        end)
+    end
+end
