@@ -2,7 +2,7 @@ local Players = game:GetService("Players")
 local localPlayer = Players.LocalPlayer
 local Backpack = localPlayer:FindFirstChildOfClass("Backpack")
 
-local function teleportBanknotesToLocalPlayer()
+local function tpbank()
     if not localPlayer.Character or not localPlayer.Character:FindFirstChild("Humanoid") then
         return
     end
@@ -32,7 +32,7 @@ end)
 
 task.spawn(function()
     while true do
-        teleportBanknotesToLocalPlayer()
+        tpbank()
         task.wait(1.2)
     end
 end)
