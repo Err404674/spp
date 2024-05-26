@@ -10,7 +10,7 @@ while task.wait() do
         v.Parent = game.Players.LocalPlayer.Character
         task.spawn(function()
             v:Activate()
-            task.wait() -- Optionally wait for a specific duration before moving the item back
+            task.wait()
             v.Parent = Backpack
         end)
     end
