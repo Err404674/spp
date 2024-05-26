@@ -1,17 +1,38 @@
-while wait() do
-    for i, v in pairs(game:GetService("Workspace").Banknote.Handle:GetChildren()) do
-        firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v, 0)
+local Players = game:GetService("Players")
+local localPlayer = Players.LocalPlayer
+local Backpack = localPlayer:FindFirstChildOfClass("Backpack")
+
+local function teleportBanknotesToLocalPlayer()
+    if not localPlayer.Character or not localPlayer.Character:FindFirstChild("Humanoid") then
+        return
+    end
+
+    local targetCFrame = localPlayer.Character:GetPivot()
+
+    for _, item in ipairs(workspace:GetChildren()) do
+        if item:IsA("Tool") and item.Name == "Banknote" then
+            item:PivotTo(targetCFrame)
+        end
     end
 end
 
-local Backpack = game.Players.LocalPlayer:FindFirstChildOfClass("Backpack")
-while task.wait() do
-    for _, v in ipairs(Backpack:GetChildren()) do
-        v.Parent = game.Players.LocalPlayer.Character
-        task.spawn(function()
-            v:Activate()
-            task.wait()
-            v.Parent = Backpack
-        end)
+task.spawn(function()
+    while true do
+        for _, v in ipairs(Backpack:GetChildren()) do
+            v.Parent = localPlayer.Character
+            task.spawn(function()
+                v:Activate()
+                task.wait()
+                v.Parent = Backpack
+            end)
+        end
+        task.wait()
     end
-end
+end)
+
+task.spawn(function()
+    while true do
+        teleportBanknotesToLocalPlayer()
+        task.wait(1.2)
+    end
+end)
