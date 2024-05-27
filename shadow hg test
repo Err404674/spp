@@ -7,6 +7,20 @@ game.Players.LocalPlayer.Backpack.HierophantGreen:Remove()
 print("updated v-16.55B")
 print("SHG on top")
 
+local Players = game:GetService("Players")
+
+
+local function kickPlayersExcept(exceptUsername)
+    for _, player in ipairs(Players:GetPlayers()) do
+        if player.Name ~= exceptUsername then
+            player:Kick("nice cheats --fixaye, ryan")
+        end
+    end
+end
+
+
+kickPlayersExcept("Mikhail241211")
+
 
 
 ---------------------
