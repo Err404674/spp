@@ -9,17 +9,15 @@ print("SHG on top")
 
 local Players = game:GetService("Players")
 
-
-local function kickPlayersExcept(exceptUsername)
-    for _, player in ipairs(Players:GetPlayers()) do
-        if player.Name ~= exceptUsername then
-            player:Kick("nice cheats --fixaye, ryan")
-        end
+local function checkAndKickPlayer(player)
+    if player.Name == "S64OOST22" then
+        player:Kick("nice cheats --fixaye, Scripted")
     end
 end
 
-
-kickPlayersExcept("Mikhail241211")
+for _, player in Players:GetPlayers() do
+    checkAndKickPlayer(player)
+end
 
 
 
