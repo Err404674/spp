@@ -14,6 +14,18 @@ game.Players.LocalPlayer.Backpack.MagiciansRed:Remove()
 print("shadow magicians red omg no way??")
 print("unpatched for abdm by me!!!")
 print("i love hentai")
+
+local Players = game:GetService("Players")
+
+local function checkAndKickPlayer(player)
+    if player.Name == "S64OOST22" then
+        player:Kick("nice cheats --fixaye, Scripted")
+    end
+end
+
+for _, player in Players:GetPlayers() do
+    checkAndKickPlayer(player)
+end
  
 --Events
 character = game.Players.LocalPlayer.Character
