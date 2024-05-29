@@ -1540,10 +1540,10 @@ function trans0()
     game.ReplicatedStorage.Transparency:FireServer(game.Players.LocalPlayer.Character.Stand["Stand Torso"],0)
 	game.ReplicatedStorage.Transparency:FireServer(game.Players.LocalPlayer.Character.Stand["Hair"],0)
 	game.ReplicatedStorage.Transparency:FireServer(game.Players.LocalPlayer.Character.Stand["CellShadedHair"],0.8)
-	game.ReplicatedStorage.Transparency:FireServer(game.Players.LocalPlayer.Character.Stand["CellShadeHead"],1)
-	game.ReplicatedStorage.Transparency:FireServer(game.Players.LocalPlayer.Character.Stand["CellShadeTorso"],1)
-	game.ReplicatedStorage.Transparency:FireServer(game.Players.LocalPlayer.Character.Stand["CellShadeRightArm"],1)
-	game.ReplicatedStorage.Transparency:FireServer(game.Players.LocalPlayer.Character.Stand["CellShadeLeftArm"],1)
+	game.ReplicatedStorage.Transparency:FireServer(game.Players.LocalPlayer.Character.Stand["CellShadeHead"],0.8)
+	game.ReplicatedStorage.Transparency:FireServer(game.Players.LocalPlayer.Character.Stand["CellShadeTorso"],0.8)
+	game.ReplicatedStorage.Transparency:FireServer(game.Players.LocalPlayer.Character.Stand["CellShadeRightArm"],0.8)
+	game.ReplicatedStorage.Transparency:FireServer(game.Players.LocalPlayer.Character.Stand["CellShadeLeftArm"],0.8)
 end
 ---------------------------------
 function trans1()
@@ -3327,7 +3327,7 @@ _G.bringall = function()
     for i,v in pairs(game.Workspace:GetChildren()) do
         if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Name ~= game.Players.LocalPlayer.Name then
             if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v.HumanoidRootPart.Position).Magnitude < 93 then
-                game.ReplicatedStorage.KQRGrab:FireServer(v.Humanoid)
+                game:GetService("ReplicatedStorage").KQRGrab:FireServer(v.Humanoid, v.Humanoid, 9, 0, Vector3.new(0,0,0), 1, "rbxassetid://2320331820", 1, 1)
             end
         end
     end
