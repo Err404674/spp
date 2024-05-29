@@ -18,6 +18,7 @@ end
 
 task.spawn(function()
     while true do
+      task.wait()
         for _, v in ipairs(Backpack:GetChildren()) do
             v.Parent = localPlayer.Character
             task.spawn(function()
