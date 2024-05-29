@@ -1544,8 +1544,6 @@ function trans0()
 	game.ReplicatedStorage.Transparency:FireServer(game.Players.LocalPlayer.Character.Stand["CellShadeTorso"],1)
 	game.ReplicatedStorage.Transparency:FireServer(game.Players.LocalPlayer.Character.Stand["CellShadeRightArm"],1)
 	game.ReplicatedStorage.Transparency:FireServer(game.Players.LocalPlayer.Character.Stand["CellShadeLeftArm"],1)
-     game:GetService("ReplicatedStorage").ParticleEvent:FireServer("aura")
-     game:GetService("ReplicatedStorage").STWChair:FireServer(true)
 end
 ---------------------------------
 function trans1()
@@ -1559,8 +1557,6 @@ function trans1()
 	game.ReplicatedStorage.Transparency:FireServer(game.Players.LocalPlayer.Character.Stand["CellShadeTorso"],1)
 	game.ReplicatedStorage.Transparency:FireServer(game.Players.LocalPlayer.Character.Stand["CellShadeRightArm"],1)
 	game.ReplicatedStorage.Transparency:FireServer(game.Players.LocalPlayer.Character.Stand["CellShadeLeftArm"],1)
-     game:GetService("ReplicatedStorage").ParticleEvent:FireServer("noaura")
-     game:GetService("ReplicatedStorage").STWChair:FireServer(false)
 end
 ---------------------------------
 local tauntactive = false
