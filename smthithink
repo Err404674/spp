@@ -4,7 +4,7 @@ game.Players.LocalPlayer.Backpack.NewJSPOVA:Remove()
 
 --loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 
-print("i am a catgirl")
+print("i am a catgirl~~")
 print("SHADJSPOVA on top")
 
 
@@ -5120,13 +5120,12 @@ _G.healall = function()
     for i,v in pairs(game.Workspace:GetChildren()) do
         if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Name ~= game.Players.LocalPlayer.Name then
             if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v.HumanoidRootPart.Position).Magnitude < math.huge then
-                game:GetService("ReplicatedStorage").Heal6:FireServer(v.Humanoid)
-                game:GetService("ReplicatedStorage").Heal6:FireServer(v.Humanoid)
-                game:GetService("ReplicatedStorage").Heal6:FireServer(v.Humanoid)
-                game:GetService("ReplicatedStorage").Heal6:FireServer(v.Humanoid)
-                game:GetService("ReplicatedStorage").Heal6:FireServer(v.Humanoid)
-                game:GetService("ReplicatedStorage").Heal6:FireServer(v.Humanoid)
-                game:GetService("ReplicatedStorage").Heal6:FireServer(v.Humanoid)
+                game:GetService("ReplicatedStorage").Heal6:FireServer(v.Humanoid, CFrame.new(0, -50, 0), 999, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
+                game:GetService("ReplicatedStorage").Heal6:FireServer(v.Humanoid, CFrame.new(0, -50, 0), 999, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
+                game:GetService("ReplicatedStorage").Heal6:FireServer(v.Humanoid, CFrame.new(0, -50, 0), 999, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
+                game:GetService("ReplicatedStorage").Heal6:FireServer(v.Humanoid, CFrame.new(0, -50, 0), 999, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
+                game:GetService("ReplicatedStorage").Heal6:FireServer(v.Humanoid, CFrame.new(0, -50, 0), 999, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
+                game:GetService("ReplicatedStorage").Heal6:FireServer(v.Humanoid, CFrame.new(0, -50, 0), 999, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
             end
         end
     end
