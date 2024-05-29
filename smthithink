@@ -4,7 +4,7 @@ game.Players.LocalPlayer.Backpack.NewJSPOVA:Remove()
 
 --loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 
-print("updated insanity")
+print("updated cheken")
 print("SHADJSPOVA on top")
 
 
