@@ -4,7 +4,7 @@ game.Players.LocalPlayer.Backpack.NewJSPOVA:Remove()
 
 --loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 
-print("updated kms")
+print("updated insanity")
 print("SHADJSPOVA on top")
 
 
@@ -1026,9 +1026,6 @@ RemakeMenuGui("Shadow Hierophant Green", {"big damage"}, {"big speed"}, {"big du
 
 
 
-
-game:GetService("ReplicatedStorage").Block:FireServer(true)
-game:GetService("ReplicatedStorage").SuperArmor:FireServer(true)
 local Humanoid = game.Players.LocalPlayer.Character.Humanoid
 plr = game:GetService'Players'.LocalPlayer
 local premium = false
@@ -1060,10 +1057,11 @@ end
 end
 
 function godmode()
-    replicatedstorage.Block:FireServer(true)
-    replicatedstorage.Damage2:FireServer(Humanoid, CFrame.new(0, -50, 0), -0 * math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
+    game:GetService("ReplicatedStorage").Block:FireServer(true)
+    game:GetService("ReplicatedStorage").SuperArmor:FireServer(true)
+    game:GetService("ReplicatedStorage").Damage2:FireServer(Humanoid, CFrame.new(0, -50, 0), -0 * math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
     wait()
-    replicatedstorage.Damage2:FireServer(Humanoid, CFrame.new(0, -50, 0), 0 * math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
+    game:GetService("ReplicatedStorage").Damage2:FireServer(Humanoid, CFrame.new(0, -50, 0), 0 * math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
 end
 godmode()
 
