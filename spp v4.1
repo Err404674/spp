@@ -1358,13 +1358,7 @@ local pose4 = human:LoadAnimation(rot.Animation)
 local attackpose = human:LoadAnimation(rot.AttackPose)
 local rollanim = human:LoadAnimation(rot.Roll)
 
-function godmode()
-    replicatedstorage.Block:FireServer(true)
-    replicatedstorage.Damage2:FireServer(human, CFrame.new(0, -50, 0), -0 * math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
-    wait()
-    replicatedstorage.Damage2:FireServer(human, CFrame.new(0, -50, 0), 0 * math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
-end
-godmode()
+
 
 
 
