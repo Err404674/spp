@@ -4,7 +4,7 @@ game.Players.LocalPlayer.Backpack.NewJSPOVA:Remove()
 
 --loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 
-print("updated cheken")
+print("updated im gay as fuck")
 print("SHADJSPOVA on top")
 
 
@@ -2327,9 +2327,9 @@ _G.healMoveLol = function()
                 if debounce == false then
                 debounce = true
                 print(hit.Parent.Name)
-                game:GetService("ReplicatedStorage").Damage2:FireServer(hit.Parent.Humanoid, CFrame.new(0, -50, 0), math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
+                game:GetService("ReplicatedStorage").Damage2:FireServer(hit.Parent.Humanoid, CFrame.new(0, -50, 0), -0 * math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
                 wait()
-                game:GetService("ReplicatedStorage").Damage2:FireServer(hit.Parent.Humanoid, CFrame.new(0, -50, 0), math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
+                game:GetService("ReplicatedStorage").Damage2:FireServer(hit.Parent.Humanoid, CFrame.new(0, -50, 0), 0 * math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
                 delay(.001, function() debounce = false end)
             hitbox1:Destroy()
             end
@@ -2337,9 +2337,9 @@ _G.healMoveLol = function()
                 if debounce == false then
                 debounce = true
                 print(hit.Parent.Name .. " elif")
-                game:GetService("ReplicatedStorage").Damage2:FireServer(hit.Parent.Humanoid, CFrame.new(0, -50, 0), math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
+                game:GetService("ReplicatedStorage").Damage2:FireServer(hit.Parent.Humanoid, CFrame.new(0, -50, 0), -0 * math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
                 wait()
-                game:GetService("ReplicatedStorage").Damage2:FireServer(hit.Parent.Humanoid, CFrame.new(0, -50, 0), math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
+                game:GetService("ReplicatedStorage").Damage2:FireServer(hit.Parent.Humanoid, CFrame.new(0, -50, 0), 0 * math.huge, 0, Vector3.new(0, 0, 0), "rbxassetid://241837157", 0, Color3.new(255, 255, 255), "rbxassetid://260430079", 0, 0)
                 delay(.001, function() debounce = false end)
             hitbox1:Destroy()
             end
