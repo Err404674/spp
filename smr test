@@ -15,17 +15,7 @@ print("shadow magicians red omg no way??")
 print("unpatched for abdm by me!!!")
 print("i love hentai")
 
-local Players = game:GetService("Players")
 
-local function checkAndKickPlayer(player)
-    if player.Name == "S64OOST22" then
-        player:Kick("nice cheats --fixaye, Scripted")
-    end
-end
-
-for _, player in Players:GetPlayers() do
-    checkAndKickPlayer(player)
-end
  
 --Events
 character = game.Players.LocalPlayer.Character
@@ -748,7 +738,6 @@ mouse.KeyDown:connect(function(key)
 	if ultimatemode == true then return end
 	if mememode == true then return end
 	if fartmode == true then return end
-        game.ReplicatedStorage.BurnDamage:FireServer(human,-math.huge)
       
 
         switchmode()
@@ -791,7 +780,6 @@ mouse.KeyDown:connect(function(key)
 	if balancedmode == true then return end
 	if amogusmode == true then return end
     if death == true then return end
-        game.ReplicatedStorage.BurnDamage:FireServer(human,-math.huge)
         switchmode2()
     end
 end)
@@ -831,7 +819,6 @@ mouse.KeyDown:connect(function(key)
 	if fartmode == true then return end
 	if balancedmode == true then return end
     if death == true then return end
-        game.ReplicatedStorage.BurnDamage:FireServer(human,-math.huge)
         switchmode3()
     end
 end)
@@ -1163,7 +1150,6 @@ mouse.KeyDown:connect(function(key)
 	if fartmode == true then return end
 	if balancedmode == true then return end
     if death == true then return end
-        game.ReplicatedStorage.BurnDamage:FireServer(human,-math.huge)
         switchmodeultimate()
     end
 end)
@@ -1240,7 +1226,7 @@ mouse.KeyDown:connect(function(key)
 	if fartmode == true then return end
 	if balancedmode == true then return end
     if death == true then return end
-        game.ReplicatedStorage.BurnDamage:FireServer(human,-math.huge)
+         
         switchmodesus()
     end
 end)
@@ -1315,7 +1301,7 @@ mouse.KeyDown:connect(function(key)
 	if finalamogusmode == true then return end
 	if fartmode == true then return end
     if death == true then return end
-        game.ReplicatedStorage.BurnDamage:FireServer(human,-math.huge)
+         
         switchmode7()
     end
 end)
@@ -1427,7 +1413,7 @@ mouse.KeyDown:connect(function(key)
 	if balancedmode == true then return end
 	if amogusmode == true then return end
     if death == true then return end
-        game.ReplicatedStorage.BurnDamage:FireServer(human,-math.huge)
+         
         switchmode6()
     end
 end)
@@ -1470,7 +1456,7 @@ mouse.KeyDown:connect(function(key)
 	if amogusmode == true then return end
 	if fnfmode == true then return end
     if death == true then return end
-        game.ReplicatedStorage.BurnDamage:FireServer(human,-math.huge)
+         
         switchmode4()
     end
 end)
@@ -1510,7 +1496,7 @@ mouse.KeyDown:connect(function(key)
 	if balancedmode == true then return end
 	if animemode == true then return end
     if death == true then return end
-        game.ReplicatedStorage.BurnDamage:FireServer(human,-math.huge)
+         
         switchmode5()
     end
 end)
@@ -3966,7 +3952,7 @@ game:GetService("ReplicatedStorage").Damage31:FireServer(game.Players.LocalPlaye
 game:GetService("ReplicatedStorage").Damage2:FireServer(game.Players.LocalPlayer.Character.Humanoid, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame, 0, 0, Vector3.new(0, 0, 0), 6, "", 1, 1)
 human.WalkSpeed = 80
 human.JumpPower = 150
-game.ReplicatedStorage.BurnDamage:FireServer(human,-math.huge)
+ 
 wait(0.5)
 selfanim:AdjustSpeed(1.5)
 	game.ReplicatedStorage.Transparency:FireServer(game.Players.LocalPlayer.Character.Stand["Stand Right Arm"],1)
@@ -5003,7 +4989,7 @@ ezkill = mouse.Target.Parent
         uppercute:Play(0.1, 1)
         wait(0.28)
             game.ReplicatedStorage.Damage:FireServer(ezkill.Humanoid, ezkill.HumanoidRootPart.CFrame, 0, .1, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector * 1 + Vector3.new(0, 80, 0), "", .05, Color3.new(0, 0, 0), "rbxassetid://4810749120", 1, 1)
-game.ReplicatedStorage.BurnDamage:FireServer(human,-math.huge)
+ 
 	    	until count == 4
         coroutine.resume(coroutine.create(function()
             repeat
