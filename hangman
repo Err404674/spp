@@ -5,7 +5,7 @@ game.Players.LocalPlayer.Backpack.HolHorseEmperor:Remove()
 --loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 
 print("i am a catgirl~~")
-print("SHADJSPOVA on top")
+warn("this is a test")
 
 
 
@@ -1338,8 +1338,8 @@ if chr:FindFirstChild("Stand") then
 	end
 end
 ---------
-local trail1 = chr.HangedMan["HangedManRightArm"].Trail
-local trail2 = chr.HangedMan["HangedManLeftArm"].Trail
+local trail1 = game:GetService("ReplicatedStorage").Trail
+local trail2 = game:GetService("ReplicatedStorage").Trail
 local trail = game:GetService("ReplicatedStorage").Trail
 ---------
 --Values
