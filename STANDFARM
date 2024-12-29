@@ -1,0 +1,36 @@
+--// STAND FARM \\--
+local ArrowRemote = game.ReplicatedStorage.Arrow
+local RokaRemote = game.ReplicatedStorage.Roka
+local speaker = game.Players.LocalPlayer
+local STANDID = 2
+
+local function equiptool(name)
+    local tool = workspace:FindFirstChild(name)
+    if tool and tool:IsA("Tool") then
+        speaker.Character:WaitForChild("Humanoid"):EquipTool(tool)
+        return tool
+    end
+    return nil
+end
+
+repeat
+    task.wait(1)
+    
+    if speaker.Data.Stand.Value == 1 then
+        local arrow = equiptool("Arrow")
+        if arrow then
+            ArrowRemote:FireServer()
+        end
+        
+        task.wait(1)
+        
+        if speaker.Data.Stand.Value ~= STANDID then
+            local roka = equiptool("Rokakaka Fruit")
+            if roka then
+                RokaRemote:FireServer()
+            end
+        end
+    end
+
+until speaker.Data.Stand.Value == STANDID
+print("Stand Found!")
